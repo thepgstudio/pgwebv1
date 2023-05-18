@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -16,7 +18,9 @@
     #54d6ff33 120deg,
     #0071ff33 160deg,
     transparent 360deg
+  
   );
+
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
@@ -33,6 +37,7 @@
     #00000010,
     #00000080
   );
+
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
@@ -105,3 +110,7 @@ a {
     color-scheme: dark;
   }
 }
+
+/* .logo{
+  width: min-content !important;
+} */
