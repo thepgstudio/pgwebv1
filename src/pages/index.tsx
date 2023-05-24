@@ -7,14 +7,14 @@ export default function Home() {
       <Head>
         <title>PGStudio Web</title>
         <meta name="description" content="PGStudio" />
-        <meta name="description" content="A Design Company" />
+        <meta name="description" content="An Architectural Design Company" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Box
-        display={"flex"}
         justifyContent={"space-between"}
+        display={"flex"}
         px="3rem"
         mt="10rem"
         pt="7rem"
@@ -26,7 +26,7 @@ export default function Home() {
           Visualization Studio
         </Text>
 
-        <Text w="54%" fontWeight={200} fontSize={"2.2rem"} pr="2rem">
+        <Text w="54%" fontWeight={200} fontSize={"2rem"} pr="2rem">
           Producing images that you want to be in, we’re creating a powerful
           non-existent reality. 3D rendering for architects, developers,
           branding agencies and product design companies.

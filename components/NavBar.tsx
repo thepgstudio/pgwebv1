@@ -28,7 +28,6 @@ const NavBar = () => {
       <HStack
         justifyContent={"space-between"}
         alignItems={"flex-start"}
-        // px="2rem"
       >
         <Box maxW={scrolled ? "13rem" : "8rem"}>
           {scrolled ? (
