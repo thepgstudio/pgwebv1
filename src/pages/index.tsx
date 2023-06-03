@@ -48,7 +48,7 @@ export default function Home() {
       </Box>
 
       <Box display={"flex"} alignItems={"flex-start"} mt="5rem">
-        <Box w={"90%"} margin={"auto"}>
+        <Box w={"100%"} margin={"auto"}>
           <Image src={image_two} alt="image_one" />
         </Box>
         {/* <Box w={"50%"}>
