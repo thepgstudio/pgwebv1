@@ -10,7 +10,7 @@ const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const scrollChange = () => setScrolled(window.scrollY > 170);
+    const scrollChange = () => setScrolled(window.scrollY > 150);
     window.addEventListener("scroll", scrollChange);
     return () => window.removeEventListener("scroll", scrollChange);
   }, []);
@@ -25,26 +25,16 @@ const NavBar = () => {
       py="1rem"
       bg="white"
     >
-      <HStack
-        justifyContent={"space-between"}
-        alignItems={"flex-start"}
-      >
+      <HStack h={"max-content"} justifyContent={"space-between"} alignItems={"flex-start"}>
         <Box maxW={scrolled ? "13rem" : "8rem"}>
           {scrolled ? (
-            <Image
-              src={logo_large}
-              width="20rem"
-              height="10rem"
-              alt="logo image"
-            />
+            <Box width="20rem">
+              <Image src={logo_large} alt="logo image" />
+            </Box>
           ) : (
-            <Image
-              width="5rem"
-              height="5rem"
-              src={logo_small}
-              className="logo"
-              alt="logo image"
-            />
+            <Box width="9rem">
+              <Image src={logo_small} className="logo" alt="logo image" />
+            </Box>
           )}
         </Box>
 

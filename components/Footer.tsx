@@ -66,7 +66,9 @@ const Footer = () => {
           >
             SERVICES:
           </Text>
-          <Text fontWeight={600}>Architectural visualization</Text>
+          <Text fontWeight={600} textTransform={"uppercase"}>
+            Architectural visualization
+          </Text>
           <VStack alignItems={"flex-start"} gap={0}>
             {nav_.map((item, index) => (
               <Text
@@ -126,7 +128,12 @@ const Footer = () => {
 
         <VStack alignItems={"flex-start"} gap="2rem">
           <VStack alignItems={"flex-start"}>
-            <Text fontSize={"1rem"} fontFamily={"poppins"} fontWeight={600}>
+            <Text
+              textTransform={"uppercase"}
+              fontSize={"1rem"}
+              fontFamily={"poppins"}
+              fontWeight={600}
+            >
               2D/3D Plans
             </Text>
             <Text

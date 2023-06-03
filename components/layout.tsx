@@ -15,12 +15,9 @@ const pgFont = localFont({
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      {/* <html lang="en" className={pgFont.className}> */}
       <NavBar />
       <main>{children}</main>
       <Footer />
-
-      {/* </html> */}
     </>
   );
 };
