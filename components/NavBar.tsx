@@ -24,6 +24,7 @@ const NavBar = () => {
       px="3rem"
       py="1rem"
       bg="white"
+      zIndex={999}
     >
       <HStack h={"max-content"} justifyContent={"space-between"} alignItems={"flex-start"}>
         <Box maxW={scrolled ? "13rem" : "8rem"}>
