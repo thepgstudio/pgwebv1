@@ -104,7 +104,7 @@ export default function Home() {
           }}
         /> */}
         <Text
-          w="70%"
+          w="60%"
           fontSize={"2.75rem"}
           textTransform={"uppercase"}
           fontFamily={"poppins"}
@@ -158,21 +158,27 @@ export default function Home() {
           mt="1rem"
           pb="1rem"
         >
-          <VStack pr="1rem" fontFamily={"poppins"} w="45%">
-            <Text fontSize={"1.5rem"} fontWeight={500}>
-              Project No.309
+          <VStack fontFamily={"poppins"} w="50%">
+            <Text fontSize={"1.25rem"} fontWeight={600}>
+              Project No.419
             </Text>
-            <Text color={"grey"} mt="0rem !important">
+            <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
               Vancover, Canada
             </Text>
             <Box
-              _hover={{ transform: "scale(1.01)" }}
+              border={".2px solid black"}
               cursor={"pointer"}
-              w="90%"
+              borderRadius={"3px"}
               h={"max-content"}
+              overflow={"hidden"}
               maxH={"25rem"}
+              w="95%"
             >
-              <Image src={slide3} alt="image one" />
+              <Image
+                src={image_one}
+                className="home_image"
+                alt="image fourimage_one"
+              />
             </Box>
           </VStack>
 
@@ -180,15 +186,22 @@ export default function Home() {
             <Divider orientation="vertical" colorScheme="#000000 !important" />
           </Box>
 
-          <VStack fontFamily={"poppins"} w="45%">
-            <Text fontSize={"1.5rem"} fontWeight={500}>
+          <VStack fontFamily={"poppins"} w="50%">
+            <Text fontSize={"1.25rem"} fontWeight={600}>
               Project No.309
             </Text>
-            <Text color={"grey"} mt="0rem !important">
+            <Text fontFamily={"1rem"} color={"grey"} mt="0rem !important">
               Vancover, Canada
             </Text>
-            <Box w="90%" h={"max-content"} maxH={"25rem"}>
-              <Image src={slide1} alt="image one" />
+            <Box
+              w="95%"
+              cursor={"pointer"}
+              borderRadius={"3px"}
+              h={"max-content"}
+              overflow={"hidden"}
+              maxH={"25rem"}
+            >
+              <Image src={image_two} className="home_image" alt="image two" />
             </Box>
           </VStack>
         </HStack>
@@ -199,25 +212,25 @@ export default function Home() {
           mt="3rem"
           pb="1rem"
         >
-          <VStack pr="1rem" fontFamily={"poppins"} w="45%">
+          <VStack fontFamily={"poppins"} w="50%">
             <Text fontSize={"1.5rem"} fontWeight={500}>
-              Project No.309
+              Project No.419
             </Text>
             <Text color={"grey"} mt="0rem !important">
               Vancover, Canada
             </Text>
             <Box
-              _hover={{ transform: "scale(1.01)" }}
+              w="95%"
               cursor={"pointer"}
-              w="90%"
+              borderRadius={"3px"}
               h={"max-content"}
+              overflow={"hidden"}
               maxH={"25rem"}
             >
               <Image
-                style={{ objectFit: "contain" }}
-                src={slide1}
-                alt="image threeimage_three"
-                height={300}
+                src={image_three}
+                className="home_image"
+                alt="image_three"
               />
             </Box>
           </VStack>
@@ -226,18 +239,25 @@ export default function Home() {
             <Divider orientation="vertical" colorScheme="#000000 !important" />
           </Box>
 
-          <VStack fontFamily={"poppins"} w="45%">
+          <VStack fontFamily={"poppins"} w="50%">
             <Text fontSize={"1.5rem"} fontWeight={500}>
-              Project No.309
+              Project No.419
             </Text>
             <Text color={"grey"} mt="0rem !important">
               Vancover, Canada
             </Text>
-            <Box w="80%" h={"max-content"} maxH={"25rem"}>
+            <Box
+              w="95%"
+              cursor={"pointer"}
+              borderRadius={"3px"}
+              h={"max-content"}
+              overflow={"hidden"}
+              maxH={"25rem"}
+            >
               <Image
-                style={{ objectFit: "contain" }}
-                src={slide4}
-                alt="image four"
+                src={image_four}
+                className="home_image"
+                alt="image fourimage_four"
               />
             </Box>
           </VStack>
