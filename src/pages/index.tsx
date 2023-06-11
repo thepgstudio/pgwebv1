@@ -151,7 +151,7 @@ export default function Home() {
         </Text>
       </Box>
 
-      <Box px="3.5rem" py="2rem">
+      <Box px="2rem" py="2rem">
         <HStack
           justifyContent={"space-between"}
           borderBottom={"1px solid #f0f0f0"}
@@ -159,14 +159,14 @@ export default function Home() {
           pb="1rem"
         >
           <VStack fontFamily={"poppins"} w="50%">
-            <Text fontSize={"1.25rem"} fontWeight={600}>
-              Project No.419
+            <Text fontSize={"1.5rem"} fontWeight={600}>
+             Metropolis
             </Text>
             <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
-              Vancover, Canada
+              Detriot, USA
             </Text>
             <Box
-              border={".2px solid black"}
+              borderTop={".2px solid black"}
               cursor={"pointer"}
               borderRadius={"3px"}
               h={"max-content"}
@@ -182,12 +182,12 @@ export default function Home() {
             </Box>
           </VStack>
 
-          <Box height={"25rem"}>
+          <Box height={"25rem"} w={"max-content"}>
             <Divider orientation="vertical" colorScheme="#000000 !important" />
           </Box>
 
           <VStack fontFamily={"poppins"} w="50%">
-            <Text fontSize={"1.25rem"} fontWeight={600}>
+            <Text fontSize={"1.5rem"} fontWeight={600}>
               Project No.309
             </Text>
             <Text fontFamily={"1rem"} color={"grey"} mt="0rem !important">
@@ -213,10 +213,10 @@ export default function Home() {
           pb="1rem"
         >
           <VStack fontFamily={"poppins"} w="50%">
-            <Text fontSize={"1.5rem"} fontWeight={500}>
+            <Text fontSize={"1.5rem"} fontWeight={600}>
               Project No.419
             </Text>
-            <Text color={"grey"} mt="0rem !important">
+            <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
               Vancover, Canada
             </Text>
             <Box
@@ -240,11 +240,11 @@ export default function Home() {
           </Box>
 
           <VStack fontFamily={"poppins"} w="50%">
-            <Text fontSize={"1.5rem"} fontWeight={500}>
+            <Text fontSize={"1.5rem"} fontWeight={600}>
               Project No.419
             </Text>
-            <Text color={"grey"} mt="0rem !important">
-              Vancover, Canada
+            <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
+              Umuahia, Nigeria
             </Text>
             <Box
               w="95%"
