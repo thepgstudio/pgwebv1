@@ -16,14 +16,11 @@ import slide2 from "../../public/Home PAGE/MAIN Image - Slide 2.jpg";
 import slide3 from "../../public/Home PAGE/MAIN Image - Slide 3.jpg";
 import slide4 from "../../public/Home PAGE/MAIN Image - Slide 4.jpg";
 
-
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-
 
 export default function Home() {
   return (
@@ -83,19 +80,24 @@ export default function Home() {
             draggable
           >
             <SwiperSlide>
-              <Image src={slide1} alt="slide_one Image" />
+              <Image
+                src={slide1}
+                alt="slide_one Image"
+                placeholder="blur"
+                priority
+              />
             </SwiperSlide>
 
             <SwiperSlide>
-              <Image src={slide2} alt="slide_two Image" />
+              <Image src={slide2} alt="slide_two Image" placeholder="blur" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <Image src={slide3} alt="slide_three Image" />
+              <Image src={slide3} alt="slide_three Image" placeholder="blur" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <Image src={slide4} alt="slide_four Image" />
+              <Image src={slide4} alt="slide_four Image" placeholder="blur" />
             </SwiperSlide>
           </Swiper>
         </Box>
@@ -175,7 +177,12 @@ export default function Home() {
                 maxH={"25rem"}
                 w="95%"
               >
-                <Image src={image_one} className="home_image" alt="image_one" />
+                <Image
+                  src={image_one}
+                  className="home_image"
+                  alt="image_one"
+                  placeholder="blur"
+                />
               </Box>
             </VStack>
 
@@ -195,7 +202,12 @@ export default function Home() {
                 overflow={"hidden"}
                 maxH={"25rem"}
               >
-                <Image src={image_two} className="home_image" alt="image two" />
+                <Image
+                  src={image_two}
+                  className="home_image"
+                  alt="image two"
+                  placeholder="blur"
+                />
               </Box>
             </VStack>
           </HStack>
@@ -230,6 +242,7 @@ export default function Home() {
                   src={image_three}
                   className="home_image"
                   alt="image_three"
+                  placeholder="blur"
                 />
               </Box>
             </VStack>
@@ -256,6 +269,7 @@ export default function Home() {
                   alt="image four"
                   className="home_image"
                   src={image_four}
+                  placeholder="blur"
                 />
               </Box>
             </VStack>
@@ -292,6 +306,7 @@ export default function Home() {
                   src={image_five}
                   className="home_image"
                   alt="image_five"
+                  placeholder="blur"
                 />
               </Box>
             </VStack>
@@ -312,7 +327,12 @@ export default function Home() {
                 overflow={"hidden"}
                 maxH={"25rem"}
               >
-                <Image src={image_six} className="home_image" alt="image six" />
+                <Image
+                  src={image_six}
+                  className="home_image"
+                  alt="image six"
+                  placeholder="blur"
+                />
               </Box>
             </VStack>
           </HStack>
