@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import logo_small from "../public/assets/logos/PGStudio Logo - Variant 1.png";
 import logo_large from "../public/assets/logos/PGStudio Logo - Variant 2.png";
+import Hamburger from "hamburger-react";
 import Image from "next/image";
 
 const NavBar = () => {
@@ -17,29 +18,45 @@ const NavBar = () => {
 
   return (
     <Box
+      px={{ base: "1rem", lg: "3rem" }}
       position={"fixed"}
-      h="max-content"
+      h={"max-content"}
+      zIndex={999}
       w={"100vw"}
       top={0}
-      px="3rem"
       py="1rem"
       bg="white"
-      zIndex={999}
     >
-      <HStack h={"max-content"} justifyContent={"space-between"} alignItems={"flex-start"}>
-        <Box maxW={scrolled ? "13rem" : "8rem"}>
+      <HStack
+        h={"max-content"}
+        justifyContent={"space-between"}
+        alignItems={"flex-start"}
+      >
+        <Box display={{ base: "none", lg: "block" }}>
           {scrolled ? (
             <Box width="20rem">
               <Image src={logo_large} alt="logo image" />
             </Box>
           ) : (
-            <Box width="9rem">
+            <Box width={"9rem"}>
               <Image src={logo_small} className="logo" alt="logo image" />
             </Box>
           )}
         </Box>
 
-        <HStack gap="3rem">
+        {/* Mobile*/}
+        <Box display={{ base: "block", lg: "none" }} w={"6rem"}>
+          <Image src={logo_small} alt="logo" />
+        </Box>
+        <Box display={{ base: "block", lg: "none" }}>
+          <Hamburger />
+        </Box>
+
+        <HStack
+          display={{ base: "none", lg: "flex" }}
+          gap={{ sm: "2rem", lg: "3rem" }}
+          ml="0rem !important"
+        >
           {[
             ["HOME", "/"],
             ["GALLERY", "/gallery"],

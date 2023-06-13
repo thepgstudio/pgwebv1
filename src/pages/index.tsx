@@ -1,21 +1,22 @@
 import { Box, Divider, HStack, Text, VStack } from "@chakra-ui/react";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Head from "next/head";
 import Image from "next/image";
 
-import image_one from "../../public/Home PAGE/HOME Image - 1.jpg";
-import image_two from "../../public/Home PAGE/HOME Image - 2.jpg";
-import image_three from "../../public/Home PAGE/HOME Image - 3.jpg";
-import image_four from "../../public/Home PAGE/HOME Image - 4.jpg";
+import image_one from "../../public/Home PAGE/drive-download-20230613T094156Z-001/HOME Image - 1.jpg";
+import image_two from "../../public/Home PAGE/drive-download-20230613T094156Z-001/HOME Image - 1 (Variant).jpg";
+import image_three from "../../public/Home PAGE/drive-download-20230613T094156Z-001/HOME Image - 2.jpg";
+import image_four from "../../public/Home PAGE/drive-download-20230613T094156Z-001/HOME Image - 2 (Variant).jpg";
+import image_five from "../../public/Home PAGE/drive-download-20230613T094156Z-001/HOME Image - 3.jpg";
+import image_six from "../../public/Home PAGE/drive-download-20230613T094156Z-001/HOME Image - 3 (Variant).jpg";
 
 import slide1 from "../../public/Home PAGE/MAIN Image - Slide 1.jpg";
 import slide2 from "../../public/Home PAGE/MAIN Image - Slide 2.jpg";
 import slide3 from "../../public/Home PAGE/MAIN Image - Slide 3.jpg";
 import slide4 from "../../public/Home PAGE/MAIN Image - Slide 4.jpg";
 
-import Typewriter from "typewriter-effect";
 
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -23,11 +24,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
+
 export default function Home() {
   return (
     <>
       <Head>
-        <title>PGStudio Web</title>
+        <title>PGStudio</title>
         <meta name="description" content="PGStudio" />
         <meta name="description" content="An Architectural Design Company" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,18 +37,20 @@ export default function Home() {
       </Head>
 
       <Box
+        flexDirection={{ base: "column", lg: "row" }}
         justifyContent={"space-between"}
-        display={"flex"}
-        px="3rem"
-        mt="10rem"
-        pt="7rem"
-        height="max-content"
+        px={{ base: "1rem", lg: "3rem" }}
+        mt={{ base: "5rem", lg: "10rem" }}
+        height={"max-content"}
         fontFamily={"poppins"}
+        display={"flex"}
+        pt="7rem"
+        gap={{ base: "2rem", lg: "0rem" }}
       >
         <Text
           textTransform={"uppercase"}
           fontWeight={500}
-          width={"38%"}
+          width={{ base: "80%", lg: "38%" }}
           fontSize={"1.75rem"}
         >
           3d Architectural Rendering and <br />
@@ -54,7 +58,7 @@ export default function Home() {
         </Text>
 
         <Text
-          w="54%"
+          w={{ base: "90%", lg: "54%" }}
           textTransform={"uppercase"}
           fontWeight={200}
           fontSize={"1.75rem"}
@@ -70,39 +74,34 @@ export default function Home() {
         <Box w={"100%"}>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            slidesPerView={1}
-            navigation
             scrollbar={{ draggable: true }}
-            draggable
+            slidesPerView={1}
             autoplay={{
               delay: 3000,
             }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
+            navigation
+            draggable
           >
             <SwiperSlide>
-              <Image src={slide1} alt="slide_one" />
+              <Image src={slide1} alt="slide_one Image" />
             </SwiperSlide>
+
             <SwiperSlide>
-              <Image src={slide2} alt="slide_two" />
+              <Image src={slide2} alt="slide_two Image" />
             </SwiperSlide>
+
             <SwiperSlide>
-              <Image src={slide3} alt="slide_three" />
+              <Image src={slide3} alt="slide_three Image" />
             </SwiperSlide>
+
             <SwiperSlide>
-              <Image src={slide4} alt="slide_four" />
+              <Image src={slide4} alt="slide_four Image" />
             </SwiperSlide>
           </Swiper>
         </Box>
       </Box>
+
       <Box px="3.5rem" py="4rem" mt="1rem" borderY={"1px solid #f0f0f0"}>
-        {/* <Typewriter
-          options={{
-            strings: ["Hello world"],
-            autoStart: true,
-            loop: true,
-          }}
-        /> */}
         <Text
           w="60%"
           fontSize={"2.75rem"}
@@ -118,30 +117,30 @@ export default function Home() {
       </Box>
 
       <Box
+        justifyContent={"space-between"}
+        borderBottom={"1px solid #f0f0f0"}
         display={"flex"}
         px="3.5rem"
         pb="3rem"
         mt="1rem"
-        borderBottom={"1px solid #f0f0f0"}
-        justifyContent={"space-between"}
       >
         <Text
-          w="max-content"
-          color="black"
-          fontSize={"1.6rem"}
           textTransform={"uppercase"}
           fontFamily={"poppins"}
+          fontSize={"1.6rem"}
           lineHeight={"3rem"}
+          w="max-content"
+          color="black"
           fontWeight={500}
         >
           our featured projects
         </Text>
 
         <Text
-          w={"50%"}
+          fontFamily={"poppins"}
           fontSize={"1.2rem"}
           fontWeight={300}
-          fontFamily={"poppins"}
+          w={"50%"}
         >
           Our architecture agency creates unique and innovative projects that
           cater to the individual needs and preference of our clients. From
@@ -152,116 +151,172 @@ export default function Home() {
       </Box>
 
       <Box px="2rem" py="2rem">
-        <HStack
-          justifyContent={"space-between"}
-          borderBottom={"1px solid #f0f0f0"}
-          mt="1rem"
-          pb="1rem"
-        >
-          <VStack fontFamily={"poppins"} w="50%">
+        {/* First Row */}
+        <>
+          <Box fontFamily={"poppins"} textAlign={"center"} mb={"2rem"}>
             <Text fontSize={"1.5rem"} fontWeight={600}>
-             Metropolis
+              Benin Museum
+            </Text>
+            <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
+              Benin, Nigeria
+            </Text>
+          </Box>
+          <HStack
+            justifyContent={"space-between"}
+            borderBottom={"1px solid #f0f0f0"}
+            pb="1rem"
+          >
+            <VStack fontFamily={"poppins"} w="50%">
+              <Box
+                borderRadius={"3px"}
+                overflow={"hidden"}
+                cursor={"pointer"}
+                h={"max-content"}
+                maxH={"25rem"}
+                w="95%"
+              >
+                <Image src={image_one} className="home_image" alt="image_one" />
+              </Box>
+            </VStack>
+
+            <Box height={"25rem"} w={"max-content"}>
+              <Divider
+                orientation="vertical"
+                colorScheme="#000000 !important"
+              />
+            </Box>
+
+            <VStack fontFamily={"poppins"} w="50%">
+              <Box
+                w="95%"
+                cursor={"pointer"}
+                borderRadius={"3px"}
+                h={"max-content"}
+                overflow={"hidden"}
+                maxH={"25rem"}
+              >
+                <Image src={image_two} className="home_image" alt="image two" />
+              </Box>
+            </VStack>
+          </HStack>
+        </>
+
+        {/* Second Row */}
+        <>
+          <Box fontFamily={"poppins"} textAlign={"center"} mt="5rem" mb="1rem">
+            <Text fontSize={"1.5rem"} fontWeight={600}>
+              Metropolis
             </Text>
             <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
               Detriot, USA
             </Text>
-            <Box
-              borderTop={".2px solid black"}
-              cursor={"pointer"}
-              borderRadius={"3px"}
-              h={"max-content"}
-              overflow={"hidden"}
-              maxH={"25rem"}
-              w="95%"
-            >
-              <Image
-                src={image_one}
-                className="home_image"
-                alt="image fourimage_one"
-              />
-            </Box>
-          </VStack>
-
-          <Box height={"25rem"} w={"max-content"}>
-            <Divider orientation="vertical" colorScheme="#000000 !important" />
           </Box>
 
-          <VStack fontFamily={"poppins"} w="50%">
-            <Text fontSize={"1.5rem"} fontWeight={600}>
-              Project No.309
-            </Text>
-            <Text fontFamily={"1rem"} color={"grey"} mt="0rem !important">
-              Vancover, Canada
-            </Text>
-            <Box
-              w="95%"
-              cursor={"pointer"}
-              borderRadius={"3px"}
-              h={"max-content"}
-              overflow={"hidden"}
-              maxH={"25rem"}
-            >
-              <Image src={image_two} className="home_image" alt="image two" />
-            </Box>
-          </VStack>
-        </HStack>
+          <HStack
+            justifyContent={"space-between"}
+            borderBottom={"1px solid #f0f0f0"}
+            pb="1rem"
+          >
+            <VStack fontFamily={"poppins"} w="50%">
+              <Box
+                w="95%"
+                cursor={"pointer"}
+                borderRadius={"3px"}
+                h={"max-content"}
+                overflow={"hidden"}
+                maxH={"25rem"}
+              >
+                <Image
+                  src={image_three}
+                  className="home_image"
+                  alt="image_three"
+                />
+              </Box>
+            </VStack>
 
-        <HStack
-          justifyContent={"space-between"}
-          borderBottom={"1px solid #f0f0f0"}
-          mt="3rem"
-          pb="1rem"
-        >
-          <VStack fontFamily={"poppins"} w="50%">
-            <Text fontSize={"1.5rem"} fontWeight={600}>
-              Project No.419
-            </Text>
-            <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
-              Vancover, Canada
-            </Text>
-            <Box
-              w="95%"
-              cursor={"pointer"}
-              borderRadius={"3px"}
-              h={"max-content"}
-              overflow={"hidden"}
-              maxH={"25rem"}
-            >
-              <Image
-                src={image_three}
-                className="home_image"
-                alt="image_three"
+            <Box height={"25rem"}>
+              <Divider
+                orientation="vertical"
+                colorScheme="#000000 !important"
               />
             </Box>
-          </VStack>
 
-          <Box height={"25rem"}>
-            <Divider orientation="vertical" colorScheme="#000000 !important" />
+            <VStack fontFamily={"poppins"} w="50%">
+              <Box
+                w="95%"
+                borderRadius={"3px"}
+                overflow={"hidden"}
+                cursor={"pointer"}
+                h={"max-content"}
+                maxH={"25rem"}
+                borderTop={".1px solid grey"}
+                borderRight={".1px solid grey"}
+              >
+                <Image
+                  alt="image four"
+                  className="home_image"
+                  src={image_four}
+                />
+              </Box>
+            </VStack>
+          </HStack>
+        </>
+
+        {/* Third Row  */}
+        <>
+          <Box
+            fontFamily={"poppins"}
+            textAlign={"center"}
+            mb={"1rem"}
+            mt="3rem"
+          >
+            <Text fontSize={"1.5rem"} fontWeight={600}>
+              Service Center
+            </Text>
+            <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
+              Alabama, USA
+            </Text>
           </Box>
 
-          <VStack fontFamily={"poppins"} w="50%">
-            <Text fontSize={"1.5rem"} fontWeight={600}>
-              Project No.419
-            </Text>
-            <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
-              Umuahia, Nigeria
-            </Text>
-            <Box
-              w="95%"
-              cursor={"pointer"}
-              borderRadius={"3px"}
-              h={"max-content"}
-              overflow={"hidden"}
-              maxH={"25rem"}
-            >
-              <Image
-                src={image_four}
-                className="home_image"
-                alt="image fourimage_four"
+          <HStack justifyContent={"space-between"} pb="1rem">
+            <VStack fontFamily={"poppins"} w="50%">
+              <Box
+                w="95%"
+                cursor={"pointer"}
+                borderRadius={"3px"}
+                h={"max-content"}
+                overflow={"hidden"}
+                maxH={"25rem"}
+              >
+                <Image
+                  src={image_five}
+                  className="home_image"
+                  alt="image_five"
+                />
+              </Box>
+            </VStack>
+
+            <Box height={"25rem"}>
+              <Divider
+                orientation="vertical"
+                colorScheme="#000000 !important"
               />
             </Box>
-          </VStack>
-        </HStack>
+
+            <VStack fontFamily={"poppins"} w="50%">
+              <Box
+                w="95%"
+                cursor={"pointer"}
+                borderRadius={"3px"}
+                h={"max-content"}
+                overflow={"hidden"}
+                maxH={"25rem"}
+              >
+                <Image src={image_six} className="home_image" alt="image six" />
+              </Box>
+            </VStack>
+          </HStack>
+        </>
       </Box>
     </>
   );
