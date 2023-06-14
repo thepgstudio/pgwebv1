@@ -29,7 +29,7 @@ const Footer = () => {
 
   return (
     <Box
-      px="4rem"
+      px={{ base: "1rem", lg: "4rem" }}
       pt="4rem"
       pb="1rem"
       w={"100vw"}
@@ -40,7 +40,12 @@ const Footer = () => {
       fontFamily={"poppins"}
       gap="5rem"
     >
-      <Box display={"flex"} justifyContent={"space-between"}>
+      <Box
+        display={"flex"}
+        justifyContent={"space-between"}
+        gap="2rem"
+        flexWrap={"wrap"}
+      >
         <VStack alignItems={"flex-start"}>
           {nav.map((item, index) => (
             <Text

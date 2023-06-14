@@ -18,6 +18,7 @@ const NavBar = () => {
 
   return (
     <Box
+      borderBottom={{ base: "1px solid gainsboro", lg: "none" }}
       px={{ base: "1rem", lg: "3rem" }}
       position={"fixed"}
       h={"max-content"}
@@ -28,9 +29,9 @@ const NavBar = () => {
       bg="white"
     >
       <HStack
-        h={"max-content"}
+        alignItems={{base:"center",lg:"flex-start"}}
         justifyContent={"space-between"}
-        alignItems={"flex-start"}
+        h={"max-content"}
       >
         <Box display={{ base: "none", lg: "block" }}>
           {scrolled ? (

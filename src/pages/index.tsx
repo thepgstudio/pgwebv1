@@ -37,29 +37,29 @@ export default function Home() {
         flexDirection={{ base: "column", lg: "row" }}
         justifyContent={"space-between"}
         px={{ base: "1rem", lg: "3rem" }}
-        mt={{ base: "5rem", lg: "10rem" }}
+        mt={{ base: "4rem", lg: "10rem" }}
+        gap={{ base: "2rem", lg: "0rem" }}
         height={"max-content"}
         fontFamily={"poppins"}
         display={"flex"}
         pt="7rem"
-        gap={{ base: "2rem", lg: "0rem" }}
       >
         <Text
           textTransform={"uppercase"}
           fontWeight={500}
-          width={{ base: "80%", lg: "38%" }}
-          fontSize={"1.75rem"}
+          width={{ base: "100%", lg: "38%" }}
+          fontSize={{ base: "1.5rem", lg: "1.75rem" }}
         >
           3d Architectural Rendering and <br />
           Visualization Studio
         </Text>
 
         <Text
-          w={{ base: "90%", lg: "54%" }}
+          w={{ base: "100%", lg: "54%" }}
           textTransform={"uppercase"}
           fontWeight={200}
-          fontSize={"1.75rem"}
-          pr="2rem"
+          fontSize={{ base: "1.5rem", lg: "1.75rem" }}
+          pr={{ base: "0rem", lg: "2rem" }}
         >
           Producing images that you want to be in, we’re creating a powerful
           non-existent reality. 3D rendering for architects, developers,
@@ -67,7 +67,11 @@ export default function Home() {
         </Text>
       </Box>
 
-      <Box display={"flex"} alignItems={"flex-start"} mt="5rem">
+      <Box
+        display={"flex"}
+        alignItems={"flex-start"}
+        mt={{ base: "2rem", lg: "5rem" }}
+      >
         <Box w={"100%"}>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -76,7 +80,7 @@ export default function Home() {
             autoplay={{
               delay: 3000,
             }}
-            navigation
+            // navigation
             draggable
           >
             <SwiperSlide>
@@ -103,14 +107,19 @@ export default function Home() {
         </Box>
       </Box>
 
-      <Box px="3.5rem" py="4rem" mt="1rem" borderY={"1px solid #f0f0f0"}>
+      <Box
+        px={{ base: "1rem", lg: "3.5rem" }}
+        py={{ base: "2rem", lg: "4rem" }}
+        mt="1rem"
+        borderY={"1px solid #f0f0f0"}
+      >
         <Text
-          w="60%"
-          fontSize={"2.75rem"}
+          fontSize={{ base: "1.8rem", lg: "2.75rem" }}
+          lineHeight={{ base: "3rem", lg: "3.3rem" }}
+          fontWeight={{ base: 300, lg: 400 }}
+          w={{ base: "100%", lg: "60%" }}
           textTransform={"uppercase"}
           fontFamily={"poppins"}
-          lineHeight={"3.3rem"}
-          fontWeight={400}
           letterSpacing={".1rem"}
         >
           crafting spaces that go beyond aesthetics, and inspire a sense of
@@ -119,21 +128,21 @@ export default function Home() {
       </Box>
 
       <Box
-        justifyContent={"space-between"}
+        justifyContent={{ base: "center", lg: "space-between" }}
         borderBottom={"1px solid #f0f0f0"}
-        display={"flex"}
-        px="3.5rem"
-        pb="3rem"
+        px={{ base: "1rem", lg: "3.5rem" }}
+        display={{ base: "none", lg: "flex" }}
+        pb={{ base: "1.5rem", lg: "3rem" }}
         mt="1rem"
       >
         <Text
           textTransform={"uppercase"}
           fontFamily={"poppins"}
-          fontSize={"1.6rem"}
+          fontSize={{ base: "1.5rem", lg: "1.6rem" }}
           lineHeight={"3rem"}
           w="max-content"
           color="black"
-          fontWeight={500}
+          fontWeight={600}
         >
           our featured projects
         </Text>
@@ -152,30 +161,36 @@ export default function Home() {
         </Text>
       </Box>
 
-      <Box px="2rem" py="2rem">
+      <Box px={{ base: "1rem", lg: "2rem" }} py={{ base: "1rem", lg: "2rem" }}>
         {/* First Row */}
         <>
           <Box fontFamily={"poppins"} textAlign={"center"} mb={"2rem"}>
-            <Text fontSize={"1.5rem"} fontWeight={600}>
-              Benin Museum
+            <Text
+              fontSize={{ base: "1.25rem", lg: "1.5rem" }}
+              fontWeight={{ base: 500, lg: 600 }}
+              textTransform={"uppercase"}
+            >
+              The African Museum
             </Text>
             <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
-              Benin, Nigeria
+              Abuja, Nigeria
             </Text>
           </Box>
           <HStack
-            justifyContent={"space-between"}
+            flexDir={{ base: "column", lg: "row" }}
+            gap={{ base: "1rem", lg: "0rem" }}
             borderBottom={"1px solid #f0f0f0"}
+            justifyContent={"space-between"}
             pb="1rem"
           >
-            <VStack fontFamily={"poppins"} w="50%">
+            <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                borderRadius={"3px"}
+                h={{ base: "13rem", lg: "max-content" }}
+                w={{ base: "100%", lg: "95%" }}
+                borderRadius={"2px"}
                 overflow={"hidden"}
                 cursor={"pointer"}
-                h={"max-content"}
                 maxH={"25rem"}
-                w="95%"
               >
                 <Image
                   src={image_one}
@@ -186,19 +201,23 @@ export default function Home() {
               </Box>
             </VStack>
 
-            <Box height={"25rem"} w={"max-content"}>
+            <Box
+              display={{ base: "none", lg: "block" }}
+              height={"25rem"}
+              w={"max-content"}
+            >
               <Divider
                 orientation="vertical"
                 colorScheme="#000000 !important"
               />
             </Box>
 
-            <VStack fontFamily={"poppins"} w="50%">
+            <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                w="95%"
+                h={{ base: "13rem", lg: "max-content" }}
+                w={{ base: "100%", lg: "95%" }}
                 cursor={"pointer"}
-                borderRadius={"3px"}
-                h={"max-content"}
+                borderRadius={"2px"}
                 overflow={"hidden"}
                 maxH={"25rem"}
               >
@@ -215,26 +234,36 @@ export default function Home() {
 
         {/* Second Row */}
         <>
-          <Box fontFamily={"poppins"} textAlign={"center"} mt="5rem" mb="1rem">
-            <Text fontSize={"1.5rem"} fontWeight={600}>
-              Metropolis
+          <Box
+            mt={{ base: "3rem", lg: "5rem" }}
+            fontFamily={"poppins"}
+            textAlign={"center"}
+            mb="1rem"
+          >
+            <Text
+              fontSize={{ base: "1.25rem", lg: "1.5rem" }}
+              fontWeight={{ base: 500, lg: 600 }}
+            >
+              INSPIRADORA
             </Text>
             <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
-              Detriot, USA
+              In Our Imagination
             </Text>
           </Box>
 
           <HStack
-            justifyContent={"space-between"}
+            flexDir={{ base: "column", lg: "row" }}
+            gap={{ base: "1rem", lg: "0rem" }}
             borderBottom={"1px solid #f0f0f0"}
+            justifyContent={"space-between"}
             pb="1rem"
           >
-            <VStack fontFamily={"poppins"} w="50%">
+            <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                w="95%"
+                w={{ base: "100%", lg: "95%" }}
                 cursor={"pointer"}
-                borderRadius={"3px"}
-                h={"max-content"}
+                borderRadius={"2px"}
+                h={{ base: "13rem", lg: "max-content" }}
                 overflow={"hidden"}
                 maxH={"25rem"}
               >
@@ -247,23 +276,23 @@ export default function Home() {
               </Box>
             </VStack>
 
-            <Box height={"25rem"}>
+            <Box height={"25rem"} display={{ base: "none", lg: "block" }}>
               <Divider
                 orientation="vertical"
                 colorScheme="#000000 !important"
               />
             </Box>
 
-            <VStack fontFamily={"poppins"} w="50%">
+            <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                w="95%"
-                borderRadius={"3px"}
-                overflow={"hidden"}
-                cursor={"pointer"}
-                h={"max-content"}
-                maxH={"25rem"}
+                h={{ base: "13rem", lg: "max-content" }}
+                w={{ base: "100%", lg: "95%" }}
                 borderTop={".1px solid grey"}
                 borderRight={".1px solid grey"}
+                borderRadius={"2px"}
+                overflow={"hidden"}
+                cursor={"pointer"}
+                maxH={"25rem"}
               >
                 <Image
                   alt="image four"
@@ -284,21 +313,29 @@ export default function Home() {
             mb={"1rem"}
             mt="3rem"
           >
-            <Text fontSize={"1.5rem"} fontWeight={600}>
-              Service Center
+            <Text
+              fontSize={{ base: "1.5rem", lg: "1.5rem" }}
+              fontWeight={{ base: 500, lg: 600 }}
+            >
+              THE RCCG
             </Text>
             <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
-              Alabama, USA
+              New York, USA
             </Text>
           </Box>
 
-          <HStack justifyContent={"space-between"} pb="1rem">
-            <VStack fontFamily={"poppins"} w="50%">
+          <HStack
+            justifyContent={"space-between"}
+            flexDir={{ base: "column", lg: "row" }}
+            pb="1rem"
+            gap={{base:"1rem", lg:"none"}}
+          >
+            <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                w="95%"
+                h={{ base: "13rem", lg: "max-content" }}
+                w={{ base: "100%", lg: "95%" }}
                 cursor={"pointer"}
-                borderRadius={"3px"}
-                h={"max-content"}
+                borderRadius={"2px"}
                 overflow={"hidden"}
                 maxH={"25rem"}
               >
@@ -311,19 +348,19 @@ export default function Home() {
               </Box>
             </VStack>
 
-            <Box height={"25rem"}>
+            <Box height={"25rem"} display={{ base: "none", lg: "block" }}>
               <Divider
                 orientation="vertical"
                 colorScheme="#000000 !important"
               />
             </Box>
 
-            <VStack fontFamily={"poppins"} w="50%">
+            <VStack fontFamily={"poppins"} w={{base:"100%",lg:"50%"}}>
               <Box
-                w="95%"
+                w={{base:"100%",lg:"95%"}}
+                h={{base:"13rem",lg:"max-content"}}
                 cursor={"pointer"}
-                borderRadius={"3px"}
-                h={"max-content"}
+                borderRadius={"2px"}
                 overflow={"hidden"}
                 maxH={"25rem"}
               >
