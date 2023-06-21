@@ -328,7 +328,7 @@ export default function Home() {
             justifyContent={"space-between"}
             flexDir={{ base: "column", lg: "row" }}
             pb="1rem"
-            gap={{base:"1rem", lg:"none"}}
+            gap={{ base: "1rem", lg: "none" }}
           >
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
@@ -355,10 +355,10 @@ export default function Home() {
               />
             </Box>
 
-            <VStack fontFamily={"poppins"} w={{base:"100%",lg:"50%"}}>
+            <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                w={{base:"100%",lg:"95%"}}
-                h={{base:"13rem",lg:"max-content"}}
+                w={{ base: "100%", lg: "95%" }}
+                h={{ base: "13rem", lg: "max-content" }}
                 cursor={"pointer"}
                 borderRadius={"2px"}
                 overflow={"hidden"}
