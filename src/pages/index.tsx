@@ -197,6 +197,7 @@ export default function Home() {
                   className="home_image"
                   alt="image_one"
                   placeholder="blur"
+                  
                 />
               </Box>
             </VStack>
