@@ -7,10 +7,10 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
-const pgFont = localFont({
-  src: "../public/assets/logos/futura/futur.ttf",
-  display: "swap",
-});
+// const pgFont = localFont({
+//   src: "../public/assets/logos/futura/futur.ttf",
+//   display: "swap",
+// });
 
 const Layout = ({ children }: LayoutProps) => {
   return (
