@@ -1,4 +1,4 @@
-import { Squash as Hamburger } from "hamburger-react";
+import { Sling as Hamburger } from "hamburger-react";
 import { useDisclosure } from "@chakra-ui/react";
 import {
   Box,
@@ -11,13 +11,21 @@ import {
 } from "@chakra-ui/react";
 import NavElements from "./NavElements";
 import { useState } from "react";
+import { NextRouter, useRouter } from "next/router";
 
 const MobileNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const router:NextRouter = useRouter();
 
   return (
     <>
-      <Hamburger toggle={onOpen} toggled={isOpen} duration={0.5} />
+      <Hamburger
+        size={40}
+        rounded
+        toggle={onOpen}
+        toggled={isOpen}
+        duration={0.5}
+      />
 
       <Drawer
         size={"full"}
@@ -25,18 +33,23 @@ const MobileNav = () => {
         onClose={onClose}
         isOpen={isOpen}
       >
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton size={"xl"} />
+        {/* <DrawerOverlay /> */}
+        <DrawerContent mt="7rem">
+          {/* <DrawerCloseButton size={"5xl"} mr="1rem" mt="1rem"/> */}
 
           <DrawerBody
-            display={"flex"}
+            justifyContent={"flex-start"}
             alignItems={"center"}
             flexDir={"column"}
-            justifyContent={"center"}
+            display={"flex"}
             height={"100%"}
+            mt="4rem"
           >
-            <NavElements orientation={"column"}/>
+            <NavElements
+              onClick={onClose}
+              orientation={"column"}
+              fontSize="1.5rem"
+            />
           </DrawerBody>
         </DrawerContent>
       </Drawer>

@@ -2,10 +2,11 @@ import { HStack, Text, Box, Button } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import Contact from "./Contact";
+import NextLink from "next/link";
 
 const NavElements = (props: any) => {
-  const router = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const router = useRouter();
 
   return (
     <Box
@@ -24,30 +25,31 @@ const NavElements = (props: any) => {
         ["TEAM", "/team"],
         ["CAREER", "/career"],
       ].map((item, index) => (
-        <Text
-          color={router.pathname === item[1] ? "#bababa" : "black"}
-          _hover={{ color: "#bababa" }}
-          fontFamily={"poppins"}
-          fontSize={"1.1rem"}
-          cursor={"pointer"}
-          fontWeight={600}
-          key={index}
-        >
-          {item[0]}
-        </Text>
+        <NextLink href={`${item[1]}`} onClick={props.onClick} key={index}>
+          <Text
+            color={router.pathname === item[1] ? "#bababa" : "black"}
+            _hover={{ color: "#bababa" }}
+            fontSize={props.fontSize}
+            fontFamily={"poppins"}
+            cursor={"pointer"}
+            fontWeight={600}
+          >
+            {item[0]}
+          </Text>
+        </NextLink>
       ))}
 
       <>
         <Button
+          border={"1px solid black"}
           _hover={{
             color: "black",
             bg: "white",
             border: "1px solid black",
           }}
-          border={"1px solid black"}
           fontFamily={"poppins"}
           borderRadius={"0rem"}
-          fontSize={".8rem"}
+          fontSize={"1rem"}
           onClick={onOpen}
           fontWeight={300}
           color="white"
