@@ -62,7 +62,11 @@ const NavBar = () => {
           display={{ base: "block", lg: "none" }}
           w={"6rem"}
         >
-          <Image src={logo_small} alt="logo" style={{ width: "6rem" }} />
+          <Image
+            src={logo_small}
+            alt="logo"
+            style={{ width: "6rem", height: "max-content", maxHeight: "5rem" }}
+          />
         </Box>
 
         <Box alignSelf={"center"} display={{ base: "block", lg: "none" }}>
