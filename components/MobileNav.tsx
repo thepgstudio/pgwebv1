@@ -15,7 +15,7 @@ import { NextRouter, useRouter } from "next/router";
 
 const MobileNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const router:NextRouter = useRouter();
+  const router: NextRouter = useRouter();
 
   return (
     <>
@@ -34,7 +34,7 @@ const MobileNav = () => {
         isOpen={isOpen}
       >
         {/* <DrawerOverlay /> */}
-        <DrawerContent mt="7rem">
+        <DrawerContent height={""} mt="7rem" overflowY={"scroll"}>
           {/* <DrawerCloseButton size={"5xl"} mr="1rem" mt="1rem"/> */}
 
           <DrawerBody
@@ -42,8 +42,8 @@ const MobileNav = () => {
             alignItems={"center"}
             flexDir={"column"}
             display={"flex"}
-            height={"100%"}
-            mt="4rem"
+            height={"max-content"}
+            my="3rem"
           >
             <NavElements
               onClick={onClose}
