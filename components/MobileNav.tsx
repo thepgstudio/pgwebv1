@@ -33,10 +33,7 @@ const MobileNav = () => {
         onClose={onClose}
         isOpen={isOpen}
       >
-        {/* <DrawerOverlay /> */}
         <DrawerContent height={""} mt="7rem" overflowY={"scroll"}>
-          {/* <DrawerCloseButton size={"5xl"} mr="1rem" mt="1rem"/> */}
-
           <DrawerBody
             justifyContent={"flex-start"}
             alignItems={"center"}

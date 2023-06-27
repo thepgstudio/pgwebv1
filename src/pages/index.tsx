@@ -48,7 +48,7 @@ export default function Home() {
           textTransform={"uppercase"}
           fontWeight={500}
           width={{ base: "100%", lg: "38%" }}
-          fontSize={{ base: "1.5rem", lg: "1.75rem" }}
+          fontSize={{ base: "1.75rem", lg: "1.9rem" }}
         >
           3d Architectural Rendering and <br />
           Visualization Studio
