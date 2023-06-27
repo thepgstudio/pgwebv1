@@ -5,13 +5,12 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbSeparator,
   VStack,
+  chakra,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import placeholder from "../../public/assets/team/test.jpeg";
-import benjie from "../../public/assets/team/benjie.jpg"
-
+import benjie from "../../public/assets/team/benjie.jpg";
+import Link from "next/link";
 
 const Team = () => {
   return (
@@ -19,9 +18,9 @@ const Team = () => {
       fontFamily={"poppins"}
       mt={{ base: "10rem", lg: "17rem" }}
       mb={{ base: "5rem", lg: "10rem" }}
-      px={{ base: "1rem", lg: "3rem" }}
+      px={{ base: "1rem", lg: "2rem" }}
     >
-      <HStack>
+      <HStack px={{ base: "0rem", lg: "1rem" }}>
         <Breadcrumb>
           <BreadcrumbItem>
             <BreadcrumbLink fontWeight={300} href="/">
@@ -37,6 +36,7 @@ const Team = () => {
         </Breadcrumb>
       </HStack>
       <HStack
+        px={{ base: "0rem", lg: "1rem" }}
         display={"flex"}
         mt="3rem"
         gap="2rem"
@@ -70,7 +70,13 @@ const Team = () => {
         rowGap={"5rem"}
       >
         {[1, 2, 3, 4].map((item, index) => (
-          <VStack ml="0rem !important" minW={"20rem"} w={{ base: "100%", lg: "24%" }} key={index}>
+          <VStack
+            cursor={"pointer"}
+            ml="0rem !important"
+            minW={"20rem"}
+            w={{ base: "100%", lg: "24%" }}
+            key={index}
+          >
             <Box>
               <Image
                 style={{ height: "100%" }}
@@ -81,13 +87,21 @@ const Team = () => {
             </Box>
             <Box pt="1.5rem">
               <Text fontSize={"1rem"} fontWeight={500}>
-                AREO BENJAMEN OLUWATIMILEYIN
+                AREO BENJAMEN OLUWATIMILEYIN <br />{" "}
+                <chakra.span
+                  color={"gray"}
+                  as={Link}
+                 
+                  href="https://github.com/iam-benjamen"
+                >
+                  SOFTWARE ENGINEER
+                </chakra.span>
               </Text>
               <Text pt=".5rem" fontSize={".8rem"} fontWeight={300}>
                 WE DON&apos;T KNOW EXACTLY HOW A PERSON CAN CONTROL SO MANY
                 PROCESSES AT THE SAME TIME, BUT BEN DOES IT WITH EASE. STRONG
-                TECHNICAL KNOWLEDGE COMBINED WITH LEADERSHIP SKILLS KEEPS TEAMS
-                MOTIVATED AND ALIGNED IN ACHIEVING PROJECT SUCCESS.
+                TECHNICAL KNOWLEDGE COMBINED WITH LEADERSHIP SKILLS KEEPS OUR
+                TEAM MOTIVATED AND ALIGNED IN ACHIEVING PROJECT SUCCESS.
               </Text>
             </Box>
           </VStack>
