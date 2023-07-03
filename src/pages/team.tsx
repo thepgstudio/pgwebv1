@@ -8,11 +8,21 @@ import {
   VStack,
   chakra,
 } from "@chakra-ui/react";
-import Image from "next/image";
-import benjie from "../../public/assets/team/benjie.jpg";
+import ben from "../../public/assets/team/Mr. Areo Benjamen - 2 (B&W).jpg";
+import sisi from "../../public/assets/team/Miss. Adediran Iyanuoluwa (B&W).jpg";
+import pg from "../../public/assets/team/PG.jpg";
+import dlaw from "../../public/assets/team/Mr. Atanda Ayomide - 1 (B&W).jpg";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 const Team = () => {
+  const asset = [
+    [pg, "ADEDIRAN ILERIOLUWA", "FOUNDER/CEO"],
+    [ben, "AREO BENJAMEN", "SOFTWARE ENGINEER"],
+    [sisi, "ADEDIRAN IYANUOLUWA", "HUMAN RESOURCE SPECIALIST"],
+    [dlaw, "ATANDA AYOMIDE", "COPYWRITER/LEGAL OFFICER"],
+  ];
+
   return (
     <Box
       fontFamily={"poppins"}
@@ -69,7 +79,7 @@ const Team = () => {
         flexWrap={"wrap"}
         rowGap={"5rem"}
       >
-        {[1, 2, 3, 4].map((item, index) => (
+        {asset.map((item, index) => (
           <VStack
             cursor={"pointer"}
             ml="0rem !important"
@@ -80,28 +90,28 @@ const Team = () => {
             <Box>
               <Image
                 style={{ height: "100%" }}
-                src={benjie}
+                src={item[0]}
                 alt="placholder image"
                 placeholder="blur"
               />
             </Box>
             <Box pt="1.5rem">
               <Text fontSize={"1rem"} fontWeight={500}>
-                AREO BENJAMEN OLUWATIMILEYIN <br />{" "}
+                {`${item[1]}`} <br />{" "}
                 <chakra.span
                   color={"gray"}
-                  as={Link}
-                 
-                  href="https://github.com/iam-benjamen"
+                  // as={Link}
+                  // href="https://github.com/iam-benjamen"
                 >
-                  SOFTWARE ENGINEER
+                  {`${item[2]}`}
                 </chakra.span>
               </Text>
               <Text pt=".5rem" fontSize={".8rem"} fontWeight={300}>
                 WE DON&apos;T KNOW EXACTLY HOW A PERSON CAN CONTROL SO MANY
-                PROCESSES AT THE SAME TIME, BUT BEN DOES IT WITH EASE. STRONG
-                TECHNICAL KNOWLEDGE COMBINED WITH LEADERSHIP SKILLS KEEPS OUR
-                TEAM MOTIVATED AND ALIGNED IN ACHIEVING PROJECT SUCCESS.
+                PROCESSES AT THE SAME TIME, BUT {`${item[1]}`} DOES IT WITH
+                EASE. STRONG TECHNICAL KNOWLEDGE COMBINED WITH LEADERSHIP SKILLS
+                KEEPS OUR TEAM MOTIVATED AND ALIGNED IN ACHIEVING PROJECT
+                SUCCESS.
               </Text>
             </Box>
           </VStack>
