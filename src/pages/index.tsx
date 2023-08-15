@@ -21,6 +21,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import ServiceSection from "../../components/Services";
 
 export default function Home() {
   return (
@@ -127,13 +128,15 @@ export default function Home() {
         </Text>
       </Box>
 
+      <ServiceSection />
+
       <Box
         justifyContent={{ base: "center", lg: "space-between" }}
-        borderBottom={"1px solid #f0f0f0"}
+        borderY={"1px solid #f0f0f0"}
         px={{ base: "1rem", lg: "3.5rem" }}
         display={{ base: "none", lg: "flex" }}
-        pb={{ base: "1.5rem", lg: "3rem" }}
-        mt="1rem"
+        py={{ base: "1.5rem", lg: "3rem" }}
+        mt="3rem"
       >
         <Text
           textTransform={"uppercase"}
@@ -185,7 +188,7 @@ export default function Home() {
           >
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                h={{ base: "13rem", lg: "max-content" }}
+                h={{ base: "15rem", lg: "max-content" }}
                 w={{ base: "100%", lg: "95%" }}
                 borderRadius={"2px"}
                 overflow={"hidden"}
@@ -197,7 +200,6 @@ export default function Home() {
                   className="home_image"
                   alt="image_one"
                   placeholder="blur"
-                  
                 />
               </Box>
             </VStack>
@@ -215,7 +217,7 @@ export default function Home() {
 
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                h={{ base: "13rem", lg: "max-content" }}
+                h={{ base: "15rem", lg: "max-content" }}
                 w={{ base: "100%", lg: "95%" }}
                 cursor={"pointer"}
                 borderRadius={"2px"}
@@ -248,7 +250,7 @@ export default function Home() {
               INSPIRADORA
             </Text>
             <Text fontSize={"1rem"} color={"grey"} mt="0rem !important">
-              In Our Imagination
+              Miami, USA
             </Text>
           </Box>
 
@@ -264,7 +266,7 @@ export default function Home() {
                 w={{ base: "100%", lg: "95%" }}
                 cursor={"pointer"}
                 borderRadius={"2px"}
-                h={{ base: "13rem", lg: "max-content" }}
+                h={{ base: "15rem", lg: "max-content" }}
                 overflow={"hidden"}
                 maxH={"25rem"}
               >
@@ -286,7 +288,7 @@ export default function Home() {
 
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                h={{ base: "13rem", lg: "max-content" }}
+                h={{ base: "15rem", lg: "max-content" }}
                 w={{ base: "100%", lg: "95%" }}
                 borderTop={".1px solid grey"}
                 borderRight={".1px solid grey"}
@@ -333,7 +335,7 @@ export default function Home() {
           >
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                h={{ base: "13rem", lg: "max-content" }}
+                h={{ base: "15rem", lg: "max-content" }}
                 w={{ base: "100%", lg: "95%" }}
                 cursor={"pointer"}
                 borderRadius={"2px"}
@@ -359,7 +361,7 @@ export default function Home() {
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
                 w={{ base: "100%", lg: "95%" }}
-                h={{ base: "13rem", lg: "max-content" }}
+                h={{ base: "15rem", lg: "max-content" }}
                 cursor={"pointer"}
                 borderRadius={"2px"}
                 overflow={"hidden"}

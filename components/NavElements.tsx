@@ -20,7 +20,7 @@ const NavElements = (props: any) => {
       {[
         ["HOME", "/"],
         ["GALLERY", "/gallery"],
-        ["SERVICES", "/services"],
+        ["SERVICES", "/#services"],
         ["COMPANY", "/company"],
         ["TEAM", "/team"],
         ["CAREER", "/career"],

@@ -8,15 +8,15 @@ import {
   VStack,
   chakra,
 } from "@chakra-ui/react";
-import ben from "../../public/assets/team/Mr. Areo Benjamen - 2 (B&W).jpg";
-import sisi from "../../public/assets/team/Miss. Adediran Iyanuoluwa (B&W).jpg";
-import pg from "../../public/assets/team/PG.jpg";
-import dlaw from "../../public/assets/team/Mr. Atanda Ayomide - 1 (B&W).jpg";
 import Image, { StaticImageData } from "next/image";
+import sisi from "../../public/assets/team/Miss. Adediran Iyanuoluwa (B&W).jpg";
+import dlaw from "../../public/assets/team/Mr. Atanda Ayomide - 1 (B&W).jpg";
+import ben from "../../public/assets/team/Mr. Areo Benjamen - 2 (B&W).jpg";
+import pg from "../../public/assets/team/PG.jpg";
 import Link from "next/link";
 
 const Team = () => {
-  const asset = [
+  const asset: (string | StaticImageData)[][] = [
     [pg, "ADEDIRAN ILERIOLUWA", "FOUNDER/CEO"],
     [ben, "AREO BENJAMEN", "SOFTWARE ENGINEER"],
     [sisi, "ADEDIRAN IYANUOLUWA", "HUMAN RESOURCE SPECIALIST"],
@@ -46,12 +46,12 @@ const Team = () => {
         </Breadcrumb>
       </HStack>
       <HStack
-        px={{ base: "0rem", lg: "1rem" }}
-        display={"flex"}
-        mt="3rem"
-        gap="2rem"
-        alignItems={"flex-start"}
         flexDir={{ base: "column", lg: "row" }}
+        px={{ base: "0rem", lg: "1rem" }}
+        alignItems={"flex-start"}
+        display={"flex"}
+        gap="2rem"
+        mt="3rem"
       >
         <Text
           w={{ base: "100%", lg: "40%" }}
@@ -109,7 +109,7 @@ const Team = () => {
               <Text pt=".5rem" fontSize={".8rem"} fontWeight={300}>
                 WE DON&apos;T KNOW EXACTLY HOW A PERSON CAN CONTROL SO MANY
                 PROCESSES AT THE SAME TIME, BUT {`${item[1]}`} DOES IT WITH
-                EASE. STRONG TECHNICAL KNOWLEDGE COMBINED WITH LEADERSHIP SKILLS
+                EASE.  STRONG TECHNICAL KNOWLEDGE COMBINED WITH LEADERSHIP SKILLS
                 KEEPS OUR TEAM MOTIVATED AND ALIGNED IN ACHIEVING PROJECT
                 SUCCESS.
               </Text>
