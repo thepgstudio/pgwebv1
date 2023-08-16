@@ -47,11 +47,12 @@ export default function Home() {
       >
         <Text
           textTransform={"uppercase"}
-          fontWeight={500}
+          fontWeight={400}
+          letterSpacing={".1rem"}
           width={{ base: "100%", lg: "38%" }}
-          fontSize={{ base: "1.75rem", lg: "1.9rem" }}
+          fontSize={{ base: "1.75rem", lg: "2rem" }}
         >
-          3d Architectural Rendering and <br />
+          3d Architectural Rendering and
           Visualization Studio
         </Text>
 
@@ -60,7 +61,7 @@ export default function Home() {
           textTransform={"uppercase"}
           fontWeight={200}
           fontSize={{ base: "1.5rem", lg: "1.75rem" }}
-          pr={{ base: "0rem", lg: "2rem" }}
+          // pr={{ base: "0rem", lg: "2rem" }}
         >
           Producing images that you want to be in, we’re creating a powerful
           non-existent reality. 3D rendering for architects, developers,
@@ -117,11 +118,11 @@ export default function Home() {
         <Text
           fontSize={{ base: "1.8rem", lg: "2.75rem" }}
           lineHeight={{ base: "3rem", lg: "3.3rem" }}
-          fontWeight={{ base: 300, lg: 400 }}
+          fontWeight={{ base: 300, lg: 300 }}
           w={{ base: "100%", lg: "60%" }}
           textTransform={"uppercase"}
           fontFamily={"poppins"}
-          letterSpacing={".1rem"}
+          letterSpacing={".02rem"}
         >
           crafting spaces that go beyond aesthetics, and inspire a sense of
           wonder and awe.
@@ -139,13 +140,13 @@ export default function Home() {
         mt="3rem"
       >
         <Text
+          fontSize={{ base: "1.5rem", lg: "2rem" }}
           textTransform={"uppercase"}
           fontFamily={"poppins"}
-          fontSize={{ base: "1.5rem", lg: "1.6rem" }}
           lineHeight={"3rem"}
-          w="max-content"
-          color="black"
-          fontWeight={600}
+          w={"max-content"}
+          color={"black"}
+          fontWeight={400}
         >
           our featured projects
         </Text>
@@ -193,7 +194,7 @@ export default function Home() {
                 borderRadius={"2px"}
                 overflow={"hidden"}
                 cursor={"pointer"}
-                maxH={"25rem"}
+                maxH={"30rem"}
               >
                 <Image
                   src={image_one}
@@ -222,7 +223,7 @@ export default function Home() {
                 cursor={"pointer"}
                 borderRadius={"2px"}
                 overflow={"hidden"}
-                maxH={"25rem"}
+                maxH={"30rem"}
               >
                 <Image
                   src={image_two}
@@ -268,7 +269,7 @@ export default function Home() {
                 borderRadius={"2px"}
                 h={{ base: "15rem", lg: "max-content" }}
                 overflow={"hidden"}
-                maxH={"25rem"}
+                maxH={"30rem"}
               >
                 <Image
                   src={image_three}
@@ -295,7 +296,7 @@ export default function Home() {
                 borderRadius={"2px"}
                 overflow={"hidden"}
                 cursor={"pointer"}
-                maxH={"25rem"}
+                maxH={"30rem"}
               >
                 <Image
                   alt="image four"
@@ -340,7 +341,7 @@ export default function Home() {
                 cursor={"pointer"}
                 borderRadius={"2px"}
                 overflow={"hidden"}
-                maxH={"25rem"}
+                maxH={"30rem"}
               >
                 <Image
                   src={image_five}
@@ -365,7 +366,7 @@ export default function Home() {
                 cursor={"pointer"}
                 borderRadius={"2px"}
                 overflow={"hidden"}
-                maxH={"25rem"}
+                maxH={"30rem"}
               >
                 <Image
                   src={image_six}

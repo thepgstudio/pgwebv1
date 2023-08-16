@@ -1,8 +1,21 @@
 import { HStack, Text, Box, Button } from "@chakra-ui/react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { useDisclosure } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import Contact from "./Contact";
 import NextLink from "next/link";
+
+const scrollIntoElement = (elementId: string) => {
+  const element = document.getElementById(elementId);
+
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }
+};
 
 const NavElements = (props: any) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -10,34 +23,51 @@ const NavElements = (props: any) => {
 
   return (
     <Box
-      display="flex"
+      gap={{ base: "3rem", lg: "3.5rem" }}
       flexDirection={props.orientation}
+      display="flex"
+      ml="0rem !important"
       alignItems={"center"}
       justifyContent={"center"}
-      gap={{ base: "3rem", lg: "3rem" }}
-      ml="0rem !important"
     >
       {[
         ["HOME", "/"],
         ["GALLERY", "/gallery"],
-        ["SERVICES", "/#services"],
+        ["SERVICES", "services"],
         ["COMPANY", "/company"],
         ["TEAM", "/team"],
-        ["CAREER", "/career"],
-      ].map((item, index) => (
-        <NextLink href={`${item[1]}`} onClick={props.onClick} key={index}>
+      ].map((item, index) =>
+        item[0] === "SERVICES" ? (
           <Text
-            color={router.pathname === item[1] ? "#bababa" : "black"}
             _hover={{ color: "#bababa" }}
             fontSize={props.fontSize}
+            key={index}
+            as={Link}
+            smooth={true}
             fontFamily={"poppins"}
             cursor={"pointer"}
             fontWeight={600}
+            to={item[1]}
+            offset={-150}
+            onClick={props.onClick}
           >
             {item[0]}
           </Text>
-        </NextLink>
-      ))}
+        ) : (
+          <NextLink href={`${item[1]}`} onClick={props.onClick} key={index}>
+            <Text
+              color={router.pathname === item[1] ? "#bababa" : "black"}
+              _hover={{ color: "#bababa" }}
+              fontSize={props.fontSize}
+              fontFamily={"poppins"}
+              cursor={"pointer"}
+              fontWeight={600}
+            >
+              {item[0]}
+            </Text>
+          </NextLink>
+        )
+      )}
 
       <>
         <Button

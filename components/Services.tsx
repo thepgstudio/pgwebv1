@@ -5,14 +5,12 @@ import {
   Scrollbar,
   A11y,
   Autoplay,
-  EffectCreative,
-  EffectCoverflow,
   Thumbs,
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+import Image from "next/image";
 import "swiper/css";
+import icon from "../public/icons/low-poly-svgrepo-com.svg";
 
 const ServiceSection = () => {
   const data = [
@@ -39,59 +37,58 @@ const ServiceSection = () => {
     ],
   ];
   return (
-    <Box px="2rem" id="services" fontFamily={"poppins"}>
+    <Box px={{base:"1rem",lg:"2rem"}} pb={"1rem"} id="services" fontFamily={"poppins"}>
       <Text
         textAlign={"center"}
         my={"2rem"}
         fontFamily={"poppins"}
-        fontSize={"2.5rem"}
-        fontWeight={300}
+        fontSize={{base:"1.75rem",lg:"2.5rem"}}
+        fontWeight={400}
       >
-        WHAT WE DO?
+        WHAT WE DO
       </Text>
 
       <Swiper
-        modules={[
-          Navigation,
-          Pagination,
-          Scrollbar,
-          A11y,
-          Autoplay,
-          EffectCoverflow,
-          Thumbs,
-        ]}
-        slidesPerView={3}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Thumbs]}
         autoplay={{
           delay: 3000,
         }}
-        effect="coverflow"
         grabCursor={true}
         pagination={true}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 120,
-          modifier: 1,
-          slideShadows: true,
+        spaceBetween={30}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
         }}
       >
         {data.map((item, index) => (
           <SwiperSlide key={index}>
             <Box
-              height={"28rem"}
+              className="swiper-container"
+              justifyContent={"center"}
+              alignItems={"center"}
+              height={"25rem"}
               display={"flex"}
+              boxShadow={"lg"}
+              gap={"1.5rem"}
               flexDir={"column"}
               background={"white"}
-              // borderTopLeftRadius={"3rem"}
-              // borderX={"2px solid black"}
-              alignItems={"center"}
-              justifyContent={"center"}
-              gap="1.5rem"
+              borderRadius={".5rem"}
             >
-              <Text fontSize={"2rem"} color={"black"} fontWeight={700}>
+              <Box width={"5rem"}>
+                <Image src={icon} alt="icon" />
+              </Box>
+              <Text textAlign={"center"} fontSize={"1.65rem"} fontWeight={700}>
                 {item[0]}
               </Text>
-              <Text textAlign={"center"} px="2rem">
+              <Text textAlign={"center"} px="2.5rem">
                 {item[1]}
               </Text>
             </Box>
