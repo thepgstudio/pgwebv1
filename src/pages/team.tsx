@@ -13,13 +13,20 @@ import sisi from "../../public/assets/team/Miss. Adediran Iyanuoluwa (B&W).jpg";
 import dlaw from "../../public/assets/team/Mr. Atanda Ayomide - 1 (B&W).jpg";
 import ben from "../../public/assets/team/Mr. Areo Benjamen - 2 (B&W).jpg";
 import pg from "../../public/assets/team/PG.jpg";
-import Link from "next/link";
+import broini from "../../public/assets/team/Mr. Adediran Inioluwa (B&W).jpg";
+import desola from "../../public/assets/team/Miss. Ganiyu Faith (B&W).jpg";
+import okuro from "../../public/assets/team/Mr. Okuro Samson (B&W).jpg";
+import drem from "../../public/assets/team/Mr. Aderemi Adedapo (B&W).jpg";
 
 const Team = () => {
   const asset: (string | StaticImageData)[][] = [
     [pg, "ADEDIRAN ILERIOLUWA", "FOUNDER/CEO"],
+    [broini, "ADEDIRAN INIOLUWA", "COO"],
+    [okuro, "SAMSON OKURO", "CHIEF MARKETING OFFICER"],
     [ben, "AREO BENJAMEN", "SOFTWARE ENGINEER"],
+    [drem, "ADEREMI ADEDAPO", "PHOTOGRPAHY DIRECTOR"],
     [sisi, "ADEDIRAN IYANUOLUWA", "HUMAN RESOURCE SPECIALIST"],
+    [desola, "GANIYU FAITH", "DIGITAL MARKETING OFFICER"],
     [dlaw, "ATANDA AYOMIDE", "COPYWRITER/LEGAL OFFICER"],
   ];
 
@@ -50,25 +57,29 @@ const Team = () => {
         px={{ base: "0rem", lg: "1rem" }}
         alignItems={"flex-start"}
         display={"flex"}
+        justifyContent={"space-between"}
         gap="2rem"
         mt="3rem"
       >
         <Text
-          w={{ base: "100%", lg: "40%" }}
+          w={{ base: "100%", lg: "50%" }}
           fontSize={{ base: "1.6rem", lg: "1.75rem" }}
-          fontWeight={500}
+          fontWeight={400}
         >
-          PGSTUDIO TEAM - A TEAM UNIFIED IN AESTHETIC SPIRIT
+          PGSTUDIO TEAM - A TEAM UNITED IN ARTISTIC VISION, TRANSCENDING
+          BOUNDARIES TOGETHER
         </Text>
 
         <Text
           ml={"0rem !important"}
-          w={{ base: "100%", lg: "60%" }}
+          w={{ base: "100%", lg: "55%" }}
           fontSize={{ base: "1.5rem", lg: "1.75rem" }}
           fontWeight={200}
+          textTransform={"uppercase"}
         >
-          WITH THE ABILITY TO ATTRACT TEAM MEMBERS FROM ACROSS THE GLOBE, WE’RE
-          ABLE TO FIND SOME OF THE INDUSTRY’S BEST AND BRIGHTEST.
+          With our exceptional talent magnetism, we&apos;re able to recruit a
+          selection of outstanding talents and brightest minds within the
+          industry.
         </Text>
       </HStack>
 
@@ -98,18 +109,12 @@ const Team = () => {
             <Box pt="1.5rem">
               <Text fontSize={"1rem"} fontWeight={500}>
                 {`${item[1]}`} <br />{" "}
-                <chakra.span
-                  color={"gray"}
-                  // as={Link}
-                  // href="https://github.com/iam-benjamen"
-                >
-                  {`${item[2]}`}
-                </chakra.span>
+                <chakra.span color={"gray"}>{`${item[2]}`}</chakra.span>
               </Text>
               <Text pt=".5rem" fontSize={".8rem"} fontWeight={300}>
                 WE DON&apos;T KNOW EXACTLY HOW A PERSON CAN CONTROL SO MANY
                 PROCESSES AT THE SAME TIME, BUT {`${item[1]}`} DOES IT WITH
-                EASE.  STRONG TECHNICAL KNOWLEDGE COMBINED WITH LEADERSHIP SKILLS
+                EASE. STRONG TECHNICAL KNOWLEDGE COMBINED WITH LEADERSHIP SKILLS
                 KEEPS OUR TEAM MOTIVATED AND ALIGNED IN ACHIEVING PROJECT
                 SUCCESS.
               </Text>

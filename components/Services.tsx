@@ -10,40 +10,54 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
-import icon from "../public/icons/low-poly-svgrepo-com.svg";
+
+import iconvirtualtours from "../public/assets/ICONs/360 VIRTUAL TOURS.svg";
+import iconarchi from "../public/assets/ICONs/ARCHITECTURAL VISUALIZATION.svg";
+import icon3drendering from "../public/assets/ICONs/REAL ESTATE 3D RENDERING.svg";
+import icon3dmodelling from "../public/assets/ICONs/3D MODELING.svg";
+import icon3danimation from "../public/assets/ICONs/3D ANIMATION.svg";
 
 const ServiceSection = () => {
   const data = [
     [
-      "ARCHITECTURAL VISUALIZATION",
-      "Creating photorealistic and immersive representations of architectural designs using cutting-edge software, skilled professionals, and meticulous attention to details.",
-    ],
-    [
       "3D MODELING",
       "We turn drawings into expertly crafted, realistic, and customized physical models, employing skilled artists, advanced software, and accurate quality control to fulfill diverse client needs across industries.",
+      icon3dmodelling,
     ],
-
+    [
+      "ARCHITECTURAL VISUALIZATION",
+      "Creating photorealistic and immersive representations of architectural designs using cutting-edge software, skilled professionals, and meticulous attention to details.",
+      iconarchi,
+    ],
     [
       "3D ANIMATION",
       "Crafting detailed 3D architectural animations that are not only technically sophisticated but also filled with compelling emotional resonance.",
+      icon3danimation,
     ],
     [
       "360 VIRTUAL TOURS",
       "Our architectural 360 virtual tours create immersive, interactive architectural experiences for effective property showcasing and user exploration from anywhere.",
+      iconvirtualtours,
     ],
     [
       "REAL ESTATE 3D RENDERING",
       "Unlock Your Client's Heart with the Power of Digital Tools. Increase your sales probability through skillfully custom-made visualizations. Our Renderings always ensure captivating property imagery.",
+      icon3drendering,
     ],
   ];
   return (
-    <Box px={{base:"1rem",lg:"2rem"}} pb={"1rem"} id="services" fontFamily={"poppins"}>
+    <Box
+      px={{ base: "1rem", lg: "2rem" }}
+      fontFamily={"poppins"}
+      pb={"1rem"}
+      id="services"
+    >
       <Text
-        textAlign={"center"}
-        my={"2rem"}
+        fontSize={{ base: "1.5rem", lg: "2rem" }}
         fontFamily={"poppins"}
-        fontSize={{base:"1.75rem",lg:"2.5rem"}}
-        fontWeight={400}
+        textAlign={"center"}
+        fontWeight={500}
+        my={"2rem"}
       >
         WHAT WE DO
       </Text>
@@ -83,12 +97,16 @@ const ServiceSection = () => {
               borderRadius={".5rem"}
             >
               <Box width={"5rem"}>
-                <Image src={icon} alt="icon" />
+                <Image src={item[2]} alt="icon" />
               </Box>
               <Text textAlign={"center"} fontSize={"1.65rem"} fontWeight={700}>
                 {item[0]}
               </Text>
-              <Text textAlign={"center"} px="2.5rem">
+              <Text
+                textTransform={"uppercase"}
+                textAlign={"center"}
+                px="2.5rem"
+              >
                 {item[1]}
               </Text>
             </Box>
