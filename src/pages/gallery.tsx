@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 
 const gallery = () => {
-    return ( Box );
-}
- 
+  return <></>;
+};
+
 export default gallery;
