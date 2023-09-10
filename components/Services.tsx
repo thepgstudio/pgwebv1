@@ -7,9 +7,10 @@ import {
   Autoplay,
   Thumbs,
 } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
 import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import patternbackground from "../public/assets/ICONs/86390.jpg";
+import Image from "next/image";
 
 import iconvirtualtours from "../public/assets/ICONs/360 VIRTUAL TOURS.svg";
 import iconarchi from "../public/assets/ICONs/ARCHITECTURAL VISUALIZATION.svg";
@@ -53,7 +54,7 @@ const ServiceSection = () => {
       id="services"
     >
       <Text
-        fontSize={{ base: "1.5rem", lg: "2rem" }}
+        fontSize={{ base: "2rem", lg: "2rem" }}
         fontFamily={"poppins"}
         textAlign={"center"}
         fontWeight={500}
@@ -85,7 +86,7 @@ const ServiceSection = () => {
         {data.map((item, index) => (
           <SwiperSlide key={index}>
             <Box
-              className="swiper-container"
+              className={"swiper-container"}
               justifyContent={"center"}
               alignItems={"center"}
               height={"25rem"}
@@ -93,20 +94,19 @@ const ServiceSection = () => {
               boxShadow={"lg"}
               gap={"1.5rem"}
               flexDir={"column"}
-              background={"white"}
               borderRadius={".5rem"}
+              position={"relative"}
             >
+              {/* <Box top={0} maxW={"max-content"}>
+                <Image src={patternbackground} style={{transform:"scale(1.02)"}} alt="pattern background" />
+              </Box> */}
               <Box width={"5rem"}>
                 <Image src={item[2]} alt="icon" />
               </Box>
-              <Text textAlign={"center"} fontSize={"1.65rem"} fontWeight={700}>
+              <Text textAlign={"center"} fontSize={"1.65rem"} fontWeight={500}>
                 {item[0]}
               </Text>
-              <Text
-                textTransform={"uppercase"}
-                textAlign={"center"}
-                px="2.5rem"
-              >
+              <Text textAlign={"center"} px="2.5rem">
                 {item[1]}
               </Text>
             </Box>

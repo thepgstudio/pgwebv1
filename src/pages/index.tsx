@@ -1,6 +1,7 @@
 import { Box, Divider, HStack, Text, VStack } from "@chakra-ui/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ServiceSection from "../../components/Services";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -11,35 +12,34 @@ import image_four from "../../public/Home PAGE/drive-download-20230613T094156Z-0
 import image_five from "../../public/Home PAGE/drive-download-20230613T094156Z-001/HOME Image - 3.jpg";
 import image_six from "../../public/Home PAGE/drive-download-20230613T094156Z-001/HOME Image - 3 (Variant).jpg";
 
-import slide1 from "../../public/Home PAGE/MAIN Image - Slide 1.jpg";
+import slide1 from "../../public/Home PAGE/MAIN Image - Slide 5.jpg";
 import slide2 from "../../public/Home PAGE/MAIN Image - Slide 2.jpg";
-import slide3 from "../../public/Home PAGE/MAIN Image - Slide 3.jpg";
-import slide4 from "../../public/Home PAGE/MAIN Image - Slide 4.jpg";
+import slide3 from "../../public/Home PAGE/MAIN Image - Slide 8-1.jpg";
+import slide4 from "../../public/Home PAGE/MAIN Image - Slide 9.jpg";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import ServiceSection from "../../components/Services";
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>PGStudio</title>
-        <meta name="description" content="PGStudio" />
-        <meta name="description" content="An Architectural Design Company" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Architectural Design Company" />
+        <meta name="description" content="PG Studio" />
+        <link rel="icon" href="/assets/logos/PGStudio Logo - Variant 1.png" />
       </Head>
 
       <Box
         flexDirection={{ base: "column", lg: "row" }}
-        justifyContent={"space-between"}
         px={{ base: "1rem", lg: "3rem" }}
         mt={{ base: "4rem", lg: "10rem" }}
         gap={{ base: "2rem", lg: "0rem" }}
+        justifyContent={"space-between"}
         height={"max-content"}
         fontFamily={"poppins"}
         display={"flex"}
@@ -52,8 +52,7 @@ export default function Home() {
           width={{ base: "100%", lg: "38%" }}
           fontSize={{ base: "1.75rem", lg: "2rem" }}
         >
-          3d Architectural Rendering and
-          Visualization Studio
+          3d Architectural Rendering and Visualization Studio
         </Text>
 
         <Text
@@ -61,7 +60,6 @@ export default function Home() {
           textTransform={"uppercase"}
           fontWeight={200}
           fontSize={{ base: "1.5rem", lg: "1.75rem" }}
-          // pr={{ base: "0rem", lg: "2rem" }}
         >
           Producing images that you want to be in, we’re creating a powerful
           non-existent reality. 3D rendering for architects, developers,
@@ -80,10 +78,10 @@ export default function Home() {
             scrollbar={{ draggable: true }}
             slidesPerView={1}
             autoplay={{
-              delay: 3000,
+              delay: 2000,
             }}
-            // navigation
             draggable
+            loop={true}
           >
             <SwiperSlide>
               <Image

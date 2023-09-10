@@ -129,6 +129,7 @@ a {
 
 .swiper-pagination-bullet-active {
   background-color: black !important;
+
 }
 
 .swiper-slide-next .swiper-container {
@@ -137,4 +138,6 @@ a {
   height: 28rem;
   position: relative;
   z-index: 9999 !important;
+  /* background-color: rgb(164, 164, 231); */
+  /* color: white; */
 }

@@ -8,28 +8,10 @@ import {
   VStack,
   chakra,
 } from "@chakra-ui/react";
-import Image, { StaticImageData } from "next/image";
-import sisi from "../../public/assets/team/Miss. Adediran Iyanuoluwa (B&W).jpg";
-import dlaw from "../../public/assets/team/Mr. Atanda Ayomide - 1 (B&W).jpg";
-import ben from "../../public/assets/team/Mr. Areo Benjamen - 2 (B&W).jpg";
-import pg from "../../public/assets/team/PG.jpg";
-import broini from "../../public/assets/team/Mr. Adediran Inioluwa (B&W).jpg";
-import desola from "../../public/assets/team/Miss. Ganiyu Faith (B&W).jpg";
-import okuro from "../../public/assets/team/Mr. Okuro Samson (B&W).jpg";
-import drem from "../../public/assets/team/Mr. Aderemi Adedapo (B&W).jpg";
+import Image from "next/image";
+import asset from "@/util";
 
 const Team = () => {
-  const asset: (string | StaticImageData)[][] = [
-    [pg, "ADEDIRAN ILERIOLUWA", "FOUNDER/CEO"],
-    [broini, "ADEDIRAN INIOLUWA", "COO"],
-    [okuro, "SAMSON OKURO", "CHIEF MARKETING OFFICER"],
-    [ben, "AREO BENJAMEN", "SOFTWARE ENGINEER"],
-    [drem, "ADEREMI ADEDAPO", "PHOTOGRPAHY DIRECTOR"],
-    [sisi, "ADEDIRAN IYANUOLUWA", "HUMAN RESOURCE SPECIALIST"],
-    [desola, "GANIYU FAITH", "DIGITAL MARKETING OFFICER"],
-    [dlaw, "ATANDA AYOMIDE", "COPYWRITER/LEGAL OFFICER"],
-  ];
-
   return (
     <Box
       fontFamily={"poppins"}
@@ -112,11 +94,7 @@ const Team = () => {
                 <chakra.span color={"gray"}>{`${item[2]}`}</chakra.span>
               </Text>
               <Text pt=".5rem" fontSize={".8rem"} fontWeight={300}>
-                WE DON&apos;T KNOW EXACTLY HOW A PERSON CAN CONTROL SO MANY
-                PROCESSES AT THE SAME TIME, BUT {`${item[1]}`} DOES IT WITH
-                EASE. STRONG TECHNICAL KNOWLEDGE COMBINED WITH LEADERSHIP SKILLS
-                KEEPS OUR TEAM MOTIVATED AND ALIGNED IN ACHIEVING PROJECT
-                SUCCESS.
+                {`${item[3]}`}
               </Text>
             </Box>
           </VStack>
