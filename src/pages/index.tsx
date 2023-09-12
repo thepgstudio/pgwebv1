@@ -15,7 +15,7 @@ import image_six from "../../public/Home PAGE/drive-download-20230613T094156Z-00
 import slide1 from "../../public/Home PAGE/MAIN Image - Slide 5.jpg";
 import slide2 from "../../public/Home PAGE/MAIN Image - Slide 2.jpg";
 import slide3 from "../../public/Home PAGE/MAIN Image - Slide 8-1.jpg";
-import slide4 from "../../public/Home PAGE/MAIN Image - Slide 9.jpg";
+import slide4 from "../../public/Home PAGE/MAIN Image - Slide 10.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -37,7 +37,7 @@ export default function Home() {
       <Box
         flexDirection={{ base: "column", lg: "row" }}
         px={{ base: "1rem", lg: "3rem" }}
-        mt={{ base: "4rem", lg: "10rem" }}
+        mt={{ base: "2rem", lg: "10rem" }}
         gap={{ base: "2rem", lg: "0rem" }}
         justifyContent={"space-between"}
         height={"max-content"}
@@ -78,7 +78,7 @@ export default function Home() {
             scrollbar={{ draggable: true }}
             slidesPerView={1}
             autoplay={{
-              delay: 2000,
+              delay: 3000,
             }}
             draggable
             loop={true}
@@ -97,11 +97,11 @@ export default function Home() {
             </SwiperSlide>
 
             <SwiperSlide>
-              <Image src={slide3} alt="slide_three Image" placeholder="blur" />
-            </SwiperSlide>
-
-            <SwiperSlide>
               <Image src={slide4} alt="slide_four Image" placeholder="blur" />
+            </SwiperSlide>
+            
+            <SwiperSlide>
+              <Image src={slide3} alt="slide_three Image" placeholder="blur" />
             </SwiperSlide>
           </Swiper>
         </Box>

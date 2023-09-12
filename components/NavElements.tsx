@@ -5,17 +5,6 @@ import { useRouter } from "next/router";
 import Contact from "./Contact";
 import NextLink from "next/link";
 
-const scrollIntoElement = (elementId: string) => {
-  const element = document.getElementById(elementId);
-
-  if (element) {
-    element.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
-  }
-};
 
 const NavElements = (props: any) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -73,9 +62,9 @@ const NavElements = (props: any) => {
         <Button
           border={"1px solid black"}
           _hover={{
+            border: "1px solid black",
             color: "black",
             bg: "white",
-            border: "1px solid black",
           }}
           fontFamily={"poppins"}
           borderRadius={"0rem"}

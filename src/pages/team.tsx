@@ -8,10 +8,13 @@ import {
   VStack,
   chakra,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import Image from "next/image";
-import asset from "@/util";
+import {asset} from "@/util";
 
 const Team = () => {
+  const router = useRouter();
+
   return (
     <Box
       fontFamily={"poppins"}
@@ -22,7 +25,10 @@ const Team = () => {
       <HStack px={{ base: "0rem", lg: "1rem" }}>
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink fontWeight={300} href="/">
+            <BreadcrumbLink
+              fontWeight={300}
+              href="/"
+            >
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>

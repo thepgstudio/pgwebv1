@@ -1,11 +1,24 @@
 import { HStack, Box, Text, Button } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
 import { NextRouter, useRouter } from "next/router";
+import { useState, useEffect } from "react";
 import logo_small from "../public/assets/logos/PGStudio Logo - Variant 1.png";
 import logo_large from "../public/assets/logos/PGStudio Logo - Variant 2.png";
-import Image from "next/image";
-import MobileNav from "./MobileNav";
 import NavElements from "./NavElements";
+import MobileNav from "./MobileNav";
+import Image from "next/image";
+
+const scrollIntoElement = (elementId: string, router: NextRouter) => {
+  if (router.pathname === "/") {
+    const element = document.getElementById(elementId)!;
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "nearest",
+    });
+  } else {
+    router.push("/#services");
+  }
+};
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -60,7 +73,7 @@ const NavBar = () => {
           onClick={() => router.push("/")}
           ml="0rem !important"
           display={{ base: "block", lg: "none" }}
-          w={"6rem"}
+          w={"5rem"}
         >
           <Image
             src={logo_small}
@@ -74,7 +87,10 @@ const NavBar = () => {
         </Box>
 
         <Box display={{ base: "none", lg: "flex" }}>
-          <NavElements orientation="row" fontSize="1.1rem" />
+          <NavElements
+            orientation="row"
+            fontSize="1.1rem"
+          />
         </Box>
       </HStack>
     </Box>

@@ -10,7 +10,6 @@ const Footer = () => {
     ["SERVICES", "/services"],
     ["COMPANY", "/company"],
     ["TEAM", "/team"],
-    ["CAREER", "/career"],
   ];
 
   const nav_: String[][] = [

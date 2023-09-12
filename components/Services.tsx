@@ -9,7 +9,7 @@ import {
 } from "swiper";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import patternbackground from "../public/assets/ICONs/86390.jpg";
+import patternbackground from "../public/texture/v880-kul-12.jpg";
 import Image from "next/image";
 
 import iconvirtualtours from "../public/assets/ICONs/360 VIRTUAL TOURS.svg";
@@ -21,6 +21,7 @@ import icon3danimation from "../public/assets/ICONs/3D ANIMATION.svg";
 const ServiceSection = () => {
   const data = [
     [
+
       "3D MODELING",
       "We turn drawings into expertly crafted, realistic, and customized physical models, employing skilled artists, advanced software, and accurate quality control to fulfill diverse client needs across industries.",
       icon3dmodelling,
@@ -94,12 +95,14 @@ const ServiceSection = () => {
               boxShadow={"lg"}
               gap={"1.5rem"}
               flexDir={"column"}
-              borderRadius={".5rem"}
               position={"relative"}
+              borderRadius={".5rem"}
+              backgroundSize={"cover"}
+              backgroundPosition={"center"}
+              backgroundRepeat={"no-repeat"}
+              backgroundImage={patternbackground.src}
+        
             >
-              {/* <Box top={0} maxW={"max-content"}>
-                <Image src={patternbackground} style={{transform:"scale(1.02)"}} alt="pattern background" />
-              </Box> */}
               <Box width={"5rem"}>
                 <Image src={item[2]} alt="icon" />
               </Box>

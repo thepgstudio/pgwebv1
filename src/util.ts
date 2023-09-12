@@ -8,6 +8,26 @@ import drem from "../public/assets/team/Mr. Aderemi Adedapo (B&W).jpg";
 import okuro from "../public/assets/team/Mr. Okuro Samson (B&W).jpg";
 import pg from "../public/assets/team/PG.jpg";
 
+import logo1 from "../public/assets/PARTNERS/1.png";
+import logo2 from "../public/assets/PARTNERS/2.png";
+import logo3 from "../public/assets/PARTNERS/3.png";
+import logo4 from "../public/assets/PARTNERS/4.png";
+import logo5 from "../public/assets/PARTNERS/5.png";
+import logo6 from "../public/assets/PARTNERS/6.png";
+import logo7 from "../public/assets/PARTNERS/7.png";
+import logo8 from "../public/assets/PARTNERS/8.png";
+
+const patners: StaticImageData[] = [
+  logo1,
+  logo2,
+  logo3,
+  logo4,
+  logo5,
+  logo6,
+  logo7,
+  logo8,
+];
+
 const asset: (string | StaticImageData)[][] = [
   [
     pg,
@@ -18,7 +38,7 @@ const asset: (string | StaticImageData)[][] = [
   [
     broini,
     "ADEDIRAN INIOLUWA",
-    "COO",
+    "CHIEF OPERATING OFFICER",
     "Inioluwa is a diligent leader who effortlessly balances creativity and efficiency. With a keen eye for detail and a passion for delivering exceptional visual experiences, he drives operational excellence while fostering a collaborative and innovative work environment.",
   ],
   [
@@ -59,4 +79,4 @@ const asset: (string | StaticImageData)[][] = [
   ],
 ];
 
-export default asset;
+export {asset, patners};

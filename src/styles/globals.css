@@ -138,6 +138,22 @@ a {
   height: 28rem;
   position: relative;
   z-index: 9999 !important;
-  /* background-color: rgb(164, 164, 231); */
-  /* color: white; */
+}
+
+@keyframes marquee{
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.flex-container{
+  animation: marquee 30s linear infinite;
+  animation-timing-function: linear;
+  white-space: nowrap;
+}
+section::-webkit-scrollbar {
+  display: none;
 }
