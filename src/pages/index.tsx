@@ -116,8 +116,8 @@ export default function Home() {
         <Text
           fontSize={{ base: "1.8rem", lg: "2.75rem" }}
           lineHeight={{ base: "3rem", lg: "3.3rem" }}
-          fontWeight={{ base: 300, lg: 300 }}
-          w={{ base: "100%", lg: "60%" }}
+          fontWeight={{ base: 300, lg: 200 }}
+          w={{ base: "100%", lg: "55%" }}
           textTransform={"uppercase"}
           fontFamily={"poppins"}
           letterSpacing={".02rem"}

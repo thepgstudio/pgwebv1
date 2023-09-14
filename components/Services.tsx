@@ -56,10 +56,10 @@ const ServiceSection = () => {
     >
       <Text
         fontSize={{ base: "2rem", lg: "2rem" }}
+        my={{base:"1rem",md:"2rem"}}
         fontFamily={"poppins"}
         textAlign={"center"}
-        fontWeight={500}
-        my={"2rem"}
+        fontWeight={400}
       >
         WHAT WE DO
       </Text>
@@ -96,7 +96,8 @@ const ServiceSection = () => {
               gap={"1.5rem"}
               flexDir={"column"}
               position={"relative"}
-              borderRadius={".5rem"}
+              // borderTop={".1px solid"}
+              // borderRadius={".5rem"}
               backgroundSize={"cover"}
               backgroundPosition={"center"}
               backgroundRepeat={"no-repeat"}

@@ -10,7 +10,6 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { useRouter } from "next/router";
 import { patners } from "@/util";
 import LogoMarquee from "../../components/LogoMarquee";
 import Contact from "../../components/Contact";
@@ -47,8 +46,8 @@ const Company = () => {
         justifyContent={"space-between"}
         alignItems={"flex-start"}
         display={"flex"}
-        gap="2rem"
-        mt="3rem"
+        gap={"2rem"}
+        mt={"3rem"}
       >
         <Text
           w={{ base: "100%", lg: "50%" }}
@@ -60,11 +59,11 @@ const Company = () => {
         </Text>
         MASTER
         <Text
-          ml={"0rem !important"}
-          w={{ base: "100%", lg: "55%" }}
           fontSize={{ base: "1.5rem", lg: "1.75rem" }}
-          fontWeight={200}
+          w={{ base: "100%", lg: "55%" }}
           textTransform={"uppercase"}
+          ml={"0rem !important"}
+          fontWeight={200}
         >
           At PGStudio, our experts have mastered the art of attaining a
           photorealism level that stands unmatched by alternative modes of
@@ -73,38 +72,37 @@ const Company = () => {
       </HStack>
 
       <Box
-        display={"flex"}
         flexDirection={{ base: "column", md: "row" }}
         pt={{ base: "5rem", md: "7rem" }}
-        alignItems={"flex-start"}
         justifyContent={"space-between"}
+        alignItems={"flex-start"}
+        display={"flex"}
       >
         <Box width={{ base: "100%", md: "30%" }}>
           <Text fontWeight={500} fontSize={"1.5rem"}>
             THE ART OF VISUALIZATION IS A BLEND OF ARTISTIC AND TECHNICAL FLAIR.
           </Text>
           <Text
-            pt={"1rem"}
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
             fontWeight={200}
+            pt={"1rem"}
           >
-            The history commences with an individual driven by great ambition.
-            Our founder, a well taught and professional graduate with
-            exceptional talent in this field, has redefined architectural design
-            and visualization. With an international impact, we have curated a
-            portfolio of over 305 realistic images across 47 diverse projects
-            worldwide.
+            The history begins with a highly ambitious individual. Our founder,
+            a well-educated and skilled graduate in this field, has
+            revolutionized architectural design and visualization. With an
+            international impact, we&apos;ve created a portfolio of <b>305+</b> realistic
+            images from about <b>47</b> projects worldwide.
           </Text>
           <Text
-            pt={"1rem"}
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
             fontWeight={200}
+            pt={"1rem"}
           >
-            The journey began with a passion for bridging imagination and
-            reality, crafting functional and aesthetic designs that tell unique
-            architectural stories.
+            This journey started with a passion for blending imagination and
+            reality, crafting functional and aesthetic designs that convey
+            distinctive architectural stories.
           </Text>
         </Box>
 
@@ -116,48 +114,47 @@ const Company = () => {
             WHO WE ARE AT PGSTUDIO.
           </Text>
           <Text
-            pt={"1rem"}
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
             fontWeight={200}
+            pt={"1rem"}
           >
-            Assembling a team of 8+ like-minded experts, the founder&apos;s
-            holistic approach to design led to international acclaim. We have
-            transformed architectural visualization into an art form, marrying
-            technology and creativity to bring projects to life before
-            construction.
+            By assembling an <b>8+</b> member team of like-minded experts, the
+            founder&apos;s holistic design approach garnered international
+            acclaim. We&apos;ve turned architectural visualization into an art,
+            blending technology and creativity to depict projects
+            pre-construction.
           </Text>
           <Text
-            pt={"1rem"}
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
             fontWeight={200}
+            pt={"1rem"}
           >
-            An advocate for sustainability, our firm has pioneered
-            environmentally conscious architecture, leaving an indelible mark on
-            the very essence of how we experience built environments.
+            As sustainability advocates, we&apos;ve pioneered eco-conscious
+            architecture, reshaping our built environments.
           </Text>
         </Box>
 
         <>
           <Box
-            cursor={"pointer"}
             _hover={{ transform: "scale(1.01)" }}
+            width={{ base: "100%", md: "35%" }}
+            justifyContent={"space-between"}
             transition={"all .3s"}
             background={"black"}
-            justifyContent={"space-between"}
+            cursor={"pointer"}
             display={"flex"}
-            height={"12rem"}
-            width={{ base: "100%", md: "35%" }}
-            p={"2rem"}
             onClick={onOpen}
+            height={"12rem"}
+            p={"2rem"}
           >
             <Text color={"white"} fontSize={"1.2rem"}>
               CONTACT US WITH NEW <br /> BUSINESS ENQUIRY
             </Text>
             <ArrowForwardIcon color={"white"} width={"3 rem"} height={"2rem"} />
           </Box>
-          <Contact isOpen={isOpen} onClose={onClose}/>
+          <Contact isOpen={isOpen} onClose={onClose} />
         </>
       </Box>
 
@@ -165,12 +162,12 @@ const Company = () => {
         <Text fontWeight={500} fontSize={"1.5rem"}>
           OUR PARTNERS
         </Text>
-        <Text fontSize={"1.3rem"} fontWeight={200}>
+        <Text textTransform={"uppercase"} fontSize={"1.3rem"} fontWeight={200}>
           We are passionate about transforming architectural visions into
           stunning visual realities. Our commitment to innovation and
           collaboration has led us to partner with accomplished architects,
           developers and designers generally, making us a trusted partner in
-          bringing architectural designs to life.
+          bringing architectural designs to life.
         </Text>
       </Box>
 

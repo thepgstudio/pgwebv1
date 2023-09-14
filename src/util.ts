@@ -1,11 +1,11 @@
 import { StaticImageData } from "next/image";
-import sisi from "../public/assets/team/Miss. Adediran Iyanuoluwa (B&W).jpg";
-import broini from "../public/assets/team/Mr. Adediran Inioluwa (B&W).jpg";
-import dlaw from "../public/assets/team/Mr. Atanda Ayomide - 1 (B&W).jpg";
-import ben from "../public/assets/team/Mr. Areo Benjamen - 2 (B&W).jpg";
 import desola from "../public/assets/team/Miss. Ganiyu Faith (B&W).jpg";
-import drem from "../public/assets/team/Mr. Aderemi Adedapo (B&W).jpg";
+import broini from "../public/assets/team/Mr. Adediran Inioluwa (B&W).jpg";
 import okuro from "../public/assets/team/Mr. Okuro Samson (B&W).jpg";
+import sisi from "../public/assets/team/Miss. Adediran Iyanuoluwa (B&W).jpg";
+import dlaw from "../public/assets/team/Mr. Atanda Ayomide - 1 (B&W).jpg";
+import drem from "../public/assets/team/Mr. Aderemi Adedapo (B&W).jpg";
+import ben from "../public/assets/team/Mr. Areo Benjamen - 2 (B&W).jpg";
 import pg from "../public/assets/team/PG.jpg";
 
 import logo1 from "../public/assets/PARTNERS/1.png";

@@ -52,7 +52,7 @@ const Contact = (props: any) => {
       <ModalContent maxW={{ base: "90%", lg: "35%" }} borderRadius={"none"}>
         <ModalCloseButton size={"lg"} />
 
-        <ModalBody fontFamily={"poppins"} p="3rem">
+        <ModalBody fontFamily={"poppins"} p={{base:"2rem",md:"3rem"}}>
           <Box mb="2rem">
             <Text fontWeight={300} fontSize={"1rem"}>
               DO YOU HAVE ANY QUESTIONS? <br /> CONTACT US VIA EMAIL
