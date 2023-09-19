@@ -2,14 +2,11 @@ import {
   ModalCloseButton,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
-  ModalFooter,
   ModalBody,
   Modal,
   Box,
   Button,
   Text,
-  HStack,
   Input,
   VStack,
   Textarea,
@@ -46,6 +43,7 @@ const Contact = (props: any) => {
   //     setLoading(false);
   //   }
   // };
+
   return (
     <Modal isOpen={props.isOpen} onClose={props.onClose}>
       <ModalOverlay />

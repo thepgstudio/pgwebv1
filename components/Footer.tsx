@@ -48,12 +48,13 @@ const Footer = () => {
         <VStack alignItems={"flex-start"}>
           {nav.map((item, index) => (
             <Text
-              fontFamily={"poppins"}
-              fontWeight={600}
-              fontSize={".9rem"}
-              key={index}
               _hover={{ color: "#bababa" }}
+              fontFamily={"poppins"}
               cursor={"pointer"}
+              fontSize={".9rem"}
+              fontWeight={600}
+              key={index}
+              onClick={() => router.push(`${item[1]}`)}
               color={router.pathname === item[1] ? "#bababa" : "black"}
             >
               {item[0]}
@@ -131,7 +132,7 @@ const Footer = () => {
         </VStack>
 
         <VStack alignItems={"flex-start"} gap="2rem">
-          <VStack alignItems={"flex-start"}>
+          {/* <VStack alignItems={"flex-start"}>
             <Text
               textTransform={"uppercase"}
               fontSize={"1rem"}
@@ -151,7 +152,7 @@ const Footer = () => {
             >
               Floor Plan
             </Text>
-          </VStack>
+          </VStack> */}
 
           <VStack alignItems={"flex-start"}>
             <Text fontSize={"1rem"} fontFamily={"poppins"} fontWeight={600}>

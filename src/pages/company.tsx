@@ -94,16 +94,7 @@ const Company = () => {
             international impact, we&apos;ve created a portfolio of <b>305+</b> realistic
             images from about <b>47</b> projects worldwide.
           </Text>
-          <Text
-            textTransform={"uppercase"}
-            fontSize={"1.2rem"}
-            fontWeight={200}
-            pt={"1rem"}
-          >
-            This journey started with a passion for blending imagination and
-            reality, crafting functional and aesthetic designs that convey
-            distinctive architectural stories.
-          </Text>
+          
         </Box>
 
         <Box
@@ -125,15 +116,7 @@ const Company = () => {
             blending technology and creativity to depict projects
             pre-construction.
           </Text>
-          <Text
-            textTransform={"uppercase"}
-            fontSize={"1.2rem"}
-            fontWeight={200}
-            pt={"1rem"}
-          >
-            As sustainability advocates, we&apos;ve pioneered eco-conscious
-            architecture, reshaping our built environments.
-          </Text>
+          
         </Box>
 
         <>
@@ -158,7 +141,7 @@ const Company = () => {
         </>
       </Box>
 
-      <Box pt="3rem" width={{ base: "100%", md: "65%" }}>
+      <Box pt="3rem" width={{ base: "100%", md: "60%" }}>
         <Text fontWeight={500} fontSize={"1.5rem"}>
           OUR PARTNERS
         </Text>

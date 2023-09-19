@@ -1,11 +1,11 @@
-import { Box, Text, effect } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import {
   Navigation,
   Pagination,
   Scrollbar,
-  A11y,
   Autoplay,
   Thumbs,
+  A11y,
 } from "swiper";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,7 +21,6 @@ import icon3danimation from "../public/assets/ICONs/3D ANIMATION.svg";
 const ServiceSection = () => {
   const data = [
     [
-
       "3D MODELING",
       "We turn drawings into expertly crafted, realistic, and customized physical models, employing skilled artists, advanced software, and accurate quality control to fulfill diverse client needs across industries.",
       icon3dmodelling,
@@ -55,13 +54,14 @@ const ServiceSection = () => {
       id="services"
     >
       <Text
-        fontSize={{ base: "2rem", lg: "2rem" }}
-        my={{base:"1rem",md:"2rem"}}
+        fontSize={{ base: "1.75rem", lg: "2rem" }}
+        mt={{ base: "1.5rem", md: "2rem" }}
+        mb={{ base: "1.5rem", md: "2rem" }}
         fontFamily={"poppins"}
         textAlign={"center"}
-        fontWeight={400}
+        fontWeight={500}
       >
-        WHAT WE DO
+        WHAT WE DO?
       </Text>
 
       <Swiper
@@ -96,21 +96,22 @@ const ServiceSection = () => {
               gap={"1.5rem"}
               flexDir={"column"}
               position={"relative"}
-              // borderTop={".1px solid"}
-              // borderRadius={".5rem"}
               backgroundSize={"cover"}
               backgroundPosition={"center"}
               backgroundRepeat={"no-repeat"}
               backgroundImage={patternbackground.src}
-        
             >
               <Box width={"5rem"}>
                 <Image src={item[2]} alt="icon" />
               </Box>
-              <Text textAlign={"center"} fontSize={"1.65rem"} fontWeight={500}>
+              <Text
+                textAlign={"center"}
+                fontSize={{ base: "1.25rem", md: "1.5rem", lg: "1.65rem" }}
+                fontWeight={500}
+              >
                 {item[0]}
               </Text>
-              <Text textAlign={"center"} px="2.5rem">
+              <Text textAlign={"center"} px={{ base: "1.5rem", md: "2.5rem" }}>
                 {item[1]}
               </Text>
             </Box>

@@ -1,17 +1,9 @@
+import { Drawer, DrawerBody, DrawerContent } from "@chakra-ui/react";
+import { NextRouter, useRouter } from "next/router";
 import { Sling as Hamburger } from "hamburger-react";
 import { useDisclosure } from "@chakra-ui/react";
-import {
-  Box,
-  VStack,
-  Drawer,
-  DrawerBody,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-} from "@chakra-ui/react";
 import NavElements from "./NavElements";
-import { useState } from "react";
-import { NextRouter, useRouter } from "next/router";
+
 
 const MobileNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -20,7 +12,7 @@ const MobileNav = () => {
   return (
     <>
       <Hamburger
-        size={40}
+        size={35}
         rounded
         toggle={onOpen}
         toggled={isOpen}
@@ -36,15 +28,15 @@ const MobileNav = () => {
         <DrawerContent height={""} mt="7rem" overflowY={"scroll"}>
           <DrawerBody
             justifyContent={"flex-start"}
+            height={"max-content"}
             alignItems={"center"}
             flexDir={"column"}
             display={"flex"}
-            height={"max-content"}
-            my="3rem"
+            my={"3rem"}
           >
             <NavElements
-              onClick={onClose}
               orientation={"column"}
+              onClick={onClose}
               fontSize="1.5rem"
             />
           </DrawerBody>

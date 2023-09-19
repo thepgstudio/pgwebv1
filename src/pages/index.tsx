@@ -99,7 +99,7 @@ export default function Home() {
             <SwiperSlide>
               <Image src={slide4} alt="slide_four Image" placeholder="blur" />
             </SwiperSlide>
-            
+
             <SwiperSlide>
               <Image src={slide3} alt="slide_three Image" placeholder="blur" />
             </SwiperSlide>
@@ -163,7 +163,7 @@ export default function Home() {
         </Text>
       </Box>
 
-      <Box px={{ base: "1rem", lg: "2rem" }} py={{ base: "1rem", lg: "2rem" }}>
+      <Box px={{ base: "1rem", lg: "3rem" }} py={{ base: "1rem", lg: "2rem" }}>
         {/* First Row */}
         <>
           <Box fontFamily={"poppins"} textAlign={"center"} mb={"2rem"}>
@@ -188,38 +188,27 @@ export default function Home() {
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
                 h={{ base: "15rem", lg: "max-content" }}
-                w={{ base: "100%", lg: "95%" }}
-                borderRadius={"2px"}
+                w={{ base: "100%", lg: "100%" }}
                 overflow={"hidden"}
                 cursor={"pointer"}
                 maxH={"30rem"}
+                objectFit={"cover"}
               >
                 <Image
                   src={image_one}
                   className="home_image"
                   alt="image_one"
                   placeholder="blur"
+                  style={{ objectFit: "fill" }}
                 />
               </Box>
             </VStack>
 
-            <Box
-              display={{ base: "none", lg: "block" }}
-              height={"25rem"}
-              w={"max-content"}
-            >
-              <Divider
-                orientation="vertical"
-                colorScheme="#000000 !important"
-              />
-            </Box>
-
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
                 h={{ base: "15rem", lg: "max-content" }}
-                w={{ base: "100%", lg: "95%" }}
+                w={{ base: "100%", lg: "100%" }}
                 cursor={"pointer"}
-                borderRadius={"2px"}
                 overflow={"hidden"}
                 maxH={"30rem"}
               >
@@ -262,10 +251,9 @@ export default function Home() {
           >
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                w={{ base: "100%", lg: "95%" }}
-                cursor={"pointer"}
-                borderRadius={"2px"}
+                w={{ base: "100%", lg: "100%" }}
                 h={{ base: "15rem", lg: "max-content" }}
+                cursor={"pointer"}
                 overflow={"hidden"}
                 maxH={"30rem"}
               >
@@ -278,20 +266,12 @@ export default function Home() {
               </Box>
             </VStack>
 
-            <Box height={"25rem"} display={{ base: "none", lg: "block" }}>
-              <Divider
-                orientation="vertical"
-                colorScheme="#000000 !important"
-              />
-            </Box>
-
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
                 h={{ base: "15rem", lg: "max-content" }}
-                w={{ base: "100%", lg: "95%" }}
+                w={{ base: "100%", lg: "100%" }}
                 borderTop={".1px solid grey"}
                 borderRight={".1px solid grey"}
-                borderRadius={"2px"}
                 overflow={"hidden"}
                 cursor={"pointer"}
                 maxH={"30rem"}
@@ -327,17 +307,16 @@ export default function Home() {
           </Box>
 
           <HStack
-            justifyContent={"space-between"}
             flexDir={{ base: "column", lg: "row" }}
+            justifyContent={"space-between"}
+            gap={{ base: "1rem", lg: "0rem" }}
             pb="1rem"
-            gap={{ base: "1rem", lg: "none" }}
           >
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
                 h={{ base: "15rem", lg: "max-content" }}
-                w={{ base: "100%", lg: "95%" }}
+                w={{ base: "100%", lg: "100%" }}
                 cursor={"pointer"}
-                borderRadius={"2px"}
                 overflow={"hidden"}
                 maxH={"30rem"}
               >
@@ -350,19 +329,11 @@ export default function Home() {
               </Box>
             </VStack>
 
-            <Box height={"25rem"} display={{ base: "none", lg: "block" }}>
-              <Divider
-                orientation="vertical"
-                colorScheme="#000000 !important"
-              />
-            </Box>
-
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                w={{ base: "100%", lg: "95%" }}
-                h={{ base: "15rem", lg: "max-content" }}
+                w={{ base: "100%", lg: "100%" }}
+                h={{ base: "15rem", lg: "max-content" }}  
                 cursor={"pointer"}
-                borderRadius={"2px"}
                 overflow={"hidden"}
                 maxH={"30rem"}
               >

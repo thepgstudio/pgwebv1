@@ -9,7 +9,7 @@ import {
   chakra,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import {asset} from "@/util";
+import { asset } from "@/util";
 import Image from "next/image";
 
 const Team = () => {
@@ -25,10 +25,7 @@ const Team = () => {
       <HStack px={{ base: "0rem", lg: "1rem" }}>
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink
-              fontWeight={300}
-              href="/"
-            >
+            <BreadcrumbLink fontWeight={300} href="/">
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
@@ -59,11 +56,11 @@ const Team = () => {
         </Text>
 
         <Text
-          ml={"0rem !important"}
-          w={{ base: "100%", lg: "55%" }}
           fontSize={{ base: "1.5rem", lg: "1.75rem" }}
-          fontWeight={200}
+          w={{ base: "100%", lg: "55%" }}
           textTransform={"uppercase"}
+          ml={"0rem !important"}
+          fontWeight={200}
         >
           With our exceptional talent magnetism, we&apos;re able to recruit a
           selection of outstanding talents and brightest minds within the
@@ -72,26 +69,26 @@ const Team = () => {
       </HStack>
 
       <HStack
-        mt="7rem"
-        alignItems={"flex-start"}
         justifyContent={"space-between"}
+        alignItems={"flex-start"}
         flexWrap={"wrap"}
         rowGap={"5rem"}
+        mt={"7rem"}
       >
         {asset.map((item, index) => (
           <VStack
-            cursor={"pointer"}
-            ml="0rem !important"
-            minW={"20rem"}
             w={{ base: "100%", lg: "24%" }}
+            ml={"0rem !important"}
+            cursor={"pointer"}
+            minW={"20rem"}
             key={index}
           >
             <Box>
               <Image
                 style={{ height: "100%" }}
+                alt={"placholder image"}
+                placeholder={"blur"}
                 src={item[0]}
-                alt="placholder image"
-                placeholder="blur"
               />
             </Box>
             <Box pt="1.5rem">

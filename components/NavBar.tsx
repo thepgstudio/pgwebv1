@@ -1,6 +1,7 @@
 import { HStack, Box, Text, Button } from "@chakra-ui/react";
 import { NextRouter, useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import { motion, useScroll, useSpring } from "framer-motion";
 import logo_small from "../public/assets/logos/PGStudio Logo - Variant 1.png";
 import logo_large from "../public/assets/logos/PGStudio Logo - Variant 2.png";
 import NavElements from "./NavElements";
@@ -24,6 +25,13 @@ const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
   const router: NextRouter = useRouter();
 
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   useEffect(() => {
     const scrollChange = () => setScrolled(window.scrollY > 150);
     window.addEventListener("scroll", scrollChange);
@@ -33,18 +41,21 @@ const NavBar = () => {
   return (
     <Box
       borderBottom={{ base: "1px solid gainsboro", lg: "none" }}
-      px={{ base: "1rem", lg: "3rem" }}
+      flexDirection={"column"}
       position={"fixed"}
       h={"max-content"}
-      zIndex={999}
+      display={"flex"}
       w={"100vw"}
-      top={0}
+      zIndex={999}
       py="1rem"
       bg="white"
+      top={0}
     >
       <HStack
+        px={{ base: "1rem", lg: "3rem" }}
         alignItems={{ base: "flex-start", lg: "flex-start" }}
         justifyContent={"space-between"}
+        gap={"1rem"}
         h={"max-content"}
       >
         <Box display={{ base: "none", lg: "block" }}>
@@ -78,7 +89,11 @@ const NavBar = () => {
           <Image
             src={logo_small}
             alt="logo"
-            style={{ width: "6rem", height: "max-content", maxHeight: "5rem" }}
+            style={{
+              width: "6rem",
+              height: "max-content",
+              maxHeight: "5rem",
+            }}
           />
         </Box>
 
@@ -87,12 +102,16 @@ const NavBar = () => {
         </Box>
 
         <Box display={{ base: "none", lg: "flex" }}>
-          <NavElements
-            orientation="row"
-            fontSize="1.1rem"
-          />
+          <NavElements orientation="row" fontSize="1.1rem" />
         </Box>
       </HStack>
+
+      <motion.div
+        style={{
+          scaleX,
+        }}
+        className="progress-bar"
+      />
     </Box>
   );
 };
