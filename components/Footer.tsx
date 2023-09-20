@@ -29,33 +29,33 @@ const Footer = () => {
   return (
     <Box
       px={{ base: "1rem", lg: "4rem" }}
+      borderTop={"1px solid #f0f0f0"}
+      fontFamily={"poppins"}
+      flexDir={"column"}
+      display={"flex"}
+      w={"100vw"}
+      bottom={0}
+      gap="5rem"
       pt="4rem"
       pb="1rem"
-      w={"100vw"}
-      borderTop={"1px solid #f0f0f0"}
-      bottom={0}
-      display={"flex"}
-      flexDir={"column"}
-      fontFamily={"poppins"}
-      gap="5rem"
     >
       <Box
-        display={"flex"}
         justifyContent={"space-between"}
-        gap="2rem"
         flexWrap={"wrap"}
+        display={"flex"}
+        gap={"2rem"}
       >
         <VStack alignItems={"flex-start"}>
           {nav.map((item, index) => (
             <Text
+              color={router.pathname === item[1] ? "#bababa" : "black"}
+              onClick={() => router.push(`${item[1]}`)}
               _hover={{ color: "#bababa" }}
               fontFamily={"poppins"}
               cursor={"pointer"}
               fontSize={".9rem"}
               fontWeight={600}
               key={index}
-              onClick={() => router.push(`${item[1]}`)}
-              color={router.pathname === item[1] ? "#bababa" : "black"}
             >
               {item[0]}
             </Text>
@@ -64,10 +64,10 @@ const Footer = () => {
 
         <VStack alignItems={"flex-start"}>
           <Text
-            fontSize={"1rem"}
-            mb=".5rem"
             fontFamily={"poppins"}
+            fontSize={"1rem"}
             fontWeight={600}
+            mb=".5rem"
           >
             SERVICES:
           </Text>
@@ -77,13 +77,13 @@ const Footer = () => {
           <VStack alignItems={"flex-start"} gap={0}>
             {nav_.map((item, index) => (
               <Text
+                _hover={{ color: "#bababa" }}
+                textTransform={"uppercase"}
                 mt={"0rem !important"}
                 fontFamily={"poppins"}
-                fontWeight={300}
-                textTransform={"uppercase"}
                 fontSize={".8rem"}
+                fontWeight={300}
                 key={index}
-                _hover={{ color: "#bababa" }}
                 cursor={"pointer"}
               >
                 {item[0]}
@@ -164,14 +164,14 @@ const Footer = () => {
               "Furniture modeling",
             ].map((item, index) => (
               <Text
-                key={index}
+                _hover={{ color: "#bababa" }}
+                textTransform={"uppercase"}
                 mt={"0rem !important"}
                 fontFamily={"poppins"}
-                textTransform={"uppercase"}
-                fontSize={".8rem"}
-                _hover={{ color: "#bababa" }}
-                fontWeight={300}
                 cursor={"pointer"}
+                fontSize={".8rem"}
+                fontWeight={300}
+                key={index}
               >
                 {item}
               </Text>

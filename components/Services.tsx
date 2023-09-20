@@ -87,19 +87,19 @@ const ServiceSection = () => {
         {data.map((item, index) => (
           <SwiperSlide key={index}>
             <Box
+              backgroundImage={patternbackground.src}
               className={"swiper-container"}
+              backgroundRepeat={"no-repeat"}
+              backgroundPosition={"center"}
               justifyContent={"center"}
+              backgroundSize={"cover"}
+              position={"relative"}
               alignItems={"center"}
+              flexDir={"column"}
               height={"25rem"}
               display={"flex"}
               boxShadow={"lg"}
               gap={"1.5rem"}
-              flexDir={"column"}
-              position={"relative"}
-              backgroundSize={"cover"}
-              backgroundPosition={"center"}
-              backgroundRepeat={"no-repeat"}
-              backgroundImage={patternbackground.src}
             >
               <Box width={"5rem"}>
                 <Image src={item[2]} alt="icon" />

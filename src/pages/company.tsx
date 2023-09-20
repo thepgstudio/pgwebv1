@@ -28,13 +28,18 @@ const Company = () => {
       <HStack>
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink fontWeight={300} href="/">
+            <BreadcrumbLink fontSize={"1.35rem"} fontWeight={300} href="/">
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink color={"#BABABA"} fontWeight={200} href="#">
+            <BreadcrumbLink
+              fontSize={"1.35rem"}
+              color={"#BABABA"}
+              fontWeight={200}
+              href="#"
+            >
               Company
             </BreadcrumbLink>
           </BreadcrumbItem>
@@ -47,7 +52,7 @@ const Company = () => {
         alignItems={"flex-start"}
         display={"flex"}
         gap={"2rem"}
-        mt={"3rem"}
+        mt={"2rem"}
       >
         <Text
           w={{ base: "100%", lg: "50%" }}
@@ -91,10 +96,9 @@ const Company = () => {
             The history begins with a highly ambitious individual. Our founder,
             a well-educated and skilled graduate in this field, has
             revolutionized architectural design and visualization. With an
-            international impact, we&apos;ve created a portfolio of <b>305+</b> realistic
-            images from about <b>47</b> projects worldwide.
+            international impact, we&apos;ve created a portfolio of <b>305+</b>{" "}
+            realistic images from about <b>47</b> projects worldwide.
           </Text>
-          
         </Box>
 
         <Box
@@ -116,7 +120,6 @@ const Company = () => {
             blending technology and creativity to depict projects
             pre-construction.
           </Text>
-          
         </Box>
 
         <>

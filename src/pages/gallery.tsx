@@ -4,9 +4,8 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  Text,
   Button,
-  Center,
+  Text,
   Link,
 } from "@chakra-ui/react";
 
@@ -22,13 +21,13 @@ const gallery = () => {
       <HStack>
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink fontWeight={300} href="/">
+            <BreadcrumbLink fontSize={"1.35rem"} fontWeight={300} href="/">
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink color={"#BABABA"} fontWeight={200} href="#">
+            <BreadcrumbLink fontSize={"1.35rem"} color={"#BABABA"} fontWeight={200} href="#">
               Gallery
             </BreadcrumbLink>
           </BreadcrumbItem>
@@ -36,28 +35,28 @@ const gallery = () => {
       </HStack>
 
       <Box
-        mt="3rem"
-        display={"flex"}
-        width={"100%"}
         justifyContent={"center"}
         alignItems={"center"}
         flexDir={"column"}
+        display={"flex"}
+        width={"100%"}
+        mt={"3rem"}
       >
         <Text textAlign={"center"} fontWeight={700} fontSize={"2.5rem"}>
-          Galery Section under construction, please click the Button below to view some
-          of our portfolio projects.
+          Gallery Section under construction, please click the Button below to
+          view some of our portfolio projects.
         </Text>
         <Button
+          href={"https://thepg.studio/works"}
+          width={"max-content"}
+          fontSize={"1.5rem"}
+          color={"white"}
+          bg={"black"}
+          mt={"1rem"}
+          _hover={{}}
+          p={"1rem"}
           as={Link}
           isExternal
-          href={"https://thepg.studio/works"}
-          fontSize={"1.5rem"}
-          p={"1rem"}
-          _hover={{}}
-          width={"max-content"}
-          mt="1rem"
-          bg="black"
-          color={"white"}
         >
           View Projects
         </Button>

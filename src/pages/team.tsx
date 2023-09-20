@@ -25,13 +25,18 @@ const Team = () => {
       <HStack px={{ base: "0rem", lg: "1rem" }}>
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink fontWeight={300} href="/">
+            <BreadcrumbLink fontSize={"1.35rem"} fontWeight={300} href="/">
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink color={"#BABABA"} fontWeight={200} href="#">
+            <BreadcrumbLink
+              fontSize={"1.35rem"}
+              color={"#BABABA"}
+              fontWeight={200}
+              href="#"
+            >
               Team
             </BreadcrumbLink>
           </BreadcrumbItem>
@@ -44,7 +49,7 @@ const Team = () => {
         display={"flex"}
         justifyContent={"space-between"}
         gap="2rem"
-        mt="3rem"
+        mt="2rem"
       >
         <Text
           w={{ base: "100%", lg: "50%" }}

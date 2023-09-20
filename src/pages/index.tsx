@@ -36,30 +36,30 @@ export default function Home() {
 
       <Box
         flexDirection={{ base: "column", lg: "row" }}
-        px={{ base: "1rem", lg: "3rem" }}
         mt={{ base: "2rem", lg: "10rem" }}
         gap={{ base: "2rem", lg: "0rem" }}
+        px={{ base: "1rem", lg: "3rem" }}
         justifyContent={"space-between"}
         height={"max-content"}
         fontFamily={"poppins"}
         display={"flex"}
-        pt="7rem"
+        pt={"7rem"}
       >
         <Text
-          textTransform={"uppercase"}
-          fontWeight={400}
-          letterSpacing={".1rem"}
-          width={{ base: "100%", lg: "38%" }}
           fontSize={{ base: "1.75rem", lg: "2rem" }}
+          width={{ base: "100%", lg: "38%" }}
+          textTransform={"uppercase"}
+          letterSpacing={".1rem"}
+          fontWeight={400}
         >
           3d Architectural Rendering and Visualization Studio
         </Text>
 
         <Text
+          fontSize={{ base: "1.5rem", lg: "1.75rem" }}
           w={{ base: "100%", lg: "54%" }}
           textTransform={"uppercase"}
           fontWeight={200}
-          fontSize={{ base: "1.5rem", lg: "1.75rem" }}
         >
           Producing images that you want to be in, we’re creating a powerful
           non-existent reality. 3D rendering for architects, developers,
