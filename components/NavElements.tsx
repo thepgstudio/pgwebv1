@@ -1,10 +1,9 @@
 import { HStack, Text, Box, Button } from "@chakra-ui/react";
-import { Link, animateScroll as scroll } from "react-scroll";
 import { useDisclosure } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import Contact from "./Contact";
 import NextLink from "next/link";
-
 
 const NavElements = (props: any) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -12,7 +11,8 @@ const NavElements = (props: any) => {
 
   return (
     <Box
-      gap={{ base: "3rem", lg: "3.5rem" }}
+      mt={{ base: "0rem", lg: ".5rem" }}
+      gap={{ base: "3rem", lg: "4rem" }}
       flexDirection={props.orientation}
       display="flex"
       ml="0rem !important"
@@ -27,21 +27,18 @@ const NavElements = (props: any) => {
         ["TEAM", "/team"],
       ].map((item, index) =>
         item[0] === "SERVICES" ? (
-          <Text
-            _hover={{ color: "#bababa" }}
-            fontSize={props.fontSize}
-            key={index}
-            as={Link}
-            smooth={true}
-            fontFamily={"poppins"}
-            cursor={"pointer"}
-            fontWeight={600}
-            to={item[1]}
-            offset={-150}
-            onClick={props.onClick}
-          >
-            {item[0]}
-          </Text>
+          <Link key={index} href="/#services" scroll={false}>
+            <Text
+              onClick={props.onClick}
+              fontFamily={"poppins"}
+              cursor={"pointer"}
+              fontWeight={600}
+              fontSize={props.fontSize}
+              _hover={{ color: "#bababa" }}
+            >
+              {item[0]}
+            </Text>
+          </Link>
         ) : (
           <NextLink href={`${item[1]}`} onClick={props.onClick} key={index}>
             <Text
@@ -68,12 +65,13 @@ const NavElements = (props: any) => {
           }}
           fontFamily={"poppins"}
           borderRadius={"0rem"}
-          fontSize={"1rem"}
+          fontSize={".9rem"}
           onClick={onOpen}
           fontWeight={300}
           color="white"
           bg="black"
           pt=".1rem"
+          px={"2rem"}
         >
           CONTACT US
         </Button>

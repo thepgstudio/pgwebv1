@@ -11,38 +11,112 @@ import {
   VStack,
   Textarea,
   Spinner,
+  useToast,
 } from "@chakra-ui/react";
-import emailjs from "@emailjs/browser";
-import { NextRouter, useRouter } from "next/router";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 const Contact = (props: any) => {
   const [Loading, setLoading] = useState(false);
-  const form = useRef<HTMLFormElement>(null);
-  const router: NextRouter = useRouter();
+  const toast = useToast();
 
-  // console.log(form.current);
-  // const sendEmail = (e: React.SyntheticEvent) => {
-  //   e.preventDefault();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  //   try {
-  //     setLoading(true);
-  //     emailjs
-  //       .sendForm(
-  //         "service_mixdhlg",
-  //         "template_x07cq5p",
-  //         form.current,
-  //         "J-J8fC6VjigWRwdEZ"
-  //       )
-  //       .then((res) => {
-  //         console.log(res.text);
-  //       });
-  //   } catch (err) {
-  //     console.log(err);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      setLoading(true);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.status === 200) {
+        console.log("Form submitted successfully");
+        toast({
+          position: "top",
+          duration: 2000,
+          isClosable: true,
+          render: () => (
+            <Box
+              fontFamily={"poppins"}
+              fontSize={"1.2rem"}
+              borderRadius={"5px"}
+              textAlign="center"
+              color={"white"}
+              fontWeight={500}
+              bg="black"
+              p={3}
+            >
+              We received your message. We will respond shortly!
+            </Box>
+          ),
+        });
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        console.error("Error submitting form");
+        toast({
+          position: "top",
+          duration: 2000,
+          isClosable: true,
+          render: () => (
+            <Box
+              fontFamily={"poppins"}
+              textAlign={"center"}
+              borderRadius={"5px"}
+              fontSize={"1.2rem"}
+              fontWeight={500}
+              color={"white"}
+              bg={"red"}
+              p={5}
+            >
+              An Error Occurred! Please Try again
+            </Box>
+          ),
+        });
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        position: "top",
+        duration: 2000,
+        isClosable: true,
+        render: () => (
+          <Box
+            fontFamily={"poppins"}
+            textAlign={"center"}
+            borderRadius={"5px"}
+            fontSize={"1.2rem"}
+            fontWeight={500}
+            color={"white"}
+            bg={"red"}
+            p={5}
+          >
+            An Error Occurred! Please Try again
+          </Box>
+        ),
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <Modal isOpen={props.isOpen} onClose={props.onClose}>
@@ -50,7 +124,7 @@ const Contact = (props: any) => {
       <ModalContent maxW={{ base: "90%", lg: "35%" }} borderRadius={"none"}>
         <ModalCloseButton size={"lg"} />
 
-        <ModalBody fontFamily={"poppins"} p={{base:"2rem",md:"3rem"}}>
+        <ModalBody fontFamily={"poppins"} p={{ base: "2rem", md: "3rem" }}>
           <Box mb="2rem">
             <Text fontWeight={300} fontSize={"1rem"}>
               DO YOU HAVE ANY QUESTIONS? <br /> CONTACT US VIA EMAIL
@@ -66,7 +140,7 @@ const Contact = (props: any) => {
               OR COMPLETE THE FORM BELOW
             </Text>
           </Box>
-          <form ref={form}>
+          <form onSubmit={handleSubmit}>
             <VStack gap="2rem">
               <Box w="100%" borderBottom={"1px solid black"}>
                 <Input
@@ -79,6 +153,9 @@ const Contact = (props: any) => {
                   w="100%"
                   border="none"
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   autoFocus
                   isRequired
                 />
@@ -94,7 +171,10 @@ const Contact = (props: any) => {
                   p={"0rem"}
                   w="100%"
                   border="none"
-                  type="text"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   isRequired
                 />
               </Box>
@@ -110,6 +190,9 @@ const Contact = (props: any) => {
                   m={"0rem"}
                   p={"0rem"}
                   w="100%"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                 />
               </Box>
 

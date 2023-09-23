@@ -21,21 +21,24 @@ const Company = () => {
     <Box
       fontFamily={"poppins"}
       mt={{ base: "10rem", lg: "17rem" }}
-      mb={{ base: "5rem", lg: "10rem" }}
-      pr={{ base: "1rem", lg: "2rem" }}
-      pl={{ base: "1rem", lg: "3rem" }}
+      mb={{ base: "3rem", lg: "10rem" }}
+      px={{ base: "1rem", lg: "2rem" }}
     >
       <HStack>
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink fontSize={"1.35rem"} fontWeight={300} href="/">
+            <BreadcrumbLink
+              fontSize={{ base: "1rem", lg: "1.35rem" }}
+              fontWeight={300}
+              href="/"
+            >
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>
             <BreadcrumbLink
-              fontSize={"1.35rem"}
+              fontSize={{ base: "1rem", lg: "1.35rem" }}
               color={"#BABABA"}
               fontWeight={200}
               href="#"
@@ -56,7 +59,7 @@ const Company = () => {
       >
         <Text
           w={{ base: "100%", lg: "50%" }}
-          fontSize={{ base: "1.6rem", lg: "1.75rem" }}
+          fontSize={{ base: "1.3rem", lg: "1.75rem" }}
           fontWeight={400}
         >
           THE ART OF VISUALIZATION IS A BLEND OF <br />
@@ -64,7 +67,7 @@ const Company = () => {
         </Text>
         MASTER
         <Text
-          fontSize={{ base: "1.5rem", lg: "1.75rem" }}
+          fontSize={{ base: "1.2rem", lg: "1.75rem" }}
           w={{ base: "100%", lg: "55%" }}
           textTransform={"uppercase"}
           ml={"0rem !important"}
@@ -78,13 +81,13 @@ const Company = () => {
 
       <Box
         flexDirection={{ base: "column", md: "row" }}
-        pt={{ base: "5rem", md: "7rem" }}
+        pt={{ base: "3rem", md: "7rem" }}
         justifyContent={"space-between"}
         alignItems={"flex-start"}
         display={"flex"}
       >
         <Box width={{ base: "100%", md: "30%" }}>
-          <Text fontWeight={500} fontSize={"1.5rem"}>
+          <Text fontWeight={500} fontSize={{base:"1.3rem",lg:"1.5rem"}}>
             THE ART OF VISUALIZATION IS A BLEND OF ARTISTIC AND TECHNICAL FLAIR.
           </Text>
           <Text
@@ -105,7 +108,7 @@ const Company = () => {
           width={{ base: "100%", md: "30%" }}
           py={{ base: "2rem", md: "0rem" }}
         >
-          <Text fontWeight={500} fontSize={"1.5rem"}>
+          <Text fontWeight={500} fontSize={{base:"1.2rem",lg:"1.5rem"}}>
             WHO WE ARE AT PGSTUDIO.
           </Text>
           <Text

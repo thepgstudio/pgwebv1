@@ -4,10 +4,15 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  Button,
   Text,
-  Link,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+  TabIndicator,
 } from "@chakra-ui/react";
+import ExteriorTab from "../../components/GalleryTabs/ExteriorTab";
 
 const gallery = () => {
   return (
@@ -15,51 +20,107 @@ const gallery = () => {
       fontFamily={"poppins"}
       mt={{ base: "10rem", lg: "17rem" }}
       mb={{ base: "5rem", lg: "10rem" }}
-      pr={{ base: "1rem", lg: "2rem" }}
-      pl={{ base: "1rem", lg: "3rem" }}
     >
-      <HStack>
+      <HStack
+        pl={{ base: "1rem", lg: "2rem" }}
+        pr={{ base: "1rem", lg: "2rem" }}
+      >
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink fontSize={"1.35rem"} fontWeight={300} href="/">
+            <BreadcrumbLink
+              fontSize={{ base: "1rem", lg: "1.35rem" }}
+              fontWeight={300}
+              href="/"
+            >
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink fontSize={"1.35rem"} color={"#BABABA"} fontWeight={200} href="#">
+            <BreadcrumbLink
+              fontSize={{ base: "1rem", lg: "1.35rem" }}
+              color={"#BABABA"}
+              fontWeight={200}
+              href="#"
+            >
               Gallery
             </BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
       </HStack>
 
-      <Box
-        justifyContent={"center"}
-        alignItems={"center"}
-        flexDir={"column"}
+      <HStack
+        pl={{ base: "1rem", lg: "2rem" }}
+        pr={{ base: "1rem", lg: "2rem" }}
+        flexDir={{ base: "column", lg: "row" }}
+        justifyContent={"space-between"}
+        alignItems={"flex-start"}
         display={"flex"}
-        width={"100%"}
-        mt={"3rem"}
+        gap={"2rem"}
+        mt={"2rem"}
       >
-        <Text textAlign={"center"} fontWeight={700} fontSize={"2.5rem"}>
-          Gallery Section under construction, please click the Button below to
-          view some of our portfolio projects.
-        </Text>
-        <Button
-          href={"https://thepg.studio/works"}
-          width={"max-content"}
-          fontSize={"1.5rem"}
-          color={"white"}
-          bg={"black"}
-          mt={"1rem"}
-          _hover={{}}
-          p={"1rem"}
-          as={Link}
-          isExternal
+        <Text
+          w={{ base: "100%", lg: "40%" }}
+          fontSize={{ base: "1.2rem", lg: "1.75rem" }}
+          fontWeight={400}
         >
-          View Projects
-        </Button>
+          IMMERSIVE ARCHITECTURAL VISUALIZATION PORTFOLIO: CRAFTING A COMPELLING
+          NON-EXISTENT REALITY.
+        </Text>
+
+        <Text
+          fontSize={{ base: "1.15rem", lg: "1.75rem" }}
+          w={{ base: "100%", lg: "55%" }}
+          textTransform={"uppercase"}
+          ml={"0rem !important"}
+          fontWeight={200}
+        >
+          Throughout our journey, we&apos;ve amassed the expertise and ability
+          to bring our clients&apos; design concepts to life, while also pushing
+          the boundaries of architectural visualizations.
+        </Text>
+      </HStack>
+
+      <Box mt={{ base: "3rem", lg: "5rem" }}>
+        <Tabs isLazy position="relative" variant="unstyled">
+          <TabList
+            justifyContent={{ base: "space-between", lg: "flex-start" }}
+            pl={{ base: "1rem", lg: "1rem" }}
+            gap={{ base: "0rem", lg: "1.5rem" }}
+            pr={{ base: "1rem", lg: "2rem" }}
+          >
+            {["EXTERIOR", "INTERIOR", "LIGHTING", "MODELS", "ANIMATION/VR"].map(
+              (item, index) => (
+                <Tab
+                  fontSize={{ base: ".85rem", lg: "1.5rem" }}
+                  fontWeight={200}
+                  key={index}
+                  p={"0rem"}
+                >
+                  {item}
+                </Tab>
+              )
+            )}
+          </TabList>
+          <TabIndicator
+            mt="-1.5px"
+            height="1px"
+            bg="black"
+            borderRadius="1px"
+            w={"max-content"}
+          />
+          <TabPanels>
+            <TabPanel>
+              <ExteriorTab />
+            </TabPanel>
+            <TabPanel>
+              <p>two!</p>
+            </TabPanel>
+            <TabPanel>
+              <p>three!</p>
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
       </Box>
     </Box>
   );

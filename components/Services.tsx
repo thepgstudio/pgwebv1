@@ -9,7 +9,7 @@ import {
 } from "swiper";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import patternbackground from "../public/texture/v880-kul-12.jpg";
+import patternbackground from "../public/texture/v880-kul-12-min.jpg";
 import Image from "next/image";
 
 import iconvirtualtours from "../public/assets/ICONs/360 VIRTUAL TOURS.svg";
@@ -51,7 +51,7 @@ const ServiceSection = () => {
       px={{ base: "1rem", lg: "2rem" }}
       fontFamily={"poppins"}
       pb={"1rem"}
-      id="services"
+      
     >
       <Text
         fontSize={{ base: "1.75rem", lg: "2rem" }}

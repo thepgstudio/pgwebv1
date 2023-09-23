@@ -28,7 +28,7 @@ const Footer = () => {
 
   return (
     <Box
-      px={{ base: "1rem", lg: "4rem" }}
+      px={{ base: "1rem", lg: "2.5rem" }}
       borderTop={"1px solid #f0f0f0"}
       fontFamily={"poppins"}
       flexDir={"column"}

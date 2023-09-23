@@ -1,7 +1,9 @@
 import { HStack, Box, Text, Button } from "@chakra-ui/react";
-import { NextRouter, useRouter } from "next/router";
-import { useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
+import { NextRouter, useRouter } from "next/router";
+import { AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+
 import logo_small from "../public/assets/logos/PGStudio Logo - Variant 1.png";
 import logo_large from "../public/assets/logos/PGStudio Logo - Variant 2.png";
 import NavElements from "./NavElements";
@@ -27,13 +29,13 @@ const NavBar = () => {
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
+    stiffness: 200,
     restDelta: 0.001,
+    damping: 50,
   });
 
   useEffect(() => {
-    const scrollChange = () => setScrolled(window.scrollY > 150);
+    const scrollChange = () => setScrolled(window.scrollY > 120);
     window.addEventListener("scroll", scrollChange);
     return () => window.removeEventListener("scroll", scrollChange);
   }, []);
@@ -47,33 +49,46 @@ const NavBar = () => {
       display={"flex"}
       w={"100vw"}
       zIndex={999}
-      py="1rem"
       bg="white"
+      py="1rem"
       top={0}
     >
       <HStack
-        px={{ base: "1rem", lg: "3rem" }}
         alignItems={{ base: "flex-start", lg: "flex-start" }}
+        px={{ base: "1rem", lg: "2rem" }}
         justifyContent={"space-between"}
-        gap={"1rem"}
         h={"max-content"}
+        gap={"1rem"}
       >
-        <Box display={{ base: "none", lg: "block" }}>
-          <Box maxW={"20rem"} display={scrolled ? "block" : "none"}>
-            <Image
-              style={{ width: "20rem" }}
-              src={logo_large}
-              alt="logo image"
-              priority
-            />
-          </Box>
+        <Box
+          display={{ base: "none", lg: "block" }}
+          cursor={"pointer"}
+          onClick={() => router.push("/")}
+        >
+          <AnimatePresence>
+            <Box
+              display={scrolled ? "block" : "none"}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              as={motion.div}
+              maxW={"20rem"}
+            >
+              <Image
+                style={{ width: "20rem" }}
+                src={logo_large}
+                alt="logo image"
+                priority
+              />
+            </Box>
+          </AnimatePresence>
 
           <Box maxW={"20rem"} display={scrolled ? "none" : "block"}>
             <Image
               style={{ width: "9rem" }}
+              alt={"logo image"}
+              className={"logo"}
               src={logo_small}
-              className="logo"
-              alt="logo image"
               priority
             />
           </Box>
@@ -81,9 +96,9 @@ const NavBar = () => {
 
         {/* Mobile*/}
         <Box
-          onClick={() => router.push("/")}
-          ml="0rem !important"
           display={{ base: "block", lg: "none" }}
+          onClick={() => router.push("/")}
+          ml={"0rem !important"}
           w={"5rem"}
         >
           <Image

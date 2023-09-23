@@ -37,8 +37,8 @@ export default function Home() {
       <Box
         flexDirection={{ base: "column", lg: "row" }}
         mt={{ base: "2rem", lg: "10rem" }}
-        gap={{ base: "2rem", lg: "0rem" }}
-        px={{ base: "1rem", lg: "3rem" }}
+        gap={{ base: "1.75rem", lg: "0rem" }}
+        px={{ base: "1rem", lg: "2rem" }}
         justifyContent={"space-between"}
         height={"max-content"}
         fontFamily={"poppins"}
@@ -46,7 +46,7 @@ export default function Home() {
         pt={"7rem"}
       >
         <Text
-          fontSize={{ base: "1.75rem", lg: "2rem" }}
+          fontSize={{ base: "1.65rem", lg: "2rem" }}
           width={{ base: "100%", lg: "38%" }}
           textTransform={"uppercase"}
           letterSpacing={".1rem"}
@@ -56,14 +56,15 @@ export default function Home() {
         </Text>
 
         <Text
-          fontSize={{ base: "1.5rem", lg: "1.75rem" }}
+          fontSize={{ base: "1.35rem", lg: "1.75rem" }}
           w={{ base: "100%", lg: "54%" }}
           textTransform={"uppercase"}
           fontWeight={200}
         >
-          Producing images that you want to be in, we’re creating a powerful
-          non-existent reality. 3D rendering for architects, developers,
-          branding agencies and product design companies.
+          Creating images tailored to your preferences, we are crafting a
+          potent virtual reality. Our 3D rendering services cater to Architects,
+          Interior Designers, Developers, Branding Agencies, and Product Design
+          firms.
         </Text>
       </Box>
 
@@ -93,34 +94,50 @@ export default function Home() {
             </SwiperSlide>
 
             <SwiperSlide>
-              <Image src={slide2} alt="slide_two Image" placeholder="blur" />
+              <Image
+                src={slide2}
+                alt="slide_two Image"
+                placeholder="blur"
+                priority
+              />
             </SwiperSlide>
 
             <SwiperSlide>
-              <Image src={slide4} alt="slide_four Image" placeholder="blur" />
+              <Image
+                src={slide4}
+                alt="slide_four Image"
+                placeholder="blur"
+                priority
+              />
             </SwiperSlide>
 
             <SwiperSlide>
-              <Image src={slide3} alt="slide_three Image" placeholder="blur" />
+              <Image
+                src={slide3}
+                alt="slide_three Image"
+                placeholder="blur"
+                priority
+              />
             </SwiperSlide>
           </Swiper>
         </Box>
       </Box>
 
       <Box
-        px={{ base: "1rem", lg: "3.5rem" }}
+        px={{ base: "1rem", lg: "2rem" }}
         py={{ base: "2rem", lg: "4rem" }}
-        mt="1rem"
         borderY={"1px solid #f0f0f0"}
+        mt={{ base: "0rem", lg: "1rem" }}
+        id="services"
       >
         <Text
-          fontSize={{ base: "1.8rem", lg: "2.75rem" }}
-          lineHeight={{ base: "3rem", lg: "3.3rem" }}
+          fontSize={{ base: "1.75rem", lg: "2.75rem" }}
+          lineHeight={{ base: "2.75rem", lg: "3.3rem" }}
           fontWeight={{ base: 300, lg: 200 }}
           w={{ base: "100%", lg: "55%" }}
           textTransform={"uppercase"}
-          fontFamily={"poppins"}
           letterSpacing={".02rem"}
+          fontFamily={"poppins"}
         >
           crafting spaces that go beyond aesthetics, and inspire a sense of
           wonder and awe.
@@ -132,7 +149,7 @@ export default function Home() {
       <Box
         justifyContent={{ base: "center", lg: "space-between" }}
         borderY={"1px solid #f0f0f0"}
-        px={{ base: "1rem", lg: "3.5rem" }}
+        px={{ base: "1rem", lg: "2rem" }}
         display={{ base: "none", lg: "flex" }}
         py={{ base: "1.5rem", lg: "3rem" }}
         mt="3rem"
@@ -163,7 +180,7 @@ export default function Home() {
         </Text>
       </Box>
 
-      <Box px={{ base: "1rem", lg: "3rem" }} py={{ base: "1rem", lg: "2rem" }}>
+      <Box px={{ base: "1rem", lg: "2rem" }} py={{ base: "1rem", lg: "2rem" }}>
         {/* First Row */}
         <>
           <Box fontFamily={"poppins"} textAlign={"center"} mb={"2rem"}>
@@ -332,7 +349,7 @@ export default function Home() {
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
                 w={{ base: "100%", lg: "100%" }}
-                h={{ base: "15rem", lg: "max-content" }}  
+                h={{ base: "15rem", lg: "max-content" }}
                 cursor={"pointer"}
                 overflow={"hidden"}
                 maxH={"30rem"}
