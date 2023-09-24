@@ -19,7 +19,7 @@ const gallery = () => {
     <Box
       fontFamily={"poppins"}
       mt={{ base: "10rem", lg: "17rem" }}
-      mb={{ base: "5rem", lg: "10rem" }}
+      mb={{ base: "5rem", lg: "7rem" }}
     >
       <HStack
         pl={{ base: "1rem", lg: "2rem" }}
@@ -50,9 +50,9 @@ const gallery = () => {
       </HStack>
 
       <HStack
+      flexDir={{ base: "column", lg: "row" }}
         pl={{ base: "1rem", lg: "2rem" }}
         pr={{ base: "1rem", lg: "2rem" }}
-        flexDir={{ base: "column", lg: "row" }}
         justifyContent={"space-between"}
         alignItems={"flex-start"}
         display={"flex"}
@@ -60,8 +60,8 @@ const gallery = () => {
         mt={"2rem"}
       >
         <Text
-          w={{ base: "100%", lg: "40%" }}
           fontSize={{ base: "1.2rem", lg: "1.75rem" }}
+          w={{ base: "100%", lg: "40%" }}
           fontWeight={400}
         >
           IMMERSIVE ARCHITECTURAL VISUALIZATION PORTFOLIO: CRAFTING A COMPELLING
@@ -85,8 +85,8 @@ const gallery = () => {
         <Tabs isLazy position="relative" variant="unstyled">
           <TabList
             justifyContent={{ base: "space-between", lg: "flex-start" }}
-            pl={{ base: "1rem", lg: "1rem" }}
             gap={{ base: "0rem", lg: "1.5rem" }}
+            pl={{ base: "1rem", lg: "1rem" }}
             pr={{ base: "1rem", lg: "2rem" }}
           >
             {["EXTERIOR", "INTERIOR", "LIGHTING", "MODELS", "ANIMATION/VR"].map(
@@ -103,11 +103,11 @@ const gallery = () => {
             )}
           </TabList>
           <TabIndicator
-            mt="-1.5px"
-            height="1px"
-            bg="black"
-            borderRadius="1px"
+            borderRadius={"1px"}
             w={"max-content"}
+            height={"1px"}
+            mt={"-1.5px"}
+            bg={"black"}
           />
           <TabPanels>
             <TabPanel>

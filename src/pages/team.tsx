@@ -9,7 +9,6 @@ import {
   chakra,
 } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/router";
 import { asset } from "@/util";
 import Image from "next/image";
 
@@ -18,7 +17,7 @@ const Team = () => {
     <Box
       fontFamily={"poppins"}
       mt={{ base: "10rem", lg: "17rem" }}
-      mb={{ base: "3rem", lg: "10rem" }}
+      mb={{ base: "3rem", lg: "7rem" }}
       px={{ base: "1rem", lg: "2rem" }}
     >
       <HStack>
@@ -45,17 +44,18 @@ const Team = () => {
           </BreadcrumbItem>
         </Breadcrumb>
       </HStack>
+      
       <HStack
         flexDir={{ base: "column", lg: "row" }}
         justifyContent={"space-between"}
         alignItems={"flex-start"}
         display={"flex"}
-        gap="2rem"
-        mt="2rem"
+        gap={"2rem"}
+        mt={"2rem"}
       >
         <Text
-          w={{ base: "100%", lg: "50%" }}
           fontSize={{ base: "1.3rem", lg: "1.75rem" }}
+          w={{ base: "100%", lg: "50%" }}
           fontWeight={400}
         >
           PGSTUDIO TEAM - A TEAM UNITED IN ARTISTIC VISION, TRANSCENDING
@@ -76,25 +76,25 @@ const Team = () => {
       </HStack>
 
       <HStack
+        mt={{ base: "3rem", lg: "7rem" }}
         justifyContent={"space-between"}
         alignItems={"flex-start"}
         flexWrap={"wrap"}
-        mt={{ base: "3rem", lg: "7rem" }}
         rowGap={"5rem"}
       >
         {asset.map((item, index) => (
           <AnimatePresence key={index}>
             <VStack
               transition={"all ease-in-ease-out"}
-              as={motion.div}
-              display={"flex"}
+              w={{ base: "100%", lg: "24%" }}
               initial={{ scale: 1.01 }}
+              ml={"0rem !important"}
               animate={{ scale: 1 }}
               transitionDelay={".1s"}
               exit={{ scale: 0.75 }}
-              w={{ base: "100%", lg: "24%" }}
-              ml={"0rem !important"}
               cursor={"pointer"}
+              as={motion.div}
+              display={"flex"}
               minW={"20rem"}
             >
               <Box>

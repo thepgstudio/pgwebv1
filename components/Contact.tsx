@@ -150,10 +150,10 @@ const Contact = (props: any) => {
                   placeholder="NAME"
                   m={"0rem"}
                   p={"0rem"}
-                  w="100%"
-                  border="none"
-                  type="text"
-                  name="name"
+                  w={"100%"}
+                  border={"none"}
+                  type={"text"}
+                  name={"name"}
                   value={formData.name}
                   onChange={handleChange}
                   autoFocus
