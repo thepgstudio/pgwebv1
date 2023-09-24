@@ -1,4 +1,4 @@
-
+import { Box } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 const ScrollToTopButton = () => {
@@ -27,12 +27,14 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <div
-      className={`scroll-to-top-button ${isVisible ? "visible" : "hidden"}`}
-      onClick={scrollToTop}
-    >
-      <span>↑</span>
-    </div>
+    <Box display={"flex"} width={"100%"} justifyContent={"center"}>
+      <div
+        className={`scroll-to-top-button ${isVisible ? "visible" : "hidden"}`}
+        onClick={scrollToTop}
+      >
+        <span>↑</span>
+      </div>
+    </Box>
   );
 };
 

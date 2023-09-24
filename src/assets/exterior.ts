@@ -1,11 +1,10 @@
-import { StaticImageData } from "next/image";
 
 export const exteriorAssets = [
   [
     {
       maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545687/GALLERY/EXTERIOR/IMAGE%201%20-%20Embed/IMAGE_1_1_xfsgwe.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545682/GALLERY/EXTERIOR/IMAGE_1_-_2_zuduju.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545685/GALLERY/EXTERIOR/IMAGE%201%20-%20Embed/IMAGE_1_4_k2l9ln.jpg",
       ],
       lightbox: [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545687/GALLERY/EXTERIOR/IMAGE%201%20-%20Embed/IMAGE_1_1_xfsgwe.jpg",

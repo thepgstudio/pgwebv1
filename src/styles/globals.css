@@ -169,7 +169,7 @@ section::-webkit-scrollbar {
   justify-content: center;
   position: fixed;
   bottom: 10px;
-  right: 48%;
+  /* right: 48%; */
   color: #fff;
   width: 3.5rem;
   height: 3rem;

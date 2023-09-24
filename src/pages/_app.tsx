@@ -10,6 +10,9 @@ const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
 
+export function reportWebVitals(metric: any){
+  console.log(metric)
+}
 export default function App({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = useState<string>();
 

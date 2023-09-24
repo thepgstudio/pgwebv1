@@ -13,6 +13,7 @@ import {
   TabIndicator,
 } from "@chakra-ui/react";
 import ExteriorTab from "../../components/GalleryTabs/ExteriorTab";
+import InteriorTab from "../../components/GalleryTabs/InteriorTab";
 
 const gallery = () => {
   return (
@@ -50,7 +51,7 @@ const gallery = () => {
       </HStack>
 
       <HStack
-      flexDir={{ base: "column", lg: "row" }}
+        flexDir={{ base: "column", lg: "row" }}
         pl={{ base: "1rem", lg: "2rem" }}
         pr={{ base: "1rem", lg: "2rem" }}
         justifyContent={"space-between"}
@@ -81,7 +82,7 @@ const gallery = () => {
         </Text>
       </HStack>
 
-      <Box mt={{ base: "3rem", lg: "5rem" }}>
+      <Box mt={{ base: "2rem", lg: "5rem" }}>
         <Tabs isLazy position="relative" variant="unstyled">
           <TabList
             justifyContent={{ base: "space-between", lg: "flex-start" }}
@@ -89,10 +90,10 @@ const gallery = () => {
             pl={{ base: "1rem", lg: "1rem" }}
             pr={{ base: "1rem", lg: "2rem" }}
           >
-            {["EXTERIOR", "INTERIOR", "LIGHTING", "MODELS", "ANIMATION/VR"].map(
+            {[  "INTERIOR","EXTERIOR", "LIGHTING", "MODELS", "ANIMATION/VR"].map(
               (item, index) => (
                 <Tab
-                  fontSize={{ base: ".85rem", lg: "1.5rem" }}
+                  fontSize={{ base: ".9rem", lg: "1.5rem" }}
                   fontWeight={200}
                   key={index}
                   p={"0rem"}
@@ -111,10 +112,10 @@ const gallery = () => {
           />
           <TabPanels>
             <TabPanel>
-              <ExteriorTab />
+              <InteriorTab/>
             </TabPanel>
             <TabPanel>
-              <p>two!</p>
+              <ExteriorTab />
             </TabPanel>
             <TabPanel>
               <p>three!</p>

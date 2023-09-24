@@ -1,6 +1,7 @@
 import { Box, Divider, HStack, Text, VStack } from "@chakra-ui/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { TypeAnimation } from "react-type-animation";
 import ServiceSection from "../../components/Services";
 import Head from "next/head";
 import Image from "next/image";
@@ -29,8 +30,13 @@ export default function Home() {
       <Head>
         <title>PGStudio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Architectural Design Company" />
-        <meta name="description" content="PG Studio" />
+        <meta
+          name="description"
+          content="3d Architectural Rendering and Visualization Studio"
+        />
+        <meta name="description" content="PGStudio" />
+        <meta name="robots" content="index, follow" />
+        <meta charSet="UTF-8" />
         <link rel="icon" href="/assets/logos/PGStudio Logo - Variant 1.png" />
       </Head>
 
@@ -61,8 +67,8 @@ export default function Home() {
           textTransform={"uppercase"}
           fontWeight={200}
         >
-          Creating images tailored to your preferences, we are crafting a
-          potent virtual reality. Our 3D rendering services cater to Architects,
+          Creating images tailored to your preferences, we are crafting a potent
+          virtual reality. Our 3D rendering services cater to Architects,
           Interior Designers, Developers, Branding Agencies, and Product Design
           firms.
         </Text>
@@ -129,19 +135,25 @@ export default function Home() {
         borderY={"1px solid #f0f0f0"}
         mt={{ base: "0rem", lg: "1rem" }}
         id="services"
+        fontSize={{ base: "1.75rem", lg: "2.75rem" }}
+        lineHeight={{ base: "2.75rem", lg: "3.3rem" }}
+        fontWeight={{ base: 300, lg: 200 }}
+        w={{ base: "100%", lg: "55%" }}
+        textTransform={"uppercase"}
+        letterSpacing={".02rem"}
+        fontFamily={"poppins"}
       >
-        <Text
-          fontSize={{ base: "1.75rem", lg: "2.75rem" }}
-          lineHeight={{ base: "2.75rem", lg: "3.3rem" }}
-          fontWeight={{ base: 300, lg: 200 }}
-          w={{ base: "100%", lg: "55%" }}
-          textTransform={"uppercase"}
-          letterSpacing={".02rem"}
-          fontFamily={"poppins"}
-        >
-          crafting spaces that go beyond aesthetics, and inspire a sense of
-          wonder and awe.
-        </Text>
+        <TypeAnimation
+          sequence={[
+            "crafting spaces that go beyond aesthetics, and",
+            "crafting spaces that go beyond aesthetics, and inspire a sense of wonder and awe.",
+            3000,
+          ]}
+          repeat={Infinity}
+          speed={20}
+          deletionSpeed={40}
+          preRenderFirstString
+        />
       </Box>
 
       <ServiceSection />
@@ -204,7 +216,7 @@ export default function Home() {
           >
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                h={{ base: "15rem", lg: "max-content" }}
+                h={{ base: "15rem", md: "20rem", lg: "max-content" }}
                 w={{ base: "100%", lg: "100%" }}
                 overflow={"hidden"}
                 cursor={"pointer"}
@@ -223,7 +235,7 @@ export default function Home() {
 
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                h={{ base: "15rem", lg: "max-content" }}
+                h={{ base: "15rem", md: "20rem", lg: "max-content" }}
                 w={{ base: "100%", lg: "100%" }}
                 cursor={"pointer"}
                 overflow={"hidden"}
@@ -269,7 +281,7 @@ export default function Home() {
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
                 w={{ base: "100%", lg: "100%" }}
-                h={{ base: "15rem", lg: "max-content" }}
+                h={{ base: "15rem", md: "20rem", lg: "max-content" }}
                 cursor={"pointer"}
                 overflow={"hidden"}
                 maxH={"30rem"}
@@ -285,7 +297,7 @@ export default function Home() {
 
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                h={{ base: "15rem", lg: "max-content" }}
+                h={{ base: "15rem", md: "20rem", lg: "max-content" }}
                 w={{ base: "100%", lg: "100%" }}
                 borderTop={".1px solid grey"}
                 borderRight={".1px solid grey"}
@@ -331,7 +343,7 @@ export default function Home() {
           >
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
-                h={{ base: "15rem", lg: "max-content" }}
+                h={{ base: "15rem", md: "20rem", lg: "max-content" }}
                 w={{ base: "100%", lg: "100%" }}
                 cursor={"pointer"}
                 overflow={"hidden"}
@@ -349,7 +361,7 @@ export default function Home() {
             <VStack fontFamily={"poppins"} w={{ base: "100%", lg: "50%" }}>
               <Box
                 w={{ base: "100%", lg: "100%" }}
-                h={{ base: "15rem", lg: "max-content" }}
+                h={{ base: "15rem", md: "20rem", lg: "max-content" }}
                 cursor={"pointer"}
                 overflow={"hidden"}
                 maxH={"30rem"}

@@ -1,9 +1,9 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { exteriorAssets } from "@/assets/exterior";
+import { interiorAssets } from "@/assets/interior";
 import { Box } from "@chakra-ui/react";
 import Image from "next/image";
 
-const ExteriorTab = () => {
+const InteriorTab = () => {
   return (
     <AnimatePresence>
       <Box
@@ -16,7 +16,7 @@ const ExteriorTab = () => {
         width={"100%"}
         gap={"1rem"}
       >
-        {exteriorAssets.map((item, rowIndex) => (
+        {interiorAssets.map((item, rowIndex) => (
           <Box
             flexDir={{ base: "column", lg: "row" }}
             key={rowIndex}
@@ -39,7 +39,6 @@ const ExteriorTab = () => {
                   alt="gallery image"
                   fill
                   style={{ objectFit: "cover" }}
-             
                 />
               </Box>
             ))}
@@ -50,4 +49,4 @@ const ExteriorTab = () => {
   );
 };
 
-export default ExteriorTab;
+export default InteriorTab;
