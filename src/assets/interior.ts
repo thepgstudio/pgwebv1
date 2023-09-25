@@ -129,4 +129,110 @@ export const interiorAssets = [
       ],
     },
   ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545634/GALLERY/INTERIOR/IMAGE_12_-_1_h9snrp.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545650/GALLERY/INTERIOR/IMAGE_12_-_2_gpnofa.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545674/GALLERY/INTERIOR/IMAGE%2012%20-%20Embed/IMAGE_12_1_exfywi.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545672/GALLERY/INTERIOR/IMAGE%2012%20-%20Embed/IMAGE_12_2_roav6g.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545673/GALLERY/INTERIOR/IMAGE%2012%20-%20Embed/IMAGE_12_3_wdf3aj.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545673/GALLERY/INTERIOR/IMAGE%2012%20-%20Embed/IMAGE_12_4_czmx0r.jpg",
+      ],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545652/GALLERY/INTERIOR/IMAGE_13_-_1_xqw6li.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545652/GALLERY/INTERIOR/IMAGE_13_-_2_vlndbf.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545664/GALLERY/INTERIOR/IMAGE%2013%20-%20Embed/IMAGE_13_1_hfdfwc.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545663/GALLERY/INTERIOR/IMAGE%2013%20-%20Embed/IMAGE_13_2_msjvjt.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545665/GALLERY/INTERIOR/IMAGE%2013%20-%20Embed/IMAGE_13_3_jbpntb.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545664/GALLERY/INTERIOR/IMAGE%2013%20-%20Embed/IMAGE_13_4_efcag9.jpg",
+      ],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545633/GALLERY/INTERIOR/IMAGE_14_-_1_yp0dnt.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545633/GALLERY/INTERIOR/IMAGE_14_-_1_yp0dnt.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545633/GALLERY/INTERIOR/IMAGE_14_-_1_yp0dnt.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545633/GALLERY/INTERIOR/IMAGE_14_-_1_yp0dnt.jpg",
+      ],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545629/GALLERY/INTERIOR/IMAGE_15_-_1_exxhey.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545628/GALLERY/INTERIOR/IMAGE_15_-_2_nkr69n.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545629/GALLERY/INTERIOR/IMAGE_15_-_1_exxhey.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545628/GALLERY/INTERIOR/IMAGE_15_-_2_nkr69n.jpg",
+      ],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545628/GALLERY/INTERIOR/IMAGE_16_-_1_sirzqn.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545627/GALLERY/INTERIOR/IMAGE_16_-_2_s1ulrw.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545668/GALLERY/INTERIOR/IMAGE%2016%20-%20Embed/IMAGE_16_1_rcizjc.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545667/GALLERY/INTERIOR/IMAGE%2016%20-%20Embed/IMAGE_16_2_un8xqq.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545667/GALLERY/INTERIOR/IMAGE%2016%20-%20Embed/IMAGE_16_3_kv5dxy.jpg",
+      ],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545626/GALLERY/INTERIOR/IMAGE_17_-_1_hthyd3.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545626/GALLERY/INTERIOR/IMAGE_17_-_2_uj4pm8.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545626/GALLERY/INTERIOR/IMAGE_17_-_1_hthyd3.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545626/GALLERY/INTERIOR/IMAGE_17_-_2_uj4pm8.jpg",
+      ],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545625/GALLERY/INTERIOR/IMAGE_18_-_1_m0zxpo.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545624/GALLERY/INTERIOR/IMAGE_18_-_2_yx5qlg.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545659/GALLERY/INTERIOR/IMAGE%2018%20-%20Embed/IMAGE_18_1_dcnbeh.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545659/GALLERY/INTERIOR/IMAGE%2018%20-%20Embed/IMAGE_18_2_dqo28l.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545658/GALLERY/INTERIOR/IMAGE%2018%20-%20Embed/IMAGE_18_3_d9v3xc.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545657/GALLERY/INTERIOR/IMAGE%2018%20-%20Embed/IMAGE_18_4_binwvw.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545657/GALLERY/INTERIOR/IMAGE%2018%20-%20Embed/IMAGE_18_5_bslywz.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545656/GALLERY/INTERIOR/IMAGE%2018%20-%20Embed/IMAGE_18_6_o3x3qc.jpg",
+      ],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545624/GALLERY/INTERIOR/IMAGE_19_-_1_lzqpts.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545647/GALLERY/INTERIOR/IMAGE_19_-_2_hafpae.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545624/GALLERY/INTERIOR/IMAGE_19_-_1_lzqpts.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545647/GALLERY/INTERIOR/IMAGE_19_-_2_hafpae.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545649/GALLERY/INTERIOR/IMAGE_19_-_3_wwydro.jpg",
+      ],
+    },
+  ],
 ];

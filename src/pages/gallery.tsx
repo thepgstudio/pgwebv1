@@ -14,6 +14,8 @@ import {
 } from "@chakra-ui/react";
 import ExteriorTab from "../../components/GalleryTabs/ExteriorTab";
 import InteriorTab from "../../components/GalleryTabs/InteriorTab";
+import LightingTab from "../../components/GalleryTabs/LightingTab";
+import ModellingTab from "../../components/GalleryTabs/modelingTab";
 
 const gallery = () => {
   return (
@@ -90,10 +92,10 @@ const gallery = () => {
             pl={{ base: "1rem", lg: "1rem" }}
             pr={{ base: "1rem", lg: "2rem" }}
           >
-            {[  "INTERIOR","EXTERIOR", "LIGHTING", "MODELS", "ANIMATION/VR"].map(
+            {["INTERIOR", "EXTERIOR", "LIGHTING", "MODELS"].map(
               (item, index) => (
                 <Tab
-                  fontSize={{ base: ".9rem", lg: "1.5rem" }}
+                  fontSize={{ base: "1rem", lg: "1.4rem" }}
                   fontWeight={200}
                   key={index}
                   p={"0rem"}
@@ -112,13 +114,16 @@ const gallery = () => {
           />
           <TabPanels>
             <TabPanel>
-              <InteriorTab/>
+              <InteriorTab />
             </TabPanel>
             <TabPanel>
               <ExteriorTab />
             </TabPanel>
             <TabPanel>
-              <p>three!</p>
+              <LightingTab />
+            </TabPanel>
+            <TabPanel>
+              <ModellingTab />
             </TabPanel>
           </TabPanels>
         </Tabs>

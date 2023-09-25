@@ -1,11 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { exteriorAssets } from "@/assets/exterior";
+import { lightingAssets } from "@/assets/lighting";
 import { useState } from "react";
 import { Box } from "@chakra-ui/react";
 import FsLightbox from "fslightbox-react";
 import Image from "next/image";
 
-const ExteriorTab = () => {
+
+const LightingTab = () => {
   const [toggler, setToggler] = useState(false);
   const [clickedIndex, setClickedIndex] = useState(0);
 
@@ -22,7 +23,7 @@ const ExteriorTab = () => {
           width={"100%"}
           gap={"1rem"}
         >
-          {exteriorAssets.map((item, rowIndex) => (
+          {lightingAssets.map((item, rowIndex) => (
             <Box
               flexDir={{ base: "column", lg: "row" }}
               key={rowIndex}
@@ -58,10 +59,10 @@ const ExteriorTab = () => {
       </AnimatePresence>
       <FsLightbox
         toggler={toggler}
-        sources={exteriorAssets[clickedIndex][0].lightbox}
+        sources={lightingAssets[clickedIndex][0].lightbox}
       />
     </>
   );
 };
 
-export default ExteriorTab;
+export default LightingTab;
