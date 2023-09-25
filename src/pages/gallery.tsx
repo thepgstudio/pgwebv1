@@ -15,7 +15,7 @@ import {
 import ExteriorTab from "../../components/GalleryTabs/ExteriorTab";
 import InteriorTab from "../../components/GalleryTabs/InteriorTab";
 import LightingTab from "../../components/GalleryTabs/LightingTab";
-import ModellingTab from "../../components/GalleryTabs/modelingTab";
+import ModellingTab from "../../components/GalleryTabs/ModelingTab";
 
 const gallery = () => {
   return (

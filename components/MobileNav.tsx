@@ -25,7 +25,7 @@ const MobileNav = () => {
         onClose={onClose}
         isOpen={isOpen}
       >
-        <DrawerContent height={""} mt="7rem" overflowY={"scroll"}>
+        <DrawerContent height={""} mt="6rem" overflowY={"scroll"}>
           <DrawerBody
             justifyContent={"flex-start"}
             height={"max-content"}
