@@ -10,6 +10,7 @@ import NavElements from "./NavElements";
 import MobileNav from "./MobileNav";
 import Image from "next/image";
 
+
 const scrollIntoElement = (elementId: string, router: NextRouter) => {
   if (router.pathname === "/") {
     const element = document.getElementById(elementId)!;
@@ -49,8 +50,8 @@ const NavBar = () => {
       display={"flex"}
       w={"100vw"}
       zIndex={999}
-      bg="white"
-      py="1rem"
+      bg={"white"}
+      py={"1rem"}
       top={0}
     >
       <HStack

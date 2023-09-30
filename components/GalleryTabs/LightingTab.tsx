@@ -5,7 +5,6 @@ import { Box } from "@chakra-ui/react";
 import FsLightbox from "fslightbox-react";
 import Image from "next/image";
 
-
 const LightingTab = () => {
   const [toggler, setToggler] = useState(false);
   const [clickedIndex, setClickedIndex] = useState(0);
@@ -59,7 +58,10 @@ const LightingTab = () => {
       </AnimatePresence>
       <FsLightbox
         toggler={toggler}
-        sources={lightingAssets[clickedIndex][0].lightbox}
+        sources={[
+          ...lightingAssets[clickedIndex][0].maindisplay,
+          ...lightingAssets[clickedIndex][0].lightbox,
+        ]}
       />
     </>
   );

@@ -58,7 +58,10 @@ const ModellingTab = () => {
       </AnimatePresence>
       <FsLightbox
         toggler={toggler}
-        sources={modellingAssets[clickedIndex][0].lightbox}
+        sources={[
+          ...modellingAssets[clickedIndex][0].maindisplay,
+          ...modellingAssets[clickedIndex][0].lightbox,
+        ]}
       />
     </>
   );

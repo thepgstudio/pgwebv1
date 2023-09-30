@@ -37,7 +37,6 @@ export const interiorAssets = [
       ],
     },
   ],
-
   [
     {
       maindisplay: [

@@ -58,7 +58,10 @@ const ExteriorTab = () => {
       </AnimatePresence>
       <FsLightbox
         toggler={toggler}
-        sources={exteriorAssets[clickedIndex][0].lightbox}
+        sources={[
+          ...exteriorAssets[clickedIndex][0].maindisplay,
+          ...exteriorAssets[clickedIndex][0].lightbox,
+        ]}
       />
     </>
   );
