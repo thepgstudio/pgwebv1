@@ -12,7 +12,7 @@ export const interiorAssets = [
       content: [
         "LIVING ROOM",
         "CLIENT: Fresh Decor",
-        "LOCATION: Illinois, USA..",
+        "LOCATION: Illinois, USA.",
       ],
     },
   ],
@@ -31,7 +31,7 @@ export const interiorAssets = [
       content: [
         "SCHOLAR SUITES",
         "CLIENT: Apartment Oasis",
-        "LOCATION: Texas, USA..",
+        "LOCATION: Texas, USA.",
       ],
     },
   ],

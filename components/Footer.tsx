@@ -7,8 +7,8 @@ const Footer = () => {
   const nav: String[][] = [
     ["HOME", "/"],
     ["GALLERY", "/gallery"],
-    ["SERVICES", "/services"],
     ["COMPANY", "/company"],
+    ["SERVICES", "#"],
     ["TEAM", "/team"],
   ];
 
