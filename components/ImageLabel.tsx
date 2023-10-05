@@ -16,11 +16,13 @@ const ImageLabel: React.FC<ImageLabelProps> = ({
   return (
     <AnimatePresence>
       <Box
-        display={
-          mouseMonitors[rowIndex] === true && content.length !== 0
-            ? "flex"
-            : "none"
-        }
+        display={{
+          base: "flex",
+          lg:
+            mouseMonitors[rowIndex] === true && content.length !== 0
+              ? "flex"
+              : "none",
+        }}
         as={motion.div}
         flexDirection={"column"}
         fontFamily={"poppins"}
@@ -28,18 +30,24 @@ const ImageLabel: React.FC<ImageLabelProps> = ({
         background={"black"}
         opacity={0.7}
         left={0}
-        top={10}
-        px={"2rem"}
-        py={"1rem"}
+        top={{ base: 5, lg: 10 }}
+        pr={{ base: "1rem", lg: "2rem" }}
+        pl={{ base: ".7rem", lg: "1.5rem" }}
+        py={{ base: ".8rem", lg: "1rem" }}
         gap={0}
       >
-        <Text m={0} fontWeight={500} fontSize={"1.4rem"} color={"white"}>
+        <Text
+          m={0}
+          fontWeight={500}
+          fontSize={{ base: ".8rem", lg: "1.4rem" }}
+          color={"white"}
+        >
           {content[0]}
         </Text>
-        <Text m={0} color={"white"}>
+        <Text fontSize={{ base: ".6rem", lg: "1.2rem" }} m={0} color={"white"}>
           {content[1]}
         </Text>
-        <Text m={0} color={"white"}>
+        <Text fontSize={{ base: ".6rem", lg: "1.2rem" }} m={0} color={"white"}>
           {content[2]}
         </Text>
       </Box>

@@ -14,7 +14,7 @@ export const exteriorAssets = [
       content: [
         "METROPOLIS",
         "CLIENT: Housing Joint Venture",
-        "LOCATION: Detroit, Michigan, USA",
+        "LOCATION: Detroit, Michigan, USA.",
       ],
     },
   ],
@@ -63,7 +63,7 @@ export const exteriorAssets = [
       content: [
         "NEOCLASSIC POOL",
         "CLIENT: Elo-Hekka Resources",
-        "LOCATION: Umuahia, Nigeria",
+        "LOCATION: Umuahia, Nigeria.",
       ],
     },
   ],
@@ -82,7 +82,7 @@ export const exteriorAssets = [
       content: [
         "BLEACHERS SEAT",
         "CLIENT: Elo-Hekka Resources",
-        "LOCATION: Ibadan, Nigeria",
+        "LOCATION: Ibadan, Nigeria.",
       ],
     },
   ],

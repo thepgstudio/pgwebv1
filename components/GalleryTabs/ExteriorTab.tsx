@@ -37,7 +37,7 @@ const ExteriorTab = () => {
           display={"flex"}
           as={motion.div}
           width={"100%"}
-          gap={"2.5rem"}
+          gap={{ base: "1rem", lg: "2rem" }}
         >
           {exteriorAssets.map((item, rowIndex) => (
             <Box

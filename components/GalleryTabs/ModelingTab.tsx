@@ -13,14 +13,14 @@ const ModellingTab = () => {
     <>
       <AnimatePresence>
         <Box
-          flexDir={"column"}
+          gap={{ base: "1rem", lg: "2.5rem" }}
           initial={{ scale: 0.75 }}
           animate={{ scale: 1 }}
           exit={{ scale: 0.75 }}
+          flexDir={"column"}
           display={"flex"}
           as={motion.div}
           width={"100%"}
-          gap={"2rem"}
         >
           {modellingAssets.map((item, rowIndex) => (
             <Box

@@ -37,11 +37,10 @@ const InteriorTab = () => {
           flexDir={"column"}
           display={"flex"}
           width={"100%"}
-          gap={"2.5rem"}
+          gap={{ base: "1rem", lg: "2.5rem" }}
         >
           {interiorAssets.map((item, rowIndex) => (
             <>
-         
               <Box
                 flexDir={{ base: "column", lg: "row" }}
                 key={rowIndex}
@@ -61,7 +60,7 @@ const InteriorTab = () => {
                     onClick={() => {
                       setToggler(!toggler);
                       setClickedIndex(rowIndex);
-                      console.log(rowIndex)
+                      console.log(rowIndex);
                     }}
                     onMouseEnter={() => handleMouseEnter(rowIndex)}
                     onMouseLeave={() => handleMouseLeave(rowIndex)}
