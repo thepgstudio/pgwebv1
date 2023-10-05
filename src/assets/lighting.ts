@@ -15,6 +15,11 @@ export const lightingAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545613/GALLERY/LIGHTING/IMAGE%201%20-%20Embed/IMAGE_1_7_jfj78c.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545612/GALLERY/LIGHTING/IMAGE%201%20-%20Embed/IMAGE_1_8_acxazy.jpg",
       ],
+      content: [
+        "WINNERS CHAPEL",
+        "CLIENT: SoundTrip",
+        "LOCATION: New York, USA",
+      ],
     },
   ],
   [
@@ -30,6 +35,7 @@ export const lightingAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545621/GALLERY/LIGHTING/IMAGE%202%20-%20Embed/IMAGE_2_4_nnoyjm.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545620/GALLERY/LIGHTING/IMAGE%202%20-%20Embed/IMAGE_2_5_xhhr3n.jpg",
       ],
+      content: ["RCCG", "CLIENT: SoundTrip", "LOCATION: New York, USA"],
     },
   ],
   [
@@ -44,6 +50,7 @@ export const lightingAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545618/GALLERY/LIGHTING/IMAGE%203%20-%20Embed/IMAGE_3_3_lihtd6.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545617/GALLERY/LIGHTING/IMAGE%203%20-%20Embed/IMAGE_3_4_pjlin1.jpg",
       ],
+      content: ["RCCG", "CLIENT: SoundTrip", "LOCATION: Texas, USA"],
     },
   ],
   [
@@ -56,6 +63,7 @@ export const lightingAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545620/GALLERY/LIGHTING/IMAGE%204%20-%20Embed/IMAGE_4_1_iksife.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545619/GALLERY/LIGHTING/IMAGE%204%20-%20Embed/IMAGE_4_2_n4qbpy.jpg",
       ],
+      content: ["RCCG", "CLIENT: SoundTrip", "LOCATION: New York, USA"],
     },
   ],
 ];

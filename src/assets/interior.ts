@@ -9,6 +9,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545669/GALLERY/INTERIOR/IMAGE%201%20-%20Embed/IMAGE_1_1_tzwup7.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545669/GALLERY/INTERIOR/IMAGE%201%20-%20Embed/IMAGE_1_2_csgn4e.jpg",
       ],
+      content: [
+        "LIVING ROOM",
+        "CLIENT: Fresh Decor",
+        "LOCATION: Illinois, USA",
+      ],
     },
   ],
   [
@@ -23,6 +28,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545670/GALLERY/INTERIOR/IMAGE%202%20-%20Embed/IMAGE_2_3_moeqis.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545670/GALLERY/INTERIOR/IMAGE%202%20-%20Embed/IMAGE_2_4_imhcxo.jpg",
       ],
+      content: [
+        "SCHOLAR SUITES",
+        "CLIENT: Apartment Oasis",
+        "LOCATION: Texas, USA",
+      ],
     },
   ],
   [
@@ -35,6 +45,7 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545643/GALLERY/INTERIOR/IMAGE_3_-_1_eoc4wr.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545642/GALLERY/INTERIOR/IMAGE_3_-_2_ke9klw.jpg",
       ],
+      content: ["INSPIRADORA", "CLIENT: Private", "LOCATION: Miami, USA"],
     },
   ],
   [
@@ -47,6 +58,7 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545655/GALLERY/INTERIOR/IMAGE_4_-_1_fxipdr.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545654/GALLERY/INTERIOR/IMAGE_4_-_2_d9l4yp.jpg",
       ],
+      content: ["ABODE", "CLIENT: Femtex Builds", "LOCATION: Oyo, Nigeria"],
     },
   ],
   [
@@ -60,6 +72,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545676/GALLERY/INTERIOR/IMAGE%206%20-%20Embed/IMAGE_6_2_gcpckc.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545676/GALLERY/INTERIOR/IMAGE%206%20-%20Embed/IMAGE_6_3_psgri2.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545675/GALLERY/INTERIOR/IMAGE%206%20-%20Embed/IMAGE_6_4_mo1o9q.jpg",
+      ],
+      content: [
+        "ABODE",
+        "CLIENT: Topchoice Deal Interior",
+        "LOCATION: Imo, Nigeria",
       ],
     },
   ],
@@ -75,6 +92,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545676/GALLERY/INTERIOR/IMAGE%206%20-%20Embed/IMAGE_6_3_psgri2.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545675/GALLERY/INTERIOR/IMAGE%206%20-%20Embed/IMAGE_6_4_mo1o9q.jpg",
       ],
+      content: [
+        "ABODE",
+        "CLIENT: Topchoice Deal Interior",
+        "LOCATION: Imo, Nigeria",
+      ],
     },
   ],
   [
@@ -87,6 +109,7 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545659/GALLERY/INTERIOR/IMAGE%208%20-%20Embed/IMAGE_8_1_cig1yn.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545660/GALLERY/INTERIOR/IMAGE%208%20-%20Embed/IMAGE_8_2_jcow8e.jpg",
       ],
+      content: ["GLASS DINETTE", "ARTWORK"],
     },
   ],
   [
@@ -100,6 +123,7 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545636/GALLERY/INTERIOR/IMAGE_9_-_2_ekmoeg.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545637/GALLERY/INTERIOR/IMAGE_9_-_3_xcqn88.jpg",
       ],
+      content: ["NEO OLD BEDROOM", "ARTWORK"],
     },
   ],
   [
@@ -114,6 +138,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545662/GALLERY/INTERIOR/IMAGE%2010%20-%20Embed/IMAGE_10_3_zjjaot.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545661/GALLERY/INTERIOR/IMAGE%2010%20-%20Embed/IMAGE_10_4_qq9pl4.jpg",
       ],
+      content: [
+        "STANDARD SUITE",
+        "CLIENT: AAG Designs",
+        "LOCATION: Lagos, Nigeria",
+      ],
     },
   ],
   [
@@ -126,6 +155,7 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545666/GALLERY/INTERIOR/IMAGE%2011%20-%20Embed/IMAGE_11_1_llchyp.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545666/GALLERY/INTERIOR/IMAGE%2011%20-%20Embed/IMAGE_11_2_o1tnnr.jpg",
       ],
+      content: ["BLACK MODERNO", "ARTWORK"],
     },
   ],
   [
@@ -139,6 +169,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545672/GALLERY/INTERIOR/IMAGE%2012%20-%20Embed/IMAGE_12_2_roav6g.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545673/GALLERY/INTERIOR/IMAGE%2012%20-%20Embed/IMAGE_12_3_wdf3aj.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545673/GALLERY/INTERIOR/IMAGE%2012%20-%20Embed/IMAGE_12_4_czmx0r.jpg",
+      ],
+      content: [
+        "NEOCLASSIC KITCHEN",
+        "CLIENT: Elo-Hekka Resources",
+        "LOCATION: Umuahia, Nigeria",
       ],
     },
   ],
@@ -154,6 +189,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545665/GALLERY/INTERIOR/IMAGE%2013%20-%20Embed/IMAGE_13_3_jbpntb.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545664/GALLERY/INTERIOR/IMAGE%2013%20-%20Embed/IMAGE_13_4_efcag9.jpg",
       ],
+      content: [
+        "THE AFRICAN MUSEUM",
+        "CLIENT: Private",
+        "LOCATION: Abuja, Nigeria",
+      ],
     },
   ],
   [
@@ -165,6 +205,11 @@ export const interiorAssets = [
       lightbox: [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545633/GALLERY/INTERIOR/IMAGE_14_-_1_yp0dnt.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545633/GALLERY/INTERIOR/IMAGE_14_-_1_yp0dnt.jpg",
+      ],
+      content: [
+        "SHOWROOM",
+        "CLIENT: 3D Decors Enterprise",
+        "LOCATION: Lagos, Nigeria",
       ],
     },
   ],
@@ -178,6 +223,7 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545629/GALLERY/INTERIOR/IMAGE_15_-_1_exxhey.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545628/GALLERY/INTERIOR/IMAGE_15_-_2_nkr69n.jpg",
       ],
+      content: ["HOME OFFICE", "ARTWORK"],
     },
   ],
   [
@@ -191,6 +237,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545667/GALLERY/INTERIOR/IMAGE%2016%20-%20Embed/IMAGE_16_2_un8xqq.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545667/GALLERY/INTERIOR/IMAGE%2016%20-%20Embed/IMAGE_16_3_kv5dxy.jpg",
       ],
+      content: [
+        "HJV OFFICE",
+        "CLIENT: Housing Joint Venture",
+        "LOCATION: Detroit, Michigan, USA",
+      ],
     },
   ],
   [
@@ -202,6 +253,11 @@ export const interiorAssets = [
       lightbox: [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545626/GALLERY/INTERIOR/IMAGE_17_-_1_hthyd3.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545626/GALLERY/INTERIOR/IMAGE_17_-_2_uj4pm8.jpg",
+      ],
+      content: [
+        "BARON SUPPLY SHOWROOM",
+        "CLIENT: Housing Joint Venture",
+        "LOCATION: Detroit, Michigan, USA",
       ],
     },
   ],
@@ -219,6 +275,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545657/GALLERY/INTERIOR/IMAGE%2018%20-%20Embed/IMAGE_18_5_bslywz.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545656/GALLERY/INTERIOR/IMAGE%2018%20-%20Embed/IMAGE_18_6_o3x3qc.jpg",
       ],
+      content: [
+        "COWORKING SPACE",
+        "CLIENT: Housing Joint Venture",
+        "LOCATION: Detroit, Michigan, USA",
+      ],
     },
   ],
   [
@@ -232,6 +293,7 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545647/GALLERY/INTERIOR/IMAGE_19_-_2_hafpae.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545649/GALLERY/INTERIOR/IMAGE_19_-_3_wwydro.jpg",
       ],
+      content: ["BAR", "CLIENT: Lighting Expert", "LOCATION: Lagos, Nigeria"],
     },
   ],
 ];

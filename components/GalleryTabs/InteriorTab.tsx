@@ -4,10 +4,12 @@ import { useState } from "react";
 import { Box, Text } from "@chakra-ui/react";
 import FsLightbox from "fslightbox-react";
 import Image from "next/image";
+import ImageLabel from "../ImageLabel";
 
 const InteriorTab = () => {
   const [clickedIndex, setClickedIndex] = useState(0);
   const [toggler, setToggler] = useState(false);
+
   const [mouseMonitors, setMouseMonitors] = useState(
     Array(interiorAssets.length).fill(false)
   );
@@ -28,17 +30,18 @@ const InteriorTab = () => {
     <>
       <AnimatePresence>
         <Box
-          flexDir={"column"}
           initial={{ scale: 0.75 }}
           animate={{ scale: 1 }}
           exit={{ scale: 0.75 }}
-          display={"flex"}
           as={motion.div}
+          flexDir={"column"}
+          display={"flex"}
           width={"100%"}
-          gap={"1rem"}
+          gap={"2.5rem"}
         >
           {interiorAssets.map((item, rowIndex) => (
             <>
+         
               <Box
                 flexDir={{ base: "column", lg: "row" }}
                 key={rowIndex}
@@ -58,6 +61,7 @@ const InteriorTab = () => {
                     onClick={() => {
                       setToggler(!toggler);
                       setClickedIndex(rowIndex);
+                      console.log(rowIndex)
                     }}
                     onMouseEnter={() => handleMouseEnter(rowIndex)}
                     onMouseLeave={() => handleMouseLeave(rowIndex)}
@@ -71,36 +75,11 @@ const InteriorTab = () => {
                       className={`image ${index}`}
                     />
 
-                    <Box
-                      display={
-                        mouseMonitors[rowIndex] === true ? "flex" : "none"
-                      }
-                      flexDirection={"column"}
-                      fontFamily={"poppins"}
-                      position={"absolute"}
-                      background={"black"}
-                      opacity={0.7}
-                      left={0}
-                      top={10}
-                      px={"2rem"}
-                      py={"1rem"}
-                      gap={0}
-                    >
-                      <Text
-                        m={0}
-                        fontWeight={500}
-                        fontSize={"1.4rem"}
-                        color={"white"}
-                      >
-                        OFFICE CENTER
-                      </Text>
-                      <Text m={0} color={"white"}>
-                        CLIENT: GENSLER
-                      </Text>
-                      <Text m={0} color={"white"}>
-                        LOCATION: SOUTH KOREA
-                      </Text>
-                    </Box>
+                    <ImageLabel
+                      mouseMonitors={mouseMonitors}
+                      rowIndex={rowIndex}
+                      content={item[0].content}
+                    />
                   </Box>
                 ))}
               </Box>

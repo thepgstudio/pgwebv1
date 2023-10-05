@@ -4,10 +4,28 @@ import { useState } from "react";
 import { Box } from "@chakra-ui/react";
 import FsLightbox from "fslightbox-react";
 import Image from "next/image";
+import ImageLabel from "../ImageLabel";
 
 const LightingTab = () => {
   const [toggler, setToggler] = useState(false);
   const [clickedIndex, setClickedIndex] = useState(0);
+
+
+  const [mouseMonitors, setMouseMonitors] = useState(
+    Array(lightingAssets.length).fill(false)
+  );
+
+  const handleMouseEnter = (rowIndex: number) => {
+    const updatedMonitors = [...mouseMonitors];
+    updatedMonitors[rowIndex] = true;
+    setMouseMonitors(updatedMonitors);
+  };
+
+  const handleMouseLeave = (rowIndex: number) => {
+    const updatedMonitors = [...mouseMonitors];
+    updatedMonitors[rowIndex] = false;
+    setMouseMonitors(updatedMonitors);
+  };
 
   return (
     <>
@@ -20,7 +38,7 @@ const LightingTab = () => {
           display={"flex"}
           as={motion.div}
           width={"100%"}
-          gap={"1rem"}
+          gap={"2.5rem"}
         >
           {lightingAssets.map((item, rowIndex) => (
             <Box
@@ -42,6 +60,8 @@ const LightingTab = () => {
                     setToggler(!toggler);
                     setClickedIndex(rowIndex);
                   }}
+                  onMouseEnter={() => handleMouseEnter(rowIndex)}
+                  onMouseLeave={() => handleMouseLeave(rowIndex)}
                 >
                   <Image
                     key={index}
@@ -49,6 +69,12 @@ const LightingTab = () => {
                     alt="gallery image"
                     fill
                     style={{ objectFit: "cover" }}
+                  />
+
+                  <ImageLabel
+                    mouseMonitors={mouseMonitors}
+                    content={item[0].content}
+                    rowIndex={rowIndex}
                   />
                 </Box>
               ))}

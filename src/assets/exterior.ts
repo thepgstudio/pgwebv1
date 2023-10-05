@@ -1,4 +1,3 @@
-
 export const exteriorAssets = [
   [
     {
@@ -11,6 +10,11 @@ export const exteriorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545687/GALLERY/EXTERIOR/IMAGE%201%20-%20Embed/IMAGE_1_2_elelw6.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545686/GALLERY/EXTERIOR/IMAGE%201%20-%20Embed/IMAGE_1_3_blb8ow.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545682/GALLERY/EXTERIOR/IMAGE_1_-_1_yfscfd.jpg",
+      ],
+      content: [
+        "METROPOLIS",
+        "CLIENT: Housing Joint Venture",
+        "LOCATION: Detroit, Michigan, USA",
       ],
     },
   ],
@@ -26,6 +30,7 @@ export const exteriorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545686/GALLERY/EXTERIOR/IMAGE%201%20-%20Embed/IMAGE_1_3_blb8ow.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545685/GALLERY/EXTERIOR/IMAGE%201%20-%20Embed/IMAGE_1_4_k2l9ln.jpg",
       ],
+      content: ["SCATTER", "ARTWORK"],
     },
   ],
   [
@@ -39,6 +44,7 @@ export const exteriorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545693/GALLERY/EXTERIOR/IMAGE%203%20-%20Embed/IMAGE_3_2_f0yhrc.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545693/GALLERY/EXTERIOR/IMAGE%203%20-%20Embed/IMAGE_3_3_wz2obx.jpg",
       ],
+      content: ["PERGOLE", "ARTWORK"],
     },
   ],
 
@@ -54,6 +60,11 @@ export const exteriorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545691/GALLERY/EXTERIOR/IMAGE%204%20-%20Embed/IMAGE_4_3_nbqaa5.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545690/GALLERY/EXTERIOR/IMAGE%204%20-%20Embed/IMAGE_4_4_norssw.jpg",
       ],
+      content: [
+        "NEOCLASSIC POOL",
+        "CLIENT: Elo-Hekka Resources",
+        "LOCATION: Umuahia, Nigeria",
+      ],
     },
   ],
   [
@@ -67,6 +78,11 @@ export const exteriorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545689/GALLERY/EXTERIOR/IMAGE%205%20-Embed/IMAGE_5_2_gpdbhf.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545688/GALLERY/EXTERIOR/IMAGE%205%20-Embed/IMAGE_5_3_aa485d.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545688/GALLERY/EXTERIOR/IMAGE%205%20-Embed/IMAGE_5_4_c9tmbr.jpg",
+      ],
+      content: [
+        "BLEACHERS SEAT",
+        "CLIENT: Elo-Hekka Resources",
+        "LOCATION: Ibadan, Nigeria",
       ],
     },
   ],

@@ -20,7 +20,7 @@ const ModellingTab = () => {
           display={"flex"}
           as={motion.div}
           width={"100%"}
-          gap={"1rem"}
+          gap={"2rem"}
         >
           {modellingAssets.map((item, rowIndex) => (
             <Box
