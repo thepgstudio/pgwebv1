@@ -34,10 +34,10 @@ export default function Home() {
           name="description"
           content="3d Architectural Rendering and Visualization Studio"
         />
-        <meta name="description" content="PGStudio" />
         <meta name="robots" content="index, follow" />
+        <meta name="description" content="PGStudio" />
         <meta charSet="UTF-8" />
-        <link rel="icon" href="/assets/logos/PGStudio Logo - Variant 1.png" />
+        <link rel="icon" href="/pgfavicon.png" />
       </Head>
 
       <Box
@@ -325,7 +325,7 @@ export default function Home() {
             mt="3rem"
           >
             <Text
-              fontSize={{ base: "1.5rem", lg: "1.5rem" }}
+              fontSize={{ base: "1.25rem", lg: "1.5rem" }}
               fontWeight={{ base: 500, lg: 600 }}
             >
               THE RCCG

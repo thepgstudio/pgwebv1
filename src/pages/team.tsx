@@ -93,7 +93,9 @@ const Team = () => {
               transitionDelay={".1s"}
               exit={{ scale: 0.75 }}
               cursor={"pointer"}
-              as={motion.div}
+              as={motion.a}
+              href="/"
+              target="_blank"
               display={"flex"}
               minW={"20rem"}
             >

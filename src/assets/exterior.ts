@@ -21,6 +21,27 @@ export const exteriorAssets = [
   [
     {
       maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906262/GALLERY/EXTERIOR/IMAGE_2_-_1_endjeu.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906262/GALLERY/EXTERIOR/IMAGE_2_-_2_zdop5n.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699905917/GALLERY/EXTERIOR/New%20Image%202%20Embed/IMAGE_2_1_yy3y31.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699905917/GALLERY/EXTERIOR/New%20Image%202%20Embed/IMAGE_2_2_hvbw7t.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699905916/GALLERY/EXTERIOR/New%20Image%202%20Embed/IMAGE_2_5_ygoah9.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699905916/GALLERY/EXTERIOR/New%20Image%202%20Embed/IMAGE_2_3_fwghxh.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699905916/GALLERY/EXTERIOR/New%20Image%202%20Embed/IMAGE_2_6_cpgswk.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699905916/GALLERY/EXTERIOR/New%20Image%202%20Embed/IMAGE_2_4_jzxpgk.jpg",
+      ],
+      content: [
+        "NATURE'S EMBRACE",
+        "CLIENT: GBENGA",
+        "LOCATION: Ota, Ogun State, Nigeria",
+      ],
+    },
+  ],
+  [
+    {
+      maindisplay: [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545682/GALLERY/EXTERIOR/IMAGE_2_-_1_une8a8.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545681/GALLERY/EXTERIOR/IMAGE_2_-_2_zk1hxi.jpg",
       ],
@@ -67,6 +88,24 @@ export const exteriorAssets = [
       ],
     },
   ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906263/GALLERY/EXTERIOR/IMAGE_7_-_1_gt5cee.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906266/GALLERY/EXTERIOR/IMAGE_7_-_2_iey6ae.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906312/GALLERY/EXTERIOR/IMAGE%207%20-%20Embed/IMAGE_7_3_pq3ld9.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906311/GALLERY/EXTERIOR/IMAGE%207%20-%20Embed/IMAGE_7_4_mjpwce.jpg",
+      ],
+      content: [
+        "CG PEN",
+        "CLIENT: Jackson Jacobs",
+        "LOCATION: Abia, Nigeria.",
+      ],
+    },
+  ],
+
   [
     {
       maindisplay: [

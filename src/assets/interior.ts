@@ -19,6 +19,19 @@ export const interiorAssets = [
   [
     {
       maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699907162/GALLERY/INTERIOR/IMAGE_20_-_1_ppb1mf.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699907254/GALLERY/INTERIOR/IMAGE_20_-_2_wgxcuj.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699907003/GALLERY/INTERIOR/IMAGE%2020%20-%20Embed/IMAGE_20_1_xyiowi.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699908788/GALLERY/INTERIOR/IMAGE%2020%20-%20Embed/IMAGE_20_2_tepw77.jpg",
+      ],
+      content: ["COSTAL OASIS", "ARTWORK"],
+    },
+  ],
+  [
+    {
+      maindisplay: [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545646/GALLERY/INTERIOR/IMAGE_2_-_1_yyqons.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545645/GALLERY/INTERIOR/IMAGE_2_-_2_uwtk3u.jpg",
       ],
