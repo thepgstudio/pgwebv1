@@ -44,7 +44,7 @@ const Team = () => {
           </BreadcrumbItem>
         </Breadcrumb>
       </HStack>
-      
+
       <HStack
         flexDir={{ base: "column", lg: "row" }}
         justifyContent={"space-between"}
@@ -94,7 +94,7 @@ const Team = () => {
               exit={{ scale: 0.75 }}
               cursor={"pointer"}
               as={motion.a}
-              href="/"
+              href={`${item[4]}`}
               target="_blank"
               display={"flex"}
               minW={"20rem"}
