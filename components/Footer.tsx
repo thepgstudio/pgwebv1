@@ -13,17 +13,17 @@ const Footer = () => {
   ];
 
   const nav_: String[][] = [
-    ["Exterior 3d renderings", "/"],
-    ["Site plan rendering", "/"],
-    ["Commercial architectural 3d visualization", "/"],
     ["Residential renderings", "/"],
-    ["Aerial view rendering services", "/"],
+    ["Commercial architectural 3d visualization", "/"],
+    ["Exterior 3d visualization", "/"],
+    // ["Site plan rendering", "/"],
+    // ["Aerial view rendering services", "/"],
     ["Interior 3d visualizations", "/"],
     ["Real estate rendering", "/"],
     ["Virtual Staging", "/"],
     ["3d Product visualization", "/"],
     ["Furniture rendering", "/"],
-    ["VFX AND POST-PRODUCTION SERVICES", "/"],
+    // ["VFX AND POST-PRODUCTION SERVICES", "/"],
   ];
 
   return (

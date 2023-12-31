@@ -55,7 +55,7 @@ const Company = () => {
         alignItems={"flex-start"}
         display={"flex"}
         gap={"2rem"}
-        mt={"2rem"}
+        my={"2rem"}
       >
         <Text
           w={{ base: "100%", lg: "50%" }}
@@ -79,6 +79,23 @@ const Company = () => {
         </Text>
       </HStack>
 
+      <Box>
+        <Box style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+          <iframe
+            src="https://player.vimeo.com/video/898182180?h=e4ef191e27&autoplay=1&loop=1"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+            }}
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </Box>
+      </Box>
       <Box
         flexDirection={{ base: "column", md: "row" }}
         pt={{ base: "3rem", md: "7rem" }}
@@ -87,7 +104,7 @@ const Company = () => {
         display={"flex"}
       >
         <Box width={{ base: "100%", md: "30%" }}>
-          <Text fontWeight={500} fontSize={{base:"1.3rem",lg:"1.5rem"}}>
+          <Text fontWeight={500} fontSize={{ base: "1.3rem", lg: "1.5rem" }}>
             THE ART OF VISUALIZATION IS A BLEND OF ARTISTIC AND TECHNICAL FLAIR.
           </Text>
           <Text
@@ -108,7 +125,7 @@ const Company = () => {
           width={{ base: "100%", md: "30%" }}
           py={{ base: "2rem", md: "0rem" }}
         >
-          <Text fontWeight={500} fontSize={{base:"1.2rem",lg:"1.5rem"}}>
+          <Text fontWeight={500} fontSize={{ base: "1.2rem", lg: "1.5rem" }}>
             WHO WE ARE AT PGSTUDIO.
           </Text>
           <Text

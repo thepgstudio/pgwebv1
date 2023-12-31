@@ -38,6 +38,7 @@ export default function Home() {
         <meta name="description" content="PGStudio" />
         <meta charSet="UTF-8" />
         <link rel="icon" href="/pgfavicon.png" />
+        <script async src="https://player.vimeo.com/api/player.js"></script>
       </Head>
 
       <Box
