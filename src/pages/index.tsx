@@ -3,7 +3,6 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { TypeAnimation } from "react-type-animation";
 import ServiceSection from "../../components/Services";
-import Head from "next/head";
 import Image from "next/image";
 
 import image_one from "../../public/Home PAGE/drive-download-20230613T094156Z-001/HOME Image - 1.jpg";
@@ -23,24 +22,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import MetaTags from "../../components/MetaTags";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>PGStudio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content="3d Architectural Rendering and Visualization Studio"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="PGStudio" />
-        <meta charSet="UTF-8" />
-        <link rel="icon" href="/pgfavicon.png" />
-        <script async src="https://player.vimeo.com/api/player.js"></script>
-      </Head>
-
+      <MetaTags />
       <Box
         flexDirection={{ base: "column", lg: "row" }}
         mt={{ base: "2rem", lg: "10rem" }}

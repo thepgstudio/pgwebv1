@@ -42,6 +42,25 @@ export const exteriorAssets = [
   [
     {
       maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1704024446/GALLERY/EXTERIOR/IMAGE_8_-_1_c6gb4c.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1704024447/GALLERY/EXTERIOR/IMAGE_8_-_2_ssnynx.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1704024328/GALLERY/EXTERIOR/IMAGE%208%20-%20Embed/IMAGE_8_1_qqoki9.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1704024329/GALLERY/EXTERIOR/IMAGE%208%20-%20Embed/IMAGE_8_2_hf6a4q.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1704024328/GALLERY/EXTERIOR/IMAGE%208%20-%20Embed/IMAGE_8_3_qsra0h.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1704024328/GALLERY/EXTERIOR/IMAGE%208%20-%20Embed/IMAGE_8_4_jwced3.jpg",
+      ],
+      content: [
+        "THE SHOLLY",
+        "CLIENT: FEMTEX BUILDS",
+        "LOCATION: Ogbomoso, Oyo State, Nigeria",
+      ],
+    },
+  ],
+  [
+    {
+      maindisplay: [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545682/GALLERY/EXTERIOR/IMAGE_2_-_1_une8a8.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545681/GALLERY/EXTERIOR/IMAGE_2_-_2_zk1hxi.jpg",
       ],
@@ -68,7 +87,6 @@ export const exteriorAssets = [
       content: ["PERGOLE", "ARTWORK"],
     },
   ],
-
   [
     {
       maindisplay: [
@@ -98,11 +116,7 @@ export const exteriorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906312/GALLERY/EXTERIOR/IMAGE%207%20-%20Embed/IMAGE_7_3_pq3ld9.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906311/GALLERY/EXTERIOR/IMAGE%207%20-%20Embed/IMAGE_7_4_mjpwce.jpg",
       ],
-      content: [
-        "CG PEN",
-        "CLIENT: Jackson Jacobs",
-        "LOCATION: Abia, Nigeria.",
-      ],
+      content: ["CG PEN", "CLIENT: Jackson Jacobs", "LOCATION: Abia, Nigeria."],
     },
   ],
 
