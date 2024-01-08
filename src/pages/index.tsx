@@ -3,6 +3,7 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { TypeAnimation } from "react-type-animation";
 import ServiceSection from "../../components/Services";
+import MetaTags from "../../components/MetaTags";
 import Image from "next/image";
 
 import image_one from "../../public/Home PAGE/drive-download-20230613T094156Z-001/HOME Image - 1.jpg";
@@ -22,7 +23,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import MetaTags from "../../components/MetaTags";
 
 export default function Home() {
   return (
