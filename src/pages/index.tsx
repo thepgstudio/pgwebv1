@@ -23,12 +23,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-
 import Head from "next/head";
+
 export default function Home() {
   return (
     <>
       <MetaTags />
+
       <Box
         flexDirection={{ base: "column", lg: "row" }}
         mt={{ base: "2rem", lg: "10rem" }}

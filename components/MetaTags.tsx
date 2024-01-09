@@ -9,7 +9,7 @@ const MetaTags = () => {
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
 
       <meta
-        name="description"
+        property="description"
         content="3d Architectural Rendering and Visualization Studio"
       />
 
@@ -26,21 +26,19 @@ const MetaTags = () => {
         content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/thepgstudio.com/PGStudio/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F6c7dc6e9-d98d-402e-9941-96f6d3e6247b.jpg%3Ftoken%3DLjOrvqUC9QPOJqhhyoMCAUr3NEk7JIvvKZOWfc-cKQg%26height%3D675%26width%3D1200%26expires%3D33240756101/og.png"
       />
 
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="thepgstudio.com" />
       <meta property="twitter:url" content="https://thepgstudio.com" />
-      <meta name="twitter:title" content="PGStudio" />
+      <meta property="twitter:title" content="PGStudio" />
       <meta
-        name="twitter:description"
+        property="twitter:description"
         content="3d Architectural Rendering and Visualization Studio"
       />
-
       <meta
-        name="twitter:image"
+        property="twitter:image"
         content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/thepgstudio.com/PGStudio/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F6c7dc6e9-d98d-402e-9941-96f6d3e6247b.jpg%3Ftoken%3DLjOrvqUC9QPOJqhhyoMCAUr3NEk7JIvvKZOWfc-cKQg%26height%3D675%26width%3D1200%26expires%3D33240756101/og.png"
-      ></meta>
+      />
       <link rel="icon" href="/pgfavicon.png" />
-      <script async src="https://player.vimeo.com/api/player.js"></script>
     </Head>
   );
 };
