@@ -5,8 +5,6 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  VStack,
-  chakra,
   useDisclosure,
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
@@ -90,7 +88,6 @@ const Company = () => {
               width: "100%",
               height: "100%",
             }}
-            frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
           ></iframe>

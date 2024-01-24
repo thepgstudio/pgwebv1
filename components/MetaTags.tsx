@@ -23,7 +23,7 @@ const MetaTags = () => {
 
       <meta
         property="og:image"
-        content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/thepgstudio.com/PGStudio/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F6c7dc6e9-d98d-402e-9941-96f6d3e6247b.jpg%3Ftoken%3DLjOrvqUC9QPOJqhhyoMCAUr3NEk7JIvvKZOWfc-cKQg%26height%3D675%26width%3D1200%26expires%3D33240756101/og.png"
+        content="https://res.cloudinary.com/djskbsz2k/image/upload/v1704754390/GALLERY/PGStudio_-_Website_Link_Preview_tqlvy3.jpg"
       />
 
       <meta property="twitter:card" content="summary_large_image" />
@@ -36,7 +36,7 @@ const MetaTags = () => {
       />
       <meta
         property="twitter:image"
-        content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/thepgstudio.com/PGStudio/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F6c7dc6e9-d98d-402e-9941-96f6d3e6247b.jpg%3Ftoken%3DLjOrvqUC9QPOJqhhyoMCAUr3NEk7JIvvKZOWfc-cKQg%26height%3D675%26width%3D1200%26expires%3D33240756101/og.png"
+        content="https://res.cloudinary.com/djskbsz2k/image/upload/v1704754390/GALLERY/PGStudio_-_Website_Link_Preview_tqlvy3.jpg"
       />
       <link rel="icon" href="/pgfavicon.png" />
     </Head>
