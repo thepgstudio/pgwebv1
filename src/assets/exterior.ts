@@ -21,6 +21,28 @@ export const exteriorAssets = [
   [
     {
       maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098600/GALLERY/EXTERIOR/JUNE%2C%202024/IMAGE_1_-_1_lsdnae.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718223432/GALLERY/EXTERIOR/JUNE%2C%202024/IMAGE_1_-_2_gt3spb.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718223891/GALLERY/EXTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_1_poamhx.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718223892/GALLERY/EXTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_2_dxa0lj.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718223893/GALLERY/EXTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_3_mjectt.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718223893/GALLERY/EXTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_4_t9dkwj.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718223904/GALLERY/EXTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_5_ldv3df.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718223934/GALLERY/EXTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_6_uy8utc.jpg",
+      ],
+      content: [
+        "",
+        "",
+        "",
+      ],
+    },
+  ],
+
+  [
+    {
+      maindisplay: [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906262/GALLERY/EXTERIOR/IMAGE_2_-_1_endjeu.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906262/GALLERY/EXTERIOR/IMAGE_2_-_2_zdop5n.jpg",
       ],
@@ -106,20 +128,6 @@ export const exteriorAssets = [
       ],
     },
   ],
-  [
-    {
-      maindisplay: [
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906263/GALLERY/EXTERIOR/IMAGE_7_-_1_gt5cee.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906266/GALLERY/EXTERIOR/IMAGE_7_-_2_iey6ae.jpg",
-      ],
-      lightbox: [
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906312/GALLERY/EXTERIOR/IMAGE%207%20-%20Embed/IMAGE_7_3_pq3ld9.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1699906311/GALLERY/EXTERIOR/IMAGE%207%20-%20Embed/IMAGE_7_4_mjpwce.jpg",
-      ],
-      content: ["CG PEN", "CLIENT: Jackson Jacobs", "LOCATION: Abia, Nigeria."],
-    },
-  ],
-
   [
     {
       maindisplay: [

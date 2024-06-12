@@ -19,6 +19,68 @@ export const interiorAssets = [
   [
     {
       maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098524/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE_1_-_1_ubbmxo.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098522/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE_1_-_2_bkr1w8.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098534/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_1_hhyqeb.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098535/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_2_i0xga4.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098534/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_3_igsduc.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098534/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_4_yohsfh.jpg",
+      ],
+      content: ["", "", ""],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098523/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE_2_-_1_phs03k.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098523/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE_2_-_2_fsjww9.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098535/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%202%20-%20Embed/IMAGE_2_1_rhntwf.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098535/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%202%20-%20Embed/IMAGE_2_2_h0kb7k.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098538/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%202%20-%20Embed/IMAGE_2_3_taxcdc.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098540/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%202%20-%20Embed/IMAGE_2_4_wdqjt7.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098536/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%202%20-%20Embed/IMAGE_2_5_tqku9v.jpg",
+      ],
+      content: ["", "", ""],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098523/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE_3_-_1_b32xqf.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098522/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE_3_-_2_cpmfxw.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098525/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%203%20-%20Embed/IMAGE_3_1_rvzyle.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098533/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%203%20-%20Embed/IMAGE_3_2_i2nsc2.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098530/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%203%20-%20Embed/IMAGE_3_3_ia0fwi.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098525/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%203%20-%20Embed/IMAGE_3_4_xzzkmu.jpg",
+      ],
+      content: ["", "", ""],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098522/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE_4_-_1_udfr5f.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098522/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE_4_-_2_tzvtjt.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098525/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%204%20-%20Embed/IMAGE_4_1_p8qsgd.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098525/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%204%20-%20Embed/IMAGE_4_2_kvdxzj.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098524/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%204%20-%20Embed/IMAGE_4_3_zytzos.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098525/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%204%20-%20Embed/IMAGE_4_4_ceqift.jpg",
+      ],
+      content: ["", "", ""],
+    },
+  ],
+
+  [
+    {
+      maindisplay: [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1699907162/GALLERY/INTERIOR/IMAGE_20_-_1_ppb1mf.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1699907254/GALLERY/INTERIOR/IMAGE_20_-_2_wgxcuj.jpg",
       ],
@@ -32,25 +94,6 @@ export const interiorAssets = [
   [
     {
       maindisplay: [
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545646/GALLERY/INTERIOR/IMAGE_2_-_1_yyqons.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545645/GALLERY/INTERIOR/IMAGE_2_-_2_uwtk3u.jpg",
-      ],
-      lightbox: [
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545672/GALLERY/INTERIOR/IMAGE%202%20-%20Embed/IMAGE_2_1_ubbik2.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545671/GALLERY/INTERIOR/IMAGE%202%20-%20Embed/IMAGE_2_2_m0det8.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545670/GALLERY/INTERIOR/IMAGE%202%20-%20Embed/IMAGE_2_3_moeqis.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545670/GALLERY/INTERIOR/IMAGE%202%20-%20Embed/IMAGE_2_4_imhcxo.jpg",
-      ],
-      content: [
-        "SCHOLAR SUITES",
-        "CLIENT: Apartment Oasis",
-        "LOCATION: Texas, USA.",
-      ],
-    },
-  ],
-  [
-    {
-      maindisplay: [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545643/GALLERY/INTERIOR/IMAGE_3_-_1_eoc4wr.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545642/GALLERY/INTERIOR/IMAGE_3_-_2_ke9klw.jpg",
       ],
@@ -59,38 +102,6 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545642/GALLERY/INTERIOR/IMAGE_3_-_2_ke9klw.jpg",
       ],
       content: ["INSPIRADORA", "CLIENT: Private", "LOCATION: Miami, USA."],
-    },
-  ],
-  [
-    {
-      maindisplay: [
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545655/GALLERY/INTERIOR/IMAGE_4_-_1_fxipdr.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545654/GALLERY/INTERIOR/IMAGE_4_-_2_d9l4yp.jpg",
-      ],
-      lightbox: [
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545655/GALLERY/INTERIOR/IMAGE_4_-_1_fxipdr.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545654/GALLERY/INTERIOR/IMAGE_4_-_2_d9l4yp.jpg",
-      ],
-      content: ["ABODE", "CLIENT: Femtex Builds", "LOCATION: Oyo, Nigeria."],
-    },
-  ],
-  [
-    {
-      maindisplay: [
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545642/GALLERY/INTERIOR/IMAGE_6_-_1_a6kvaq.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545642/GALLERY/INTERIOR/IMAGE_6_-_2_mxzx92.jpg",
-      ],
-      lightbox: [
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545677/GALLERY/INTERIOR/IMAGE%206%20-%20Embed/IMAGE_6_1_loiy03.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545676/GALLERY/INTERIOR/IMAGE%206%20-%20Embed/IMAGE_6_2_gcpckc.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545676/GALLERY/INTERIOR/IMAGE%206%20-%20Embed/IMAGE_6_3_psgri2.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545675/GALLERY/INTERIOR/IMAGE%206%20-%20Embed/IMAGE_6_4_mo1o9q.jpg",
-      ],
-      content: [
-        "ABODE",
-        "CLIENT: Topchoice Deal Interior",
-        "LOCATION: Imo, Nigeria.",
-      ],
     },
   ],
   [
@@ -125,20 +136,7 @@ export const interiorAssets = [
       content: ["GLASS DINETTE", "ARTWORK"],
     },
   ],
-  [
-    {
-      maindisplay: [
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545638/GALLERY/INTERIOR/IMAGE_9_-_1_x8qr98.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545636/GALLERY/INTERIOR/IMAGE_9_-_2_ekmoeg.jpg",
-      ],
-      lightbox: [
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545638/GALLERY/INTERIOR/IMAGE_9_-_1_x8qr98.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545636/GALLERY/INTERIOR/IMAGE_9_-_2_ekmoeg.jpg",
-        "https://res.cloudinary.com/djskbsz2k/image/upload/v1695545637/GALLERY/INTERIOR/IMAGE_9_-_3_xcqn88.jpg",
-      ],
-      content: ["NEO OLD BEDROOM", "ARTWORK"],
-    },
-  ],
+
   [
     {
       maindisplay: [

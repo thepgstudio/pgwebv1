@@ -13,9 +13,10 @@ const MetaTags = () => {
         content="3d Architectural Rendering and Visualization Studio"
       />
 
-      <meta property="og:url" content="https://thepgstudio.com" />
-      <meta property="og:type" content="website" />
       <meta property="og:title" content="PGStudio" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://thepgstudio.com" />
+      <meta property="og:site_name" content="PGStudio" />
       <meta
         property="og:description"
         content="3d Architectural Rendering and Visualization Studio"
@@ -34,6 +35,7 @@ const MetaTags = () => {
         property="twitter:description"
         content="3d Architectural Rendering and Visualization Studio"
       />
+
       <meta
         property="twitter:image"
         content="https://res.cloudinary.com/djskbsz2k/image/upload/v1704754390/GALLERY/PGStudio_-_Website_Link_Preview_tqlvy3.jpg"
