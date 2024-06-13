@@ -28,7 +28,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098534/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_3_igsduc.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098534/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_4_yohsfh.jpg",
       ],
-      content: ["", "", ""],
+      content: [
+        "548 FAULK ST",
+        "Angelic Real Estate and Investments LLC",
+        "Dallas, TX, USA",
+      ],
     },
   ],
   [
@@ -44,7 +48,11 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098540/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%202%20-%20Embed/IMAGE_2_4_wdqjt7.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098536/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%202%20-%20Embed/IMAGE_2_5_tqku9v.jpg",
       ],
-      content: ["", "", ""],
+      content: [
+        "548 FAULK ST",
+        "Angelic Real Estate and Investments LLC",
+        "Dallas, TX, USA",
+      ],
     },
   ],
   [
@@ -59,7 +67,7 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098530/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%203%20-%20Embed/IMAGE_3_3_ia0fwi.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098525/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%203%20-%20Embed/IMAGE_3_4_xzzkmu.jpg",
       ],
-      content: ["", "", ""],
+      content: ["KITCHEN REMODEL", "Explore Remodeling", "Northern Virginia, USA"],
     },
   ],
   [
@@ -74,7 +82,7 @@ export const interiorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098524/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%204%20-%20Embed/IMAGE_4_3_zytzos.jpg",
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1718098525/GALLERY/INTERIOR/JUNE%2C%202024/IMAGE%204%20-%20Embed/IMAGE_4_4_ceqift.jpg",
       ],
-      content: ["", "", ""],
+      content: ["GLENMORE KITCHEN", "FlipwithThomas", "Glenmore Estates, Ohio, USA"],
     },
   ],
 

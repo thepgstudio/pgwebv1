@@ -13,7 +13,7 @@ export const exteriorAssets = [
       ],
       content: [
         "METROPOLIS",
-        "CLIENT: Housing Joint Venture",
+        "CLIENT: Housing Joint Venture LLC",
         "LOCATION: Detroit, Michigan, USA.",
       ],
     },
@@ -33,9 +33,9 @@ export const exteriorAssets = [
         "https://res.cloudinary.com/djskbsz2k/image/upload/v1718223934/GALLERY/EXTERIOR/JUNE%2C%202024/IMAGE%201%20-%20Embed/IMAGE_1_6_uy8utc.jpg",
       ],
       content: [
-        "",
-        "",
-        "",
+        "548 FAULK ST",
+        "Angelic Real Estate and Investments LLC",
+        "Dallas, TX, USA",
       ],
     },
   ],
