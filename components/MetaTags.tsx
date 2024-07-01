@@ -24,7 +24,7 @@ const MetaTags = () => {
 
       <meta
         property="og:image"
-        content="https://res.cloudinary.com/djskbsz2k/image/upload/v1704754390/GALLERY/PGStudio_-_Website_Link_Preview_tqlvy3.jpg"
+        content="/opengraph-image.jpg"
       />
 
       <meta property="twitter:card" content="summary_large_image" />
@@ -38,7 +38,7 @@ const MetaTags = () => {
 
       <meta
         property="twitter:image"
-        content="https://res.cloudinary.com/djskbsz2k/image/upload/v1704754390/GALLERY/PGStudio_-_Website_Link_Preview_tqlvy3.jpg"
+        content="/opengraph-image.jpg"
       />
       <link rel="icon" href="/pgfavicon.png" />
     </Head>
