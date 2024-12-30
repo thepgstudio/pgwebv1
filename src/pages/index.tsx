@@ -17,6 +17,7 @@ import slide2 from "../../public/Home PAGE/MAIN Image - Slide 2.jpg";
 import slide3 from "../../public/Home PAGE/MAIN Image - Slide 8-1.jpg";
 import slide4 from "../../public/Home PAGE/MAIN Image - Slide 10.jpg";
 
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";

@@ -31,7 +31,7 @@ const patners: StaticImageData[] = [
 const asset: (string | StaticImageData)[][] = [
   [
     pg,
-    "ADEDIRAN ILERIOLUWA",
+    "ADEDIRAN ILERIOLUWA PROMISE",
     "FOUNDER/CEO",
     "This team of imaginative experts dedicated to turning ideas into captivating realities is led by Ilerioluwa. Being a visionary and innovative leader, our process is driven by ultra-modern technologies, creating immersive visual experiences that redefine architectural possibilities.",
     "https://www.linkedin.com/in/adediran-ilerioluwa/",

@@ -164,7 +164,7 @@ const Footer = () => {
       </Box>
       <Box display={"flex"} flexDir={"column"}>
         <Text textTransform={"uppercase"} fontWeight={600} fontSize={"1rem"}>
-          © copyright 2023 PGStudio all rights reserved.
+          © copyright {new Date().getFullYear()} PGStudio all rights reserved.
         </Text>
         <Text
           fontSize={".9rem"}
