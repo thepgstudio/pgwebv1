@@ -39,6 +39,52 @@ export const exteriorAssets = [
       ],
     },
   ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208407/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/1%20-%20LEFT/1_dbu237.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208431/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/1%20-%20RIGHT/1_mignyh.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208407/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/1%20-%20LEFT/2_ymojqo.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208406/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/1%20-%20LEFT/3_kpbelk.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208406/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/1%20-%20LEFT/4_wqin7b.jpg",
+
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208429/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/1%20-%20RIGHT/3_flxukr.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208429/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/1%20-%20RIGHT/2_f99pzb.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208428/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/1%20-%20RIGHT/4_yzohtm.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208427/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/1%20-%20RIGHT/5_twfond.jpg",
+      ],
+      content: [
+        "Durr Apartments",
+        "CLIENT: Durr Capital Groups",
+        "LOCATION: Greensboro, NC, USA",
+      ],
+    },
+  ],
+  [
+    {
+      maindisplay: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208439/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/2%20-%20LEFT/1_usf4mo.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208425/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/3%20-%20RIGHT/1_f0dr8l.jpg",
+      ],
+      lightbox: [
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208439/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/2%20-%20LEFT/2_ymkgxo.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208433/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/2%20-%20LEFT/3_ypboz2.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208432/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/2%20-%20LEFT/4_xupnmd.jpg",
+
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208423/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/3%20-%20RIGHT/2_s2zyfo.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208422/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/3%20-%20RIGHT/3_ksyno9.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208408/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/3%20-%20RIGHT/5_e7dhhz.jpg",
+        "https://res.cloudinary.com/djskbsz2k/image/upload/v1736208407/GALLERY/EXTERIOR/Portfolio%20IMAGES%20-%20Update/3%20-%20RIGHT/4_xelxo3.jpg",
+      ],
+      content: [
+        "Durr Apartments",
+        "CLIENT: Durr Capital Groups",
+        "LOCATION: Greensboro, NC, USA",
+      ],
+    },
+  ],
 
   [
     {
