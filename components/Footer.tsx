@@ -179,6 +179,8 @@ const Footer = () => {
             cursor={"pointer"}
             as={Link}
             href={"https://web.facebook.com/thepgstudios"}
+            target="_blank"
+
           >
             <Image
               src={facebookicon}
@@ -190,6 +192,7 @@ const Footer = () => {
           <Box
             as={Link}
             href={"https://www.instagram.com/thepgstudios"}
+            target="_blank"
             cursor={"pointer"}
           >
             <Image
@@ -202,6 +205,8 @@ const Footer = () => {
             cursor={"pointer"}
             as={Link}
             href={"https://www.linkedin.com/company/thepgstudios"}
+            target="_blank"
+
           >
             <Image
               src={linkedinicon}
@@ -213,6 +218,7 @@ const Footer = () => {
             cursor={"pointer"}
             as={Link}
             href={"https://twitter.com/thepgstudios"}
+            target="_blank"
           >
             <Image
               src={twittericon}
