@@ -10,12 +10,10 @@ export default async function emailHandler(
       const { name, email, message } = req.body;
 
       const transporter = nodemailer.createTransport({
-        host: "smtp.zoho.com",
-        port: 465,
-        secure: true,
+        service: "gmail",
         auth: {
-          user: "office@thepgstudio.com",
-          pass: "Office07@thepgstudio",
+          user: "promiseadediran@thepgstudio.com",
+          pass: "abcp bkwn oshg zrad",
         },
       });
 
