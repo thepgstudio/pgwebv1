@@ -12,7 +12,9 @@ import {
   Textarea,
   Spinner,
   useToast,
+  Checkbox,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Contact = (props: any) => {
@@ -24,6 +26,7 @@ const Contact = (props: any) => {
     email: "",
     message: "",
   });
+  const [consented, setConsented] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -70,6 +73,7 @@ const Contact = (props: any) => {
           email: "",
           message: "",
         });
+        setConsented(false);
       } else {
         console.error("Error submitting form");
         toast({
@@ -196,8 +200,55 @@ const Contact = (props: any) => {
                 />
               </Box>
 
+              <Checkbox
+                isChecked={consented}
+                onChange={(e) => setConsented(e.target.checked)}
+                alignItems={"flex-start"}
+                colorScheme="blackAlpha"
+                isRequired
+                w="100%"
+                sx={{
+                  ".chakra-checkbox__control": {
+                    borderColor: "black",
+                    borderRadius: "0",
+                    mt: ".15rem",
+                  },
+                  ".chakra-checkbox__control[data-checked]": {
+                    bg: "black",
+                    borderColor: "black",
+                  },
+                }}
+              >
+                <Text fontSize={".8rem"} fontWeight={300} lineHeight={"1.6"}>
+                  I have read and agree to the{" "}
+                  <Text
+                    as={Link}
+                    href="/terms-and-conditions"
+                    target="_blank"
+                    fontWeight={500}
+                    borderBottom={"1px solid black"}
+                    _hover={{ color: "#bababa", borderColor: "#bababa" }}
+                  >
+                    Terms and Conditions
+                  </Text>{" "}
+                  and{" "}
+                  <Text
+                    as={Link}
+                    href="/privacy-policy"
+                    target="_blank"
+                    fontWeight={500}
+                    borderBottom={"1px solid black"}
+                    _hover={{ color: "#bababa", borderColor: "#bababa" }}
+                  >
+                    Privacy Policy
+                  </Text>
+                  .
+                </Text>
+              </Checkbox>
+
               <Button
                 _hover={{ color: "black", bg: "white", border: "1px solid" }}
+                isDisabled={!consented}
                 borderRadius={"0rem"}
                 background={"black"}
                 fontSize={"1.3rem"}

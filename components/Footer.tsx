@@ -166,14 +166,35 @@ const Footer = () => {
         <Text textTransform={"uppercase"} fontWeight={600} fontSize={"1rem"}>
           © copyright {new Date().getFullYear()} PGStudio all rights reserved.
         </Text>
-        <Text
-          fontSize={".9rem"}
-          fontWeight={300}
-          w="max-content"
-          borderBottom={"1px solid #000"}
-        >
-          TERMS OF USE & PRIVACY POLICY
-        </Text>
+        <HStack gap={".75rem"} mt={".25rem"}>
+          <Text
+            as={Link}
+            href={"/terms-and-conditions"}
+            fontSize={".9rem"}
+            fontWeight={300}
+            w="max-content"
+            borderBottom={"1px solid #000"}
+            _hover={{ color: "#bababa", borderColor: "#bababa" }}
+            cursor={"pointer"}
+          >
+            TERMS AND CONDITIONS
+          </Text>
+          <Text fontWeight={300} fontSize={".9rem"} color={"#bababa"}>
+            |
+          </Text>
+          <Text
+            as={Link}
+            href={"/privacy-policy"}
+            fontSize={".9rem"}
+            fontWeight={300}
+            w="max-content"
+            borderBottom={"1px solid #000"}
+            _hover={{ color: "#bababa", borderColor: "#bababa" }}
+            cursor={"pointer"}
+          >
+            PRIVACY POLICY
+          </Text>
+        </HStack>
         <HStack mt={"1rem"} gap={".5rem"}>
           <Box
             cursor={"pointer"}
