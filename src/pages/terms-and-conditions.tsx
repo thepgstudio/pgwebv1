@@ -62,11 +62,19 @@ Clients who require a Non-Disclosure Agreement (NDA) should communicate this req
 PGStudio does not guarantee that visualizations will exactly replicate the appearance of constructed buildings or manufactured products, as physical materials, lighting conditions, and construction tolerances may vary.`,
     },
     {
-      title: "9. Governing Law",
+      title: "9. SMS Messaging Consent",
+      body: `When you provide your phone number via our contact form and opt in to receive SMS messages, PGStudio may send you transactional messages (such as project updates, appointment confirmations, and responses to your enquiries) and, where separately consented to, marketing and promotional messages.
+
+Your SMS consent information, including your phone number and opt-in status, will never be sold, rented, or shared with third parties for their own marketing purposes. The sole exception is our authorised SMS service providers who are engaged strictly to facilitate message delivery on our behalf. These providers are contractually bound to maintain the confidentiality of your data and may not use it for any other purpose.
+
+You may opt out of SMS communications at any time by replying STOP to any message. For assistance, reply HELP. Message frequency may vary. Standard message and data rates may apply.`,
+    },
+    {
+      title: "10. Governing Law",
       body: `These Terms and Conditions are governed by and construed in accordance with applicable law. Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the relevant courts. PGStudio will always endeavour to resolve disputes amicably and in good faith before pursuing formal legal remedies.`,
     },
     {
-      title: "10. Contact",
+      title: "11. Contact",
       body: `If you have any questions about these Terms and Conditions, or wish to discuss any aspect of our services or a specific project, please do not hesitate to get in touch with us. You can reach PGStudio through our website contact form or via our official social media channels. We welcome all enquiries and are committed to responding promptly and professionally.`,
     },
   ];

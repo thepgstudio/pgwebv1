@@ -1,6 +1,7 @@
 import { HStack, Text, Box, Button } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import Link from "next/link";
 import Contact from "./Contact";
 import NextLink from "next/link";
@@ -8,6 +9,12 @@ import NextLink from "next/link";
 const NavElements = (props: any) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
+
+  useEffect(() => {
+    if (router.query.a2p === "true") {
+      onOpen();
+    }
+  }, [router.query.a2p]);
 
   return (
     <Box

@@ -40,41 +40,47 @@ We may also disclose your information where required by law, in response to a va
 We do not share your personal information with advertisers or data brokers.`,
     },
     {
-      title: "5. Data Retention",
+      title: "5. SMS Consent and Messaging",
+      body: `When you provide your phone number and consent to receive SMS messages from PGStudio, your consent and phone number will never be shared with third parties for their own marketing or promotional purposes. The only exception is our authorised SMS service providers who facilitate the delivery of messages on our behalf. These providers are bound by strict confidentiality and data protection obligations and are permitted to process your information solely for the purpose of message delivery.
+
+Your decision to opt in or opt out of SMS communications has no bearing on your ability to use our services or receive other forms of support. You may withdraw your consent at any time by replying STOP to any message you receive from us.`,
+    },
+    {
+      title: "6. Data Retention",
       body: `PGStudio retains your personal information for as long as is necessary to fulfil the purposes outlined in this policy, including for the duration of any ongoing business relationship and for a reasonable period thereafter to comply with our legal obligations, resolve disputes, and enforce our agreements.
 
 When your information is no longer required, we will take reasonable steps to securely delete or anonymise it.`,
     },
     {
-      title: "6. Data Security",
+      title: "7. Data Security",
       body: `We take the security of your personal information seriously and implement appropriate technical and organisational measures to protect it against unauthorised access, alteration, disclosure, or destruction. These measures include secure servers, encrypted communications where applicable, and restricted access to personal data within our team.
 
 However, no method of data transmission over the internet or electronic storage is completely secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security and encourage you to take reasonable precautions when sharing sensitive information online.`,
     },
     {
-      title: "7. Cookies",
+      title: "8. Cookies",
       body: `Our website may use cookies and similar tracking technologies to enhance your browsing experience and gather analytical data about site usage. Cookies are small text files placed on your device that help us remember your preferences and understand how visitors interact with our site.
 
 You can control the use of cookies through your browser settings. Please note that disabling certain cookies may affect the functionality of our website. By continuing to use our website, you consent to our use of cookies in accordance with this policy.`,
     },
     {
-      title: "8. Third-Party Links",
+      title: "9. Third-Party Links",
       body: `Our website may contain links to third-party websites, including social media platforms such as Facebook, Instagram, LinkedIn, and X (formerly Twitter). This Privacy Policy applies only to our website and services. We are not responsible for the privacy practices or content of any third-party sites, and we encourage you to review the privacy policies of any external sites you visit.`,
     },
     {
-      title: "9. Your Rights",
+      title: "10. Your Rights",
       body: `Depending on your location, you may have certain rights regarding your personal information, including the right to access the personal data we hold about you, request correction of inaccurate data, request deletion of your personal data, object to or restrict certain types of processing, and withdraw consent where processing is based on consent.
 
 To exercise any of these rights, please contact us using the details below. We will respond to your request within a reasonable timeframe and in accordance with applicable law.`,
     },
     {
-      title: "10. Changes to This Policy",
+      title: "11. Changes to This Policy",
       body: `PGStudio reserves the right to update or modify this Privacy Policy at any time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically to stay informed about how we are protecting your information.
 
 Your continued use of our website or services following the posting of changes constitutes your acceptance of the revised policy.`,
     },
     {
-      title: "11. Contact Us",
+      title: "12. Contact Us",
       body: `If you have any questions, concerns, or requests relating to this Privacy Policy or the way we handle your personal information, please reach out to us through our website contact form or via our official social media channels. We are committed to addressing your concerns in a transparent and timely manner.
 
 PGStudio values your trust and is dedicated to handling your personal information with care, integrity, and respect.`,

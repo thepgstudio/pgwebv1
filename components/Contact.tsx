@@ -24,9 +24,11 @@ const Contact = (props: any) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
-  const [consented, setConsented] = useState(false);
+  const [consentTransactional, setConsentTransactional] = useState(false);
+  const [consentMarketing, setConsentMarketing] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -44,7 +46,11 @@ const Contact = (props: any) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          consentTransactional,
+          consentMarketing,
+        }),
       });
 
       if (response.status === 200) {
@@ -71,9 +77,11 @@ const Contact = (props: any) => {
         setFormData({
           name: "",
           email: "",
+          phone: "",
           message: "",
         });
-        setConsented(false);
+        setConsentTransactional(false);
+        setConsentMarketing(false);
       } else {
         console.error("Error submitting form");
         toast({
@@ -184,6 +192,24 @@ const Contact = (props: any) => {
               </Box>
 
               <Box w="100%" borderBottom={"1px solid black"}>
+                <Input
+                  _placeholder={{ color: "#000000" }}
+                  focusBorderColor="transparent"
+                  borderRadius={"0rem"}
+                  placeholder="PHONE NUMBER"
+                  m={"0rem"}
+                  p={"0rem"}
+                  w="100%"
+                  border="none"
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  isRequired
+                />
+              </Box>
+
+              <Box w="100%" borderBottom={"1px solid black"}>
                 <Textarea
                   isRequired
                   _placeholder={{ color: "#000000" }}
@@ -200,55 +226,56 @@ const Contact = (props: any) => {
                 />
               </Box>
 
-              <Checkbox
-                isChecked={consented}
-                onChange={(e) => setConsented(e.target.checked)}
-                alignItems={"flex-start"}
-                colorScheme="blackAlpha"
-                isRequired
-                w="100%"
-                sx={{
-                  ".chakra-checkbox__control": {
-                    borderColor: "black",
-                    borderRadius: "0",
-                    mt: ".15rem",
-                  },
-                  ".chakra-checkbox__control[data-checked]": {
-                    bg: "black",
-                    borderColor: "black",
-                  },
-                }}
-              >
-                <Text fontSize={".8rem"} fontWeight={300} lineHeight={"1.6"}>
-                  I have read and agree to the{" "}
-                  <Text
-                    as={Link}
-                    href="/terms-and-conditions"
-                    target="_blank"
-                    fontWeight={500}
-                    borderBottom={"1px solid black"}
-                    _hover={{ color: "#bababa", borderColor: "#bababa" }}
-                  >
-                    Terms and Conditions
-                  </Text>{" "}
-                  and{" "}
-                  <Text
-                    as={Link}
-                    href="/privacy-policy"
-                    target="_blank"
-                    fontWeight={500}
-                    borderBottom={"1px solid black"}
-                    _hover={{ color: "#bababa", borderColor: "#bababa" }}
-                  >
-                    Privacy Policy
+              <VStack w="100%" gap={"1rem"} alignItems={"flex-start"}>
+                <Checkbox
+                  isChecked={consentTransactional}
+                  onChange={(e) => setConsentTransactional(e.target.checked)}
+                  alignItems={"flex-start"}
+                  colorScheme="blackAlpha"
+                  w="100%"
+                  sx={{
+                    ".chakra-checkbox__control": {
+                      borderColor: "black",
+                      borderRadius: "0",
+                      mt: ".15rem",
+                    },
+                    ".chakra-checkbox__control[data-checked]": {
+                      bg: "black",
+                      borderColor: "black",
+                    },
+                  }}
+                >
+                  <Text fontSize={".75rem"} fontWeight={300} lineHeight={"1.7"} color={"#444"}>
+                    I consent to receive transactional messaging from PGStudio at the phone number provided. Message frequency may vary. Messages and Data rates may apply. Reply HELP for help or STOP to opt out.
                   </Text>
-                  .
-                </Text>
-              </Checkbox>
+                </Checkbox>
+
+                <Checkbox
+                  isChecked={consentMarketing}
+                  onChange={(e) => setConsentMarketing(e.target.checked)}
+                  alignItems={"flex-start"}
+                  colorScheme="blackAlpha"
+                  w="100%"
+                  sx={{
+                    ".chakra-checkbox__control": {
+                      borderColor: "black",
+                      borderRadius: "0",
+                      mt: ".15rem",
+                    },
+                    ".chakra-checkbox__control[data-checked]": {
+                      bg: "black",
+                      borderColor: "black",
+                    },
+                  }}
+                >
+                  <Text fontSize={".75rem"} fontWeight={300} lineHeight={"1.7"} color={"#444"}>
+                    I consent to receive marketing and promotional messages from PGStudio at the phone number provided. Message frequency may vary. Messages & Data rates may apply. Reply HELP for help and STOP to opt out.
+                  </Text>
+                </Checkbox>
+              </VStack>
 
               <Button
                 _hover={{ color: "black", bg: "white", border: "1px solid" }}
-                isDisabled={!consented}
                 borderRadius={"0rem"}
                 background={"black"}
                 fontSize={"1.3rem"}
@@ -260,6 +287,34 @@ const Contact = (props: any) => {
               >
                 {Loading === true ? <Spinner /> : "SEND"}
               </Button>
+
+              <Text fontSize={".7rem"} fontWeight={300} color={"#888"} textAlign={"center"} lineHeight={"1.7"}>
+                By submitting this form you agree to our{" "}
+                <Text
+                  as={Link}
+                  href="/terms-and-conditions"
+                  target="_blank"
+                  fontWeight={500}
+                  color={"black"}
+                  borderBottom={"1px solid black"}
+                  _hover={{ color: "#bababa", borderColor: "#bababa" }}
+                >
+                  Terms and Conditions
+                </Text>{" "}
+                and{" "}
+                <Text
+                  as={Link}
+                  href="/privacy-policy"
+                  target="_blank"
+                  fontWeight={500}
+                  color={"black"}
+                  borderBottom={"1px solid black"}
+                  _hover={{ color: "#bababa", borderColor: "#bababa" }}
+                >
+                  Privacy Policy
+                </Text>
+                .
+              </Text>
             </VStack>
           </form>
         </ModalBody>
