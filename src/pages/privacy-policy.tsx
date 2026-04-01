@@ -33,11 +33,7 @@ We will never sell your personal information to third parties, and we will only 
     },
     {
       title: "4. Sharing of Information",
-      body: `We may share your information with trusted third-party service providers who assist us in operating our website and delivering our services, such as email service providers, cloud storage platforms, and project management tools. These third parties are contractually obligated to handle your data securely and only for the purposes for which it was shared.
-
-We may also disclose your information where required by law, in response to a valid legal request, or to protect the safety, rights, or property of PGStudio, our clients, or the public.
-
-We do not share your personal information with advertisers or data brokers.`,
+      body: `Mobile information, including text messaging originator opt-in data and consent, will not be shared with any third parties or affiliates for marketing/promotional purposes, as further detailed in Section 5.`,
     },
     {
       title: "5. SMS Consent and Messaging",
