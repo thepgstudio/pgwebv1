@@ -9,7 +9,7 @@ const MetaTags = () => {
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
 
       <meta
-        property="description"
+        name="description"
         content="3d Architectural Rendering and Visualization Studio"
       />
 
@@ -24,21 +24,21 @@ const MetaTags = () => {
 
       <meta
         property="og:image"
-        content="/opengraph-image.jpg"
+        content="https://thepgstudio.com/opengraph-image.jpg"
       />
 
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="thepgstudio.com" />
-      <meta property="twitter:url" content="https://thepgstudio.com" />
-      <meta property="twitter:title" content="PGStudio" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:domain" content="thepgstudio.com" />
+      <meta name="twitter:url" content="https://thepgstudio.com" />
+      <meta name="twitter:title" content="PGStudio" />
       <meta
-        property="twitter:description"
+        name="twitter:description"
         content="3d Architectural Rendering and Visualization Studio"
       />
 
       <meta
-        property="twitter:image"
-        content="/opengraph-image.jpg"
+        name="twitter:image"
+        content="https://thepgstudio.com/opengraph-image.jpg"
       />
       <link rel="icon" href="/pgfavicon.png" />
     </Head>

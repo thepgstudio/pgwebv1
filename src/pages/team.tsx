@@ -22,7 +22,7 @@ const Team = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
-          property="description"
+          name="description"
           content="3d Architectural Rendering and Visualization Studio"
         />
       </Head>

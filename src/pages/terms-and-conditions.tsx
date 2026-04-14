@@ -99,7 +99,7 @@ Factors such as network congestion, carrier filtering, device compatibility, or 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
-          property="description"
+          name="description"
           content="Terms and Conditions — PGStudio 3D Architectural Rendering and Visualization Studio"
         />
       </Head>
